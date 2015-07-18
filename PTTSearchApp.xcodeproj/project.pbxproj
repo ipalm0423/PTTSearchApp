@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6060B4409F0FE2D25AD39B4A /* Pods_PTTSearchApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0131580E420046FBD5EBCE81 /* Pods_PTTSearchApp.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		ACC2EB7D1B5A9E8500F92347 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2EB7C1B5A9E8500F92347 /* AppDelegate.swift */; };
 		ACC2EB801B5A9E8500F92347 /* PTTSearchApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACC2EB7E1B5A9E8500F92347 /* PTTSearchApp.xcdatamodeld */; };
 		ACC2EB821B5A9E8500F92347 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2EB811B5A9E8500F92347 /* ViewController.swift */; };
@@ -14,6 +15,10 @@
 		ACC2EB871B5A9E8500F92347 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC2EB861B5A9E8500F92347 /* Images.xcassets */; };
 		ACC2EB8A1B5A9E8500F92347 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACC2EB881B5A9E8500F92347 /* LaunchScreen.xib */; };
 		ACC2EB961B5A9E8500F92347 /* PTTSearchAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2EB951B5A9E8500F92347 /* PTTSearchAppTests.swift */; };
+		ACC2EBA41B5AAF4300F92347 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2EBA31B5AAF4300F92347 /* Singleton.swift */; };
+		ACC2EBA61B5AAF6D00F92347 /* JSONMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2EBA51B5AAF6D00F92347 /* JSONMappable.swift */; };
+		ACC2EBA81B5AB09300F92347 /* SearchHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2EBA71B5AB09300F92347 /* SearchHistory.swift */; };
+		ACC2EBAA1B5AB0CB00F92347 /* SearchProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2EBA91B5AB0CB00F92347 /* SearchProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0131580E420046FBD5EBCE81 /* Pods_PTTSearchApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PTTSearchApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30C1B859130DF166560571B6 /* Pods-PTTSearchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTTSearchApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PTTSearchApp/Pods-PTTSearchApp.release.xcconfig"; sourceTree = "<group>"; };
 		ACC2EB771B5A9E8500F92347 /* PTTSearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTTSearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC2EB7B1B5A9E8500F92347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACC2EB7C1B5A9E8500F92347 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +45,11 @@
 		ACC2EB8F1B5A9E8500F92347 /* PTTSearchAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PTTSearchAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC2EB941B5A9E8500F92347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACC2EB951B5A9E8500F92347 /* PTTSearchAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTTSearchAppTests.swift; sourceTree = "<group>"; };
+		ACC2EBA31B5AAF4300F92347 /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		ACC2EBA51B5AAF6D00F92347 /* JSONMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONMappable.swift; sourceTree = "<group>"; };
+		ACC2EBA71B5AB09300F92347 /* SearchHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchHistory.swift; sourceTree = "<group>"; };
+		ACC2EBA91B5AB0CB00F92347 /* SearchProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchProfile.swift; sourceTree = "<group>"; };
+		B2534E6993C4AE2F5DF89BD4 /* Pods-PTTSearchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTTSearchApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PTTSearchApp/Pods-PTTSearchApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6060B4409F0FE2D25AD39B4A /* Pods_PTTSearchApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +71,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C9474777E383DE7A13A5597 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0131580E420046FBD5EBCE81 /* Pods_PTTSearchApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ACC2EB6E1B5A9E8500F92347 = {
 			isa = PBXGroup;
 			children = (
 				ACC2EB791B5A9E8500F92347 /* PTTSearchApp */,
 				ACC2EB921B5A9E8500F92347 /* PTTSearchAppTests */,
 				ACC2EB781B5A9E8500F92347 /* Products */,
+				C63390AEF91FA691F8CD396E /* Pods */,
+				7C9474777E383DE7A13A5597 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +117,10 @@
 			isa = PBXGroup;
 			children = (
 				ACC2EB7B1B5A9E8500F92347 /* Info.plist */,
+				ACC2EBA31B5AAF4300F92347 /* Singleton.swift */,
+				ACC2EBA51B5AAF6D00F92347 /* JSONMappable.swift */,
+				ACC2EBA71B5AB09300F92347 /* SearchHistory.swift */,
+				ACC2EBA91B5AB0CB00F92347 /* SearchProfile.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -115,6 +142,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C63390AEF91FA691F8CD396E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2534E6993C4AE2F5DF89BD4 /* Pods-PTTSearchApp.debug.xcconfig */,
+				30C1B859130DF166560571B6 /* Pods-PTTSearchApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACC2EB991B5A9E8500F92347 /* Build configuration list for PBXNativeTarget "PTTSearchApp" */;
 			buildPhases = (
+				51BA344A02F667207AB2ABE2 /* Check Pods Manifest.lock */,
 				ACC2EB731B5A9E8500F92347 /* Sources */,
 				ACC2EB741B5A9E8500F92347 /* Frameworks */,
 				ACC2EB751B5A9E8500F92347 /* Resources */,
+				9DFD6331A07BD8BCC63D1FEE /* Embed Pods Frameworks */,
+				BC6756345E3DB6439BD1B10F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,14 +249,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		51BA344A02F667207AB2ABE2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9DFD6331A07BD8BCC63D1FEE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PTTSearchApp/Pods-PTTSearchApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC6756345E3DB6439BD1B10F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PTTSearchApp/Pods-PTTSearchApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ACC2EB731B5A9E8500F92347 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACC2EBAA1B5AB0CB00F92347 /* SearchProfile.swift in Sources */,
+				ACC2EBA81B5AB09300F92347 /* SearchHistory.swift in Sources */,
 				ACC2EB821B5A9E8500F92347 /* ViewController.swift in Sources */,
+				ACC2EBA41B5AAF4300F92347 /* Singleton.swift in Sources */,
 				ACC2EB801B5A9E8500F92347 /* PTTSearchApp.xcdatamodeld in Sources */,
 				ACC2EB7D1B5A9E8500F92347 /* AppDelegate.swift in Sources */,
+				ACC2EBA61B5AAF6D00F92347 /* JSONMappable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +435,7 @@
 		};
 		ACC2EB9A1B5A9E8500F92347 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2534E6993C4AE2F5DF89BD4 /* Pods-PTTSearchApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PTTSearchApp/Info.plist;
@@ -354,6 +446,7 @@
 		};
 		ACC2EB9B1B5A9E8500F92347 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30C1B859130DF166560571B6 /* Pods-PTTSearchApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PTTSearchApp/Info.plist;
@@ -415,6 +508,7 @@
 				ACC2EB9B1B5A9E8500F92347 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACC2EB9C1B5A9E8500F92347 /* Build configuration list for PBXNativeTarget "PTTSearchAppTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +517,7 @@
 				ACC2EB9E1B5A9E8500F92347 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

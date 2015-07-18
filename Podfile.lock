@@ -1,0 +1,34 @@
+PODS:
+  - Alamofire (1.2.3)
+  - AlamofireObjectMapper (0.5):
+    - Alamofire (~> 1.2)
+    - ObjectMapper (~> 0.10)
+  - Kingfisher (1.4.2)
+  - ObjectMapper (0.12)
+  - SugarRecord/Core (1.0.7)
+  - SugarRecord/CoreData (1.0.7):
+    - SugarRecord/Core
+
+DEPENDENCIES:
+  - Alamofire (~> 1.2)
+  - AlamofireObjectMapper (~> 0.5)
+  - Kingfisher (~> 1.4)
+  - SugarRecord/CoreData (from `https://github.com/SugarRecord/SugarRecord.git`)
+
+EXTERNAL SOURCES:
+  SugarRecord:
+    :git: https://github.com/SugarRecord/SugarRecord.git
+
+CHECKOUT OPTIONS:
+  SugarRecord:
+    :commit: 3a9bdf27da40974fb408400e64fd0fe5521a3bdd
+    :git: https://github.com/SugarRecord/SugarRecord.git
+
+SPEC CHECKSUMS:
+  Alamofire: 5550bf0b575ed1a4bf9be572f9463e1015cc169e
+  AlamofireObjectMapper: 898d4ef5c6fc076331406f43702dc06d2c9c7513
+  Kingfisher: 4446782a827abbe2e6048a1fa741924a10e6ad7c
+  ObjectMapper: ef4a369cbab75546029ceb7e8155772b5f8e8841
+  SugarRecord: 9d55ce666e8161eacdc95c996173eb53eb6d3683
+
+COCOAPODS: 0.37.2

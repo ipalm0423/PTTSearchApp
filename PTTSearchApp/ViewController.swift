@@ -7,11 +7,16 @@
 //
 
 import UIKit
+import SugarRecord
+import Foundation
+import Alamofire
+import AlamofireObjectMapper
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
