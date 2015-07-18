@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACC2EB7D1B5A9E8500F92347 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2EB7C1B5A9E8500F92347 /* AppDelegate.swift */; };
+		ACC2EB801B5A9E8500F92347 /* PTTSearchApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACC2EB7E1B5A9E8500F92347 /* PTTSearchApp.xcdatamodeld */; };
+		ACC2EB821B5A9E8500F92347 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2EB811B5A9E8500F92347 /* ViewController.swift */; };
+		ACC2EB851B5A9E8500F92347 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC2EB831B5A9E8500F92347 /* Main.storyboard */; };
+		ACC2EB871B5A9E8500F92347 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC2EB861B5A9E8500F92347 /* Images.xcassets */; };
+		ACC2EB8A1B5A9E8500F92347 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACC2EB881B5A9E8500F92347 /* LaunchScreen.xib */; };
+		ACC2EB961B5A9E8500F92347 /* PTTSearchAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2EB951B5A9E8500F92347 /* PTTSearchAppTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACC2EB901B5A9E8500F92347 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACC2EB6F1B5A9E8500F92347 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACC2EB761B5A9E8500F92347;
+			remoteInfo = PTTSearchApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ACC2EB771B5A9E8500F92347 /* PTTSearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTTSearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACC2EB7B1B5A9E8500F92347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACC2EB7C1B5A9E8500F92347 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ACC2EB7F1B5A9E8500F92347 /* PTTSearchApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PTTSearchApp.xcdatamodel; sourceTree = "<group>"; };
+		ACC2EB811B5A9E8500F92347 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ACC2EB841B5A9E8500F92347 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ACC2EB861B5A9E8500F92347 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ACC2EB891B5A9E8500F92347 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		ACC2EB8F1B5A9E8500F92347 /* PTTSearchAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PTTSearchAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACC2EB941B5A9E8500F92347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACC2EB951B5A9E8500F92347 /* PTTSearchAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTTSearchAppTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACC2EB741B5A9E8500F92347 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACC2EB8C1B5A9E8500F92347 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ACC2EB6E1B5A9E8500F92347 = {
+			isa = PBXGroup;
+			children = (
+				ACC2EB791B5A9E8500F92347 /* PTTSearchApp */,
+				ACC2EB921B5A9E8500F92347 /* PTTSearchAppTests */,
+				ACC2EB781B5A9E8500F92347 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACC2EB781B5A9E8500F92347 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACC2EB771B5A9E8500F92347 /* PTTSearchApp.app */,
+				ACC2EB8F1B5A9E8500F92347 /* PTTSearchAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACC2EB791B5A9E8500F92347 /* PTTSearchApp */ = {
+			isa = PBXGroup;
+			children = (
+				ACC2EB7C1B5A9E8500F92347 /* AppDelegate.swift */,
+				ACC2EB811B5A9E8500F92347 /* ViewController.swift */,
+				ACC2EB831B5A9E8500F92347 /* Main.storyboard */,
+				ACC2EB861B5A9E8500F92347 /* Images.xcassets */,
+				ACC2EB881B5A9E8500F92347 /* LaunchScreen.xib */,
+				ACC2EB7E1B5A9E8500F92347 /* PTTSearchApp.xcdatamodeld */,
+				ACC2EB7A1B5A9E8500F92347 /* Supporting Files */,
+			);
+			path = PTTSearchApp;
+			sourceTree = "<group>";
+		};
+		ACC2EB7A1B5A9E8500F92347 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ACC2EB7B1B5A9E8500F92347 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ACC2EB921B5A9E8500F92347 /* PTTSearchAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACC2EB951B5A9E8500F92347 /* PTTSearchAppTests.swift */,
+				ACC2EB931B5A9E8500F92347 /* Supporting Files */,
+			);
+			path = PTTSearchAppTests;
+			sourceTree = "<group>";
+		};
+		ACC2EB931B5A9E8500F92347 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ACC2EB941B5A9E8500F92347 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACC2EB761B5A9E8500F92347 /* PTTSearchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACC2EB991B5A9E8500F92347 /* Build configuration list for PBXNativeTarget "PTTSearchApp" */;
+			buildPhases = (
+				ACC2EB731B5A9E8500F92347 /* Sources */,
+				ACC2EB741B5A9E8500F92347 /* Frameworks */,
+				ACC2EB751B5A9E8500F92347 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PTTSearchApp;
+			productName = PTTSearchApp;
+			productReference = ACC2EB771B5A9E8500F92347 /* PTTSearchApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACC2EB8E1B5A9E8500F92347 /* PTTSearchAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACC2EB9C1B5A9E8500F92347 /* Build configuration list for PBXNativeTarget "PTTSearchAppTests" */;
+			buildPhases = (
+				ACC2EB8B1B5A9E8500F92347 /* Sources */,
+				ACC2EB8C1B5A9E8500F92347 /* Frameworks */,
+				ACC2EB8D1B5A9E8500F92347 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACC2EB911B5A9E8500F92347 /* PBXTargetDependency */,
+			);
+			name = PTTSearchAppTests;
+			productName = PTTSearchAppTests;
+			productReference = ACC2EB8F1B5A9E8500F92347 /* PTTSearchAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACC2EB6F1B5A9E8500F92347 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "陳冠宇";
+				TargetAttributes = {
+					ACC2EB761B5A9E8500F92347 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					ACC2EB8E1B5A9E8500F92347 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = ACC2EB761B5A9E8500F92347;
+					};
+				};
+			};
+			buildConfigurationList = ACC2EB721B5A9E8500F92347 /* Build configuration list for PBXProject "PTTSearchApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACC2EB6E1B5A9E8500F92347;
+			productRefGroup = ACC2EB781B5A9E8500F92347 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACC2EB761B5A9E8500F92347 /* PTTSearchApp */,
+				ACC2EB8E1B5A9E8500F92347 /* PTTSearchAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACC2EB751B5A9E8500F92347 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACC2EB851B5A9E8500F92347 /* Main.storyboard in Resources */,
+				ACC2EB8A1B5A9E8500F92347 /* LaunchScreen.xib in Resources */,
+				ACC2EB871B5A9E8500F92347 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACC2EB8D1B5A9E8500F92347 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACC2EB731B5A9E8500F92347 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACC2EB821B5A9E8500F92347 /* ViewController.swift in Sources */,
+				ACC2EB801B5A9E8500F92347 /* PTTSearchApp.xcdatamodeld in Sources */,
+				ACC2EB7D1B5A9E8500F92347 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACC2EB8B1B5A9E8500F92347 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACC2EB961B5A9E8500F92347 /* PTTSearchAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACC2EB911B5A9E8500F92347 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACC2EB761B5A9E8500F92347 /* PTTSearchApp */;
+			targetProxy = ACC2EB901B5A9E8500F92347 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ACC2EB831B5A9E8500F92347 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACC2EB841B5A9E8500F92347 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ACC2EB881B5A9E8500F92347 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACC2EB891B5A9E8500F92347 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACC2EB971B5A9E8500F92347 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACC2EB981B5A9E8500F92347 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACC2EB9A1B5A9E8500F92347 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PTTSearchApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ACC2EB9B1B5A9E8500F92347 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PTTSearchApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ACC2EB9D1B5A9E8500F92347 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PTTSearchAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PTTSearchApp.app/PTTSearchApp";
+			};
+			name = Debug;
+		};
+		ACC2EB9E1B5A9E8500F92347 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PTTSearchAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PTTSearchApp.app/PTTSearchApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACC2EB721B5A9E8500F92347 /* Build configuration list for PBXProject "PTTSearchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACC2EB971B5A9E8500F92347 /* Debug */,
+				ACC2EB981B5A9E8500F92347 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACC2EB991B5A9E8500F92347 /* Build configuration list for PBXNativeTarget "PTTSearchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACC2EB9A1B5A9E8500F92347 /* Debug */,
+				ACC2EB9B1B5A9E8500F92347 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ACC2EB9C1B5A9E8500F92347 /* Build configuration list for PBXNativeTarget "PTTSearchAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACC2EB9D1B5A9E8500F92347 /* Debug */,
+				ACC2EB9E1B5A9E8500F92347 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ACC2EB7E1B5A9E8500F92347 /* PTTSearchApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ACC2EB7F1B5A9E8500F92347 /* PTTSearchApp.xcdatamodel */,
+			);
+			currentVersion = ACC2EB7F1B5A9E8500F92347 /* PTTSearchApp.xcdatamodel */;
+			path = PTTSearchApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ACC2EB6F1B5A9E8500F92347 /* Project object */;
+}
