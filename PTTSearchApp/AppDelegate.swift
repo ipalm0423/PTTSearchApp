@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        let stack: DefaultCDStack = DefaultCDStack(databaseName: "Database.sqlite", automigrating: true)
+        let stack: DefaultCDStack = DefaultCDStack(databaseName: "PTTSearchApp.sqlite", automigrating: true)
         stack.autoSaving = true
         SugarRecord.addStack(stack)
         return true

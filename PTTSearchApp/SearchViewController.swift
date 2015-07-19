@@ -29,21 +29,21 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         self.searchController.delegate = self
         self.searchController.searchBar.delegate = self
         self.searchController.searchResultsUpdater = self
-        self.searchController.hidesNavigationBarDuringPresentation = false
+        self.searchController.hidesNavigationBarDuringPresentation = true
         self.searchController.searchBar.placeholder = "輸入你要查詢的內容"
         self.searchController.dimsBackgroundDuringPresentation = false
-        self.navigationItem.titleView = self.searchController.searchBar
-        self.definesPresentationContext = true
+        self.tableView.tableHeaderView = self.searchController.searchBar
+        self.searchController.searchBar.sizeToFit()
+        self.searchController.searchBar.scopeButtonTitles = ["所有", "帳號", "文章"]
+        //self.navigationItem.titleView = self.searchController.searchBar
+        //self.definesPresentationContext = true
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
         // Do any additional setup after loading the view, typically from a nib.
+        self.loadHistoryHint()
         
-        
-        
-        //test
-        self.hints = ["1" , "2" , "3"]
         
     }
 
@@ -70,16 +70,18 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCellWithIdentifier("ProfileCell") as! ProfileTableViewCell
-        
         if self.searchController.active {
+            let cell = self.tableView.dequeueReusableCellWithIdentifier("HintCell") as! HintTableViewCell
             cell.MainLabel.text = self.filtedHints[indexPath.row]
+            return cell
         }else {
+            let cell = self.tableView.dequeueReusableCellWithIdentifier("ProfileCell") as! ProfileTableViewCell
             cell.MainLabel.text = self.histories[indexPath.row].name
+            return cell
         }
         
         
-        return cell
+        
     }
 
     
@@ -88,7 +90,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
 //search view controll
     func updateSearchResultsForSearchController(searchController: UISearchController) {
         self.filterHint()
-        self.tableView.reloadData()
+        
     }
     
     func searchScope() -> String {
@@ -101,6 +103,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        //update hint from server
         self.loadHints(searchText)
     }
     
@@ -114,6 +117,14 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         self.tableView.reloadData()
     }
     
+    func addHintInArray(hint: String) {
+        if contains(self.hints, hint) {
+            //already in array
+        }else {
+            //add to array
+            self.hints += [hint]
+        }
+    }
     
     
 //Internet
@@ -123,12 +134,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
             println("got hint from server")
             if let suggestHint = response?.suggestHint {
                 for hint in suggestHint {
-                    if contains(self.hints, hint) {
-                        //already in array
-                    }else {
-                        //add to array
-                        self.hints += [hint]
-                    }
+                    self.addHintInArray(hint)
                 }
             }
             if error != nil {
@@ -142,6 +148,54 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     
     
     
+//core data
+    func loadHistoryHint() {
+        let hints = SearchHistroy.sorted(by: "searchTime", ascending: false).find()
+        println("load history hints: ")
+        print(hints.count)
+        for var i = 0; i < hints.count; i++ {
+            if let hint = hints.objectAtIndex(UInt(i)) as? SearchHistroy {
+                self.addHintInArray(hint.hint)
+            }
+        }
+    }
+    
+    
+//navigation
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        //save search history to core data
+        if let hint:SearchHistroy = SearchHistroy.create() as? SearchHistroy {
+            hint.hint = searchBar.text
+            hint.searchTime = NSDate()
+            hint.save()
+        }
+        self.addHintInArray(searchBar.text)
+        
+        /*
+        //send to server
+        let url = Singleton.sharedInstance.serverURL + "search/"
+        Alamofire.request(.GET, url, parameters: ["agent" : "iphone", "hint" : searchBar.text]).responseObject { (response: mapHint?, error: NSError?) -> Void in
+            println("got result from server")
+            if let resultProfile = response?.suggestHint {
+                for hint in suggestHint {
+                    if contains(self.hints, hint) {
+                        //already in array
+                    }else {
+                        //add to array
+                        self.hints += [hint]
+                    }
+                }
+            }
+            if error != nil {
+                println(error)
+            }
+        }
+        */
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+    }
     
     
     
