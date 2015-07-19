@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class searchHint: Mappable {
+class mapHint: Mappable {
     var topTopic: [String]?
     var topSearch: [String]?
     var suggestHint: [String]?

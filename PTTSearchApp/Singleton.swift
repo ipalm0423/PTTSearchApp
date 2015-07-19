@@ -24,7 +24,7 @@ class Singleton: NSObject {
     }
     
     //Internet
-    var serverURL = "http://122.116.90.83:30000"
+    var serverURL = "http://192.168.1.103:3000/"
     
     
 }

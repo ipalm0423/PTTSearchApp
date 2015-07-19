@@ -10,7 +10,7 @@
 		6060B4409F0FE2D25AD39B4A /* Pods_PTTSearchApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0131580E420046FBD5EBCE81 /* Pods_PTTSearchApp.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		ACC2EB7D1B5A9E8500F92347 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2EB7C1B5A9E8500F92347 /* AppDelegate.swift */; };
 		ACC2EB801B5A9E8500F92347 /* PTTSearchApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACC2EB7E1B5A9E8500F92347 /* PTTSearchApp.xcdatamodeld */; };
-		ACC2EB821B5A9E8500F92347 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2EB811B5A9E8500F92347 /* ViewController.swift */; };
+		ACC2EB821B5A9E8500F92347 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2EB811B5A9E8500F92347 /* SearchViewController.swift */; };
 		ACC2EB851B5A9E8500F92347 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC2EB831B5A9E8500F92347 /* Main.storyboard */; };
 		ACC2EB871B5A9E8500F92347 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC2EB861B5A9E8500F92347 /* Images.xcassets */; };
 		ACC2EB8A1B5A9E8500F92347 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACC2EB881B5A9E8500F92347 /* LaunchScreen.xib */; };
@@ -19,6 +19,8 @@
 		ACC2EBA61B5AAF6D00F92347 /* JSONMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2EBA51B5AAF6D00F92347 /* JSONMappable.swift */; };
 		ACC2EBA81B5AB09300F92347 /* SearchHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2EBA71B5AB09300F92347 /* SearchHistory.swift */; };
 		ACC2EBAA1B5AB0CB00F92347 /* SearchProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2EBA91B5AB0CB00F92347 /* SearchProfile.swift */; };
+		ACD2FF051B5B751E006DF40D /* HintTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD2FF041B5B751E006DF40D /* HintTableViewCell.swift */; };
+		ACD2FF071B5B752C006DF40D /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD2FF061B5B752C006DF40D /* ProfileTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,7 @@
 		ACC2EB7B1B5A9E8500F92347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACC2EB7C1B5A9E8500F92347 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACC2EB7F1B5A9E8500F92347 /* PTTSearchApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PTTSearchApp.xcdatamodel; sourceTree = "<group>"; };
-		ACC2EB811B5A9E8500F92347 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ACC2EB811B5A9E8500F92347 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		ACC2EB841B5A9E8500F92347 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACC2EB861B5A9E8500F92347 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ACC2EB891B5A9E8500F92347 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		ACC2EBA51B5AAF6D00F92347 /* JSONMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONMappable.swift; sourceTree = "<group>"; };
 		ACC2EBA71B5AB09300F92347 /* SearchHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchHistory.swift; sourceTree = "<group>"; };
 		ACC2EBA91B5AB0CB00F92347 /* SearchProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchProfile.swift; sourceTree = "<group>"; };
+		ACD2FF041B5B751E006DF40D /* HintTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HintTableViewCell.swift; sourceTree = "<group>"; };
+		ACD2FF061B5B752C006DF40D /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		B2534E6993C4AE2F5DF89BD4 /* Pods-PTTSearchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTTSearchApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PTTSearchApp/Pods-PTTSearchApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,7 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				ACC2EB7C1B5A9E8500F92347 /* AppDelegate.swift */,
-				ACC2EB811B5A9E8500F92347 /* ViewController.swift */,
+				ACD2FF031B5B74F0006DF40D /* SearchPage */,
 				ACC2EB831B5A9E8500F92347 /* Main.storyboard */,
 				ACC2EB861B5A9E8500F92347 /* Images.xcassets */,
 				ACC2EB881B5A9E8500F92347 /* LaunchScreen.xib */,
@@ -140,6 +144,16 @@
 				ACC2EB941B5A9E8500F92347 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ACD2FF031B5B74F0006DF40D /* SearchPage */ = {
+			isa = PBXGroup;
+			children = (
+				ACC2EB811B5A9E8500F92347 /* SearchViewController.swift */,
+				ACD2FF041B5B751E006DF40D /* HintTableViewCell.swift */,
+				ACD2FF061B5B752C006DF40D /* ProfileTableViewCell.swift */,
+			);
+			name = SearchPage;
 			sourceTree = "<group>";
 		};
 		C63390AEF91FA691F8CD396E /* Pods */ = {
@@ -302,9 +316,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACD2FF051B5B751E006DF40D /* HintTableViewCell.swift in Sources */,
 				ACC2EBAA1B5AB0CB00F92347 /* SearchProfile.swift in Sources */,
 				ACC2EBA81B5AB09300F92347 /* SearchHistory.swift in Sources */,
-				ACC2EB821B5A9E8500F92347 /* ViewController.swift in Sources */,
+				ACD2FF071B5B752C006DF40D /* ProfileTableViewCell.swift in Sources */,
+				ACC2EB821B5A9E8500F92347 /* SearchViewController.swift in Sources */,
 				ACC2EBA41B5AAF4300F92347 /* Singleton.swift in Sources */,
 				ACC2EB801B5A9E8500F92347 /* PTTSearchApp.xcdatamodeld in Sources */,
 				ACC2EB7D1B5A9E8500F92347 /* AppDelegate.swift in Sources */,
