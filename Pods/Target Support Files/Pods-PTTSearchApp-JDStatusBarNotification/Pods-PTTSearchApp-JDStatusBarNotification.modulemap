@@ -1,0 +1,6 @@
+framework module JDStatusBarNotification {
+  umbrella header "Pods-PTTSearchApp-JDStatusBarNotification-umbrella.h"
+
+  export *
+  module * { export * }
+}

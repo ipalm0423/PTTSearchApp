@@ -12,13 +12,15 @@ import SugarRecord
 import Foundation
 import Alamofire
 import AlamofireObjectMapper
+import JDStatusBarNotification
+
 
 class SearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchResultsUpdating, UISearchControllerDelegate, UISearchBarDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     
     var hints = [String]()
-    var histories = [SearchProfile]()
+    var histories = [SearchResult]()
     var filtedHints = [String]()
     var searchController = UISearchController(searchResultsController: nil)
     
@@ -34,7 +36,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         self.searchController.dimsBackgroundDuringPresentation = false
         self.tableView.tableHeaderView = self.searchController.searchBar
         self.searchController.searchBar.sizeToFit()
-        self.searchController.searchBar.scopeButtonTitles = ["所有", "帳號", "文章"]
+        self.searchController.searchBar.scopeButtonTitles = ["帳號", "文章"]
         //self.navigationItem.titleView = self.searchController.searchBar
         //self.definesPresentationContext = true
         
@@ -150,15 +152,16 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     
 //core data
     func loadHistoryHint() {
-        let hints = SearchHistroy.sorted(by: "searchTime", ascending: false).find()
+        let loadhints = SearchHistroy.sorted(by: "searchTime", ascending: false).find()
         println("load history hints: ")
-        print(hints.count)
-        for var i = 0; i < hints.count; i++ {
-            if let hint = hints.objectAtIndex(UInt(i)) as? SearchHistroy {
+        print(loadhints.count)
+        for var i = 0; i < loadhints.count; i++ {
+            if let hint = loadhints.objectAtIndex(UInt(i)) as? SearchHistroy {
                 self.addHintInArray(hint.hint)
             }
         }
     }
+    
     
     
 //navigation
@@ -171,30 +174,69 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         }
         self.addHintInArray(searchBar.text)
         
-        /*
-        //send to server
-        let url = Singleton.sharedInstance.serverURL + "search/"
-        Alamofire.request(.GET, url, parameters: ["agent" : "iphone", "hint" : searchBar.text]).responseObject { (response: mapHint?, error: NSError?) -> Void in
-            println("got result from server")
-            if let resultProfile = response?.suggestHint {
-                for hint in suggestHint {
-                    if contains(self.hints, hint) {
-                        //already in array
-                    }else {
-                        //add to array
-                        self.hints += [hint]
-                    }
-                }
-            }
-            if error != nil {
-                println(error)
-            }
+        //navi
+        switch self.searchScope() {
+        case "文章" :
+            self.searchController.active = false
+            self.performSegueWithIdentifier("TitleViewSegue", sender: self)
+        case "帳號" :
+            self.searchController.active = false
+            self.performSegueWithIdentifier("ProfileViewSegue", sender: self)
+        default:
+            println("error: different scope")
         }
-        */
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var url = Singleton.sharedInstance.serverURL + "search/"
         
+        if segue.identifier == "ProfileViewSegue"{
+            url += "searchProfile"
+            //send to server
+            if let destinationVC = segue.destinationViewController as? ProfileViewController {
+                println("Show profile view")
+                
+                //搜尋帳號
+                Alamofire.request(.GET, url, parameters: ["agent" : "iphone", "hint" : self.searchController.searchBar.text]).responseObject { (response: mapProfile?, error: NSError?) -> Void in
+                    println("got result from server")
+                    if let resultProfileAccount = response?.account {
+                        println("find profile: " + resultProfileAccount)
+                        //有結果
+                        destinationVC.tempProfile = response
+                    }else {
+                        //無結果
+                        JDStatusBarNotification.showWithStatus("無結果", dismissAfter: 1.0, styleName: JDStatusBarStyleWarning)
+                    }
+                    if error != nil {
+                        println(error)
+                    }
+                }
+            }
+            
+        }else if segue.identifier == "TitleViewSegue" {
+            url += "searchArticle"
+            //傳送給伺服器
+            if self.searchScope() == "文章" {
+                //搜尋文章, wait....
+                /*
+                Alamofire.request(.GET, url, parameters: ["agent" : "iphone", "hint" : self.searchController.searchBar.text]).responseObject { (response: mapProfile?, error: NSError?) -> Void in
+                    println("got result from server")
+                    if let resultProfileAccount = response?.account {
+                        //有結果
+                        self.performSegueWithIdentifier("ProfileViewSegue", sender: self)
+                    }else {
+                        //無結果
+                        JDStatusBarNotification.showWithStatus("沒有搜尋結果", dismissAfter: 0.5)
+                    }
+                    if error != nil {
+                        println(error)
+                    }*/
+                }
+        }
     }
     
     

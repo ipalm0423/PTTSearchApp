@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3E182B1C1B92FF99DE99367D"
+               BlueprintIdentifier = "7F6002EC4E37D2F30BB90760"
                BuildableName = "Kingfisher.framework"
                BlueprintName = "Pods-PTTSearchApp-Kingfisher"
                ReferencedContainer = "container:Pods.xcodeproj">

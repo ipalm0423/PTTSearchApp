@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1E3DFF1C1A145D8E6F0C0E5F"
+               BlueprintIdentifier = "030925585B1A6F804D5F5F00"
                BuildableName = "ObjectMapper.framework"
                BlueprintName = "Pods-PTTSearchApp-ObjectMapper"
                ReferencedContainer = "container:Pods.xcodeproj">

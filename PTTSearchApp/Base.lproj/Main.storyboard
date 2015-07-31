@@ -86,11 +86,50 @@
                     <navigationItem key="navigationItem" id="lMP-Ty-zp4"/>
                     <connections>
                         <outlet property="tableView" destination="XdO-8p-Yd5" id="S2x-wp-seM"/>
+                        <segue destination="1dv-sp-ReB" kind="show" identifier="TitleViewSegue" id="sMK-qo-N76"/>
+                        <segue destination="wcw-Hm-0IF" kind="show" identifier="ProfileViewSegue" id="Uta-UF-rXs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1756" y="317"/>
+            <point key="canvasLocation" x="1696" y="317"/>
+        </scene>
+        <!--TitlesViewController-->
+        <scene sceneID="Fgh-Qh-MM5">
+            <objects>
+                <viewController id="1dv-sp-ReB" userLabel="TitlesViewController" customClass="TitlesViewController" customModule="PTTSearchApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AdN-6q-vQ6"/>
+                        <viewControllerLayoutGuide type="bottom" id="6vH-Ed-gZ0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2mo-12-yn3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zEz-Kg-S4P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2432" y="997"/>
+        </scene>
+        <!--ProfileViewController-->
+        <scene sceneID="X1Q-mr-AF8">
+            <objects>
+                <viewController id="wcw-Hm-0IF" userLabel="ProfileViewController" customClass="ProfileViewController" customModule="PTTSearchApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gBY-Xe-AFP"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pl7-0Y-dVE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Git-iq-sUm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ntn-sS-o9W"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qri-FA-gbx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2492" y="317"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="VwC-Pf-Tdy">

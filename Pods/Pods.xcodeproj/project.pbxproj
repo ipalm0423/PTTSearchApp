@@ -7,602 +7,686 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07F0C496DD0475F06CB3C9A3 /* Pods-PTTSearchApp-Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00C776CBF551D2C234E99EBE /* Pods-PTTSearchApp-Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1851C8391E3F4B2C0FE13949 /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07A33041E5D4B96F9089851 /* ISO8601DateTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		1A09A4F15FC73B1F07FF217E /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1AD4D2212A14F35EF9CC10 /* ObjectMapper.framework */; };
-		1A73B5C5EDDBE26F752B59FF /* Pods-PTTSearchApp-AlamofireObjectMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7231CAD8E42DADF1FFFD51 /* Pods-PTTSearchApp-AlamofireObjectMapper-dummy.m */; };
-		21076CC512959FD863B00267 /* Pods-PTTSearchApp-Kingfisher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B16DC62F1124A6B993745E /* Pods-PTTSearchApp-Kingfisher-dummy.m */; };
-		224FC064F7974DFA98D39C01 /* DefaultCDStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A8F53B0A5B78BD10FBDBCF /* DefaultCDStack.swift */; };
-		23C81CBC817BC2A3B311C0E4 /* KingfisherOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607722AE7EDB37709878478E /* KingfisherOptions.swift */; };
-		255B23A49D1135F810AE32B7 /* Pods-PTTSearchApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7842AD4FB4A770F73BB4DE8E /* Pods-PTTSearchApp-dummy.m */; };
-		2655C8D1E97A4349A1D0C29E /* SugarRecordStackProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8374B292A8DBFC12C03266 /* SugarRecordStackProtocol.swift */; };
-		28779F23E66EBEF38DF1A53F /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C891396C32116DE6D5EB47 /* ToJSON.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		2E3878F15EB668D08B452DA6 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAB75B437995D134294B708 /* ParameterEncoding.swift */; };
-		2E729848BECB52F7596A4CFA /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDB50AB76FE7F7DD135AE19 /* TransformOf.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		300BB9C2825E4AF56ADAA2EE /* Pods-PTTSearchApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ADF440123FEC4626C6B9368D /* Pods-PTTSearchApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		378CBF26D768E859764608A5 /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DE25EA2FA4BE4F62A6D132 /* CustomDateFormatTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		394DB5E279D270990F82DF1E /* Pods-PTTSearchApp-ObjectMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AC748CCCF544EC170AAB69C /* Pods-PTTSearchApp-ObjectMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3B61CF1A32842D098403E76B /* Pods-PTTSearchApp-SugarRecord-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FEAE1984945EEB55E7EDBFAF /* Pods-PTTSearchApp-SugarRecord-dummy.m */; };
-		3E05D24695ECBFF4AC21480D /* SugarRecordResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEE96F32F20CA40ECBFB6AC /* SugarRecordResults.swift */; };
-		3ECCBAF02076EEE122A59BA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8391A31A497F9660ACA56658 /* Foundation.framework */; };
-		41485E8C86F9C10633BE4205 /* UIImage+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F1EF4D8FD13ACFCE6DB046 /* UIImage+Decode.swift */; };
-		42EEB67BB71E0E433D7087A4 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D047B658844582FA53DB5055 /* Operators.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		431CBB68FEB06363CCDC13CC /* SugarRecordLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAD98755C4CD075EE52197E /* SugarRecordLogger.swift */; };
-		43F4046580AA9FB3AC04C416 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8495263C714747A5789111CC /* ImageDownloader.swift */; };
-		51217491271819A5F69033EB /* Pods-PTTSearchApp-AlamofireObjectMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F3E983B032BEFFD43B2D71A8 /* Pods-PTTSearchApp-AlamofireObjectMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		53F0BA3C0427DE60EFD33468 /* DateFormaterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A39AD64C172EE77B7406EAF /* DateFormaterTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		57BB784A653CABC793F4A1C3 /* Pods-PTTSearchApp-Kingfisher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A8120635F0D5CB8674549C6 /* Pods-PTTSearchApp-Kingfisher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5E36E787DFAA0A23C7ADDA65 /* UIButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7364A50299D3D9248417A7AE /* UIButton+Kingfisher.swift */; };
-		687A2DE5802D9143F5854A3A /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5BCA410759AE36CC10BD3 /* URLTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		6A24AB7BC743BA7479711352 /* Pods-PTTSearchApp-ObjectMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BFD90A2D619F0112AA85E6 /* Pods-PTTSearchApp-ObjectMapper-dummy.m */; };
-		6C9943F4735738AED1C43AFA /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F57CB2A7B76DC9D4EF672C /* Download.swift */; };
-		6C9EF85DE1B7DEDF8CA28BF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8391A31A497F9660ACA56658 /* Foundation.framework */; };
-		6E57C312AC17C734FD9D9697 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = E381627F85A78BE350FE5322 /* String+MD5.swift */; };
-		7044B1DC90A80EB1854AFD02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8391A31A497F9660ACA56658 /* Foundation.framework */; };
-		74607025FD4A46354F2A8605 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BFE602919ABF7276247E85 /* Upload.swift */; };
-		753E33B8D5187AFDD2383C5E /* SugarRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08F1D843D7161713A8AB887 /* SugarRecord.swift */; };
-		7A8B262FFB8A028AF78A32CC /* SugarRecordCDContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B82E7414D45FD127A6EB04 /* SugarRecordCDContext.swift */; };
-		7B4DFC0394A908E35EB19569 /* KingfisherOptionsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B1196591511C9F1E53BA5 /* KingfisherOptionsInfo.swift */; };
-		843AE9A290AA5007AC6AED16 /* iCloudCDStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB44022A4F24C40B13A0D8AE /* iCloudCDStack.swift */; };
-		86BB118C35535493BD0ADC51 /* EnumTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F361D55EC7C59CCF8CD3A /* EnumTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		8CBFE31DEBAB9738D7A8EC47 /* SugarRecordContextProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ECCDF52807AFB27ABA9974 /* SugarRecordContextProtocol.swift */; };
-		8D3FF500563B5ACF6EB06D2B /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE05F48B6A5E6B6DF882E06C /* TransformType.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		900A989AE8376050C0365ADD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8391A31A497F9660ACA56658 /* Foundation.framework */; };
-		9456C16208A148D2109D7D1D /* WKInterfaceImage+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C1238413376417B2E73EF /* WKInterfaceImage+Kingfisher.swift */; };
-		ABB7EB2B35A92CC47C1580DE /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290F0E342D92F836FC262F7F /* Mapper.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		AFEDC17A2209B7D16CB83D4B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8707319210A7D7475DA48CE /* CoreData.framework */; };
-		B0C8947027606ED2126C5009 /* SugarRecordFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4539CEEE7A40BC2053704D8 /* SugarRecordFinder.swift */; };
-		B23CA9AFA4CC55C0AB38DB3B /* KingfisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74584AE8CB5D8266C5DA49B /* KingfisherManager.swift */; };
-		B492CCF5062D8E156FCFB5DC /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE1EF8625AA0A368DC8BE65 /* Request.swift */; };
-		B5497EEE0B1E3075DEF49525 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BACE8BF39C97882B3E56B6F /* ResponseSerialization.swift */; };
-		B57CC9E0FD94FF0B5F187BE2 /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A831B39C61285CC375A84FBA /* FromJSON.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		BFE06B01699C78B18BCCAB88 /* SugarRecordFinder+FetchedResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87833BAD135FB7178B5E0E9 /* SugarRecordFinder+FetchedResultsController.swift */; };
-		C231BEF6175412AE4669E6A4 /* SugarRecordResultsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692BAB28DD3F03A906BB62A2 /* SugarRecordResultsProtocol.swift */; };
-		C6C361F4530891FC0BD71D10 /* UIImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E4C16BC072FA131842B24F /* UIImageView+Kingfisher.swift */; };
-		C74D38B037F116337B4F5A0D /* Pods-PTTSearchApp-Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E981BE1144C7DE437C7CFA2 /* Pods-PTTSearchApp-Alamofire-dummy.m */; };
-		D567BD308B8069493C3017E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8391A31A497F9660ACA56658 /* Foundation.framework */; };
-		D971D6E25F2A30BCCCF0E53B /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6C994F7E693919A737E1F3 /* DateTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		E1E1AB3EE03A5D662E5A5D78 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C28ADC3A95FA51B2E702CC /* Manager.swift */; };
-		E467FBD5316A5F059A292E85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8391A31A497F9660ACA56658 /* Foundation.framework */; };
-		E7F4A9CEC63CA16FEA3B2C4C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08ACBE2DDBB522A3DAC1DA5 /* Alamofire.framework */; };
-		E8307D98CE1A3188A505826D /* AlamofireObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9A5C0E2A4974FF78173D45 /* AlamofireObjectMapper.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		E876D3E402E4C833D7DA500D /* CDArray+SugarRecordResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D925FD41A2D8B75EDABA61 /* CDArray+SugarRecordResults.swift */; };
-		E97BFAE13D1C37BF39AEE015 /* Pods-PTTSearchApp-SugarRecord-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69996D446E180C7C214998B1 /* Pods-PTTSearchApp-SugarRecord-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F508F51A707D0D9170FC8AAC /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C98EB567F7A73717FE9F1E /* ImageCache.swift */; };
-		F7ECCFA8FE465588DF63113C /* NSManagedObject+SugarRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C8EBC4E4F9165F6995BECC /* NSManagedObject+SugarRecord.swift */; };
-		FA68371096559C342F19B56F /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F767B76CDA95A4DF1B0A45 /* Alamofire.swift */; };
-		FEC8FDF419A648B3FC4AAD70 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D75938876D8086ABD8E4EB /* Validation.swift */; };
+		02042ADEE8688C41EB74D7AC /* SugarRecordFinder+FetchedResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656FAEE4A791007648145844 /* SugarRecordFinder+FetchedResultsController.swift */; };
+		05034E125F64AB0782AB4550 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF29F36A8ED3297794C3AA37 /* Alamofire.framework */; };
+		0C454E7536A0076387576F60 /* Pods-PTTSearchApp-Kingfisher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E369E096F9C2313150ECAC71 /* Pods-PTTSearchApp-Kingfisher-dummy.m */; };
+		0C6D46CB382EE9094F4A3DB7 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A1FD8F243C9D8009493396 /* String+MD5.swift */; };
+		10EC4E82F5EC406CFF25F5EA /* Pods-PTTSearchApp-ObjectMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8AA31B53F858E7839BC93 /* Pods-PTTSearchApp-ObjectMapper-dummy.m */; };
+		124B5E1F608F74AC81F407F9 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE06B15490021EB2F77B2530 /* Manager.swift */; };
+		14A11F24CFB59031CB6A860E /* JDStatusBarNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2AFA716C6695EB32934B71 /* JDStatusBarNotification.m */; };
+		16A0F5EDB14738C044A61E64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA5AAE182E8C2AE1311AA5E /* Foundation.framework */; };
+		17009AE32123EA5BD659A9AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA5AAE182E8C2AE1311AA5E /* Foundation.framework */; };
+		194039DB7193DEF484D8FF4D /* KingfisherOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E2405E747C279099C7FFAA /* KingfisherOptions.swift */; };
+		196BC5DE5DCBFE5940AB263D /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450C4773C8424E6BE1E1A146 /* ParameterEncoding.swift */; };
+		1BD4CD03FF5575637F6A6F7A /* SugarRecordFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99E2D184F47C01877E8B2CC /* SugarRecordFinder.swift */; };
+		206A33EADA06FDD13F037AA0 /* JDStatusBarNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DB371F1D7A56F6EB22F3A1D /* JDStatusBarNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22F9C1DF10F3C7B8CD3A0950 /* Pods-PTTSearchApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 60B0BEB7D1BB3415141D4053 /* Pods-PTTSearchApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22FE20D6C54DA3DCC704FACB /* DateFormaterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E6201C54F5093843882FD1 /* DateFormaterTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		25A32B4F67A8781BC511D9E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA5AAE182E8C2AE1311AA5E /* Foundation.framework */; };
+		2B2C3CA4983E40E5AB844B3E /* UIImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F431B27A4AEA1FD9C58ABB56 /* UIImageView+Kingfisher.swift */; };
+		32E63A3066FF85EF550C536A /* SugarRecordLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8159A13A7E9A6C7924B1B30 /* SugarRecordLogger.swift */; };
+		32FF315140A1112F6F1BF48B /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90DCB5F790928CD78629DEE /* ImageCache.swift */; };
+		39424BFA422031EB2A258B8C /* SugarRecordStackProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D7C81BB408F4396DFD0F92 /* SugarRecordStackProtocol.swift */; };
+		3B2A853F39578BD14A9F5617 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16CBAD1385C3434E865AEFA /* Validation.swift */; };
+		3DF0482C043D3A5C4D1928B2 /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57078412715554D8084F5EA /* DateTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4228F40899AD61E0397F9341 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE72D24FAC07E0A17958419 /* Operators.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4843C34F37C4771BAC2AD454 /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C36FBD77A2B2B64982FE861 /* TransformType.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4B0E5F9BAD4ACCE084E450B3 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA03B2FDB864068F1FE0D51 /* Mapper.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4D3B5FAEE5143DB6670B3F57 /* Pods-PTTSearchApp-Kingfisher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 99628C165D67E2EA3D2D237D /* Pods-PTTSearchApp-Kingfisher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D747E0C2CDD675EC9661B5E /* SugarRecordResultsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F84AF88243E6801576D9AD /* SugarRecordResultsProtocol.swift */; };
+		4E4E893B300A4132005164CE /* JDStatusBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC57C61CD64F93414B6E873 /* JDStatusBarView.m */; };
+		53337CCB5EB88D6F54468CB5 /* Pods-PTTSearchApp-SugarRecord-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9268FBC3DD15B565FFD7E94E /* Pods-PTTSearchApp-SugarRecord-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		558132A99BA910F51C10BC28 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2281CF0C92A81DF27BF19ADE /* Upload.swift */; };
+		56BFBFFC1DFEA378841DFEB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA5AAE182E8C2AE1311AA5E /* Foundation.framework */; };
+		571E6C04487A36E15ABD4F30 /* KingfisherOptionsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F419235552BD310E78B92 /* KingfisherOptionsInfo.swift */; };
+		579410A2B949A2080C8520CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA5AAE182E8C2AE1311AA5E /* Foundation.framework */; };
+		5BB4C5BBC939AC9C9D65C9F2 /* SugarRecordContextProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2BA6517D854F81DF9E210E /* SugarRecordContextProtocol.swift */; };
+		5EEAF27CA694ABEA5A5AA25E /* AlamofireObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E6F9DD3FC601C0B1A8E9B3 /* AlamofireObjectMapper.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F551E6E068D6B6BFA689025 /* UIImage+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19829E991D77249A8B8D4E3 /* UIImage+Decode.swift */; };
+		666F8B697C620CFBF1DD5DBA /* SugarRecordCDContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E2F90CEE54B5AD1E895DF9 /* SugarRecordCDContext.swift */; };
+		66B47C6B69AC4B064A7C3D55 /* CDArray+SugarRecordResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0EE74A1C2EBEE750DA984F /* CDArray+SugarRecordResults.swift */; };
+		680DB1BE2B0DB95A870E7725 /* Pods-PTTSearchApp-Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 38238F5A1889FAC6C88DBEA8 /* Pods-PTTSearchApp-Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E89DC6E9B11E1F6003536E3 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9924EA37631BBB1138180521 /* Request.swift */; };
+		72C756E839C96C57C5288F55 /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E996A3422DB8DA4F743B9E4 /* ToJSON.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		73513C9F6D0EF59D9128D9AB /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005A125D743A45F56DAD1FA7 /* URLTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		795D2809014F4BFDAE296D82 /* DefaultCDStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD1EDC032F04531BCEA59F9 /* DefaultCDStack.swift */; };
+		799E4FF39BE4F7DDBFC3D7FD /* Pods-PTTSearchApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F65AA27B2BCF396DFA12412 /* Pods-PTTSearchApp-dummy.m */; };
+		7C9CFA215BA8E45CA2726549 /* iCloudCDStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286E9116C93A927E6C5E2C4C /* iCloudCDStack.swift */; };
+		8105733DC78F990837E0FAB1 /* Pods-PTTSearchApp-Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 520712B5969F00D5503A182C /* Pods-PTTSearchApp-Alamofire-dummy.m */; };
+		822B96644960A1EE09F644BE /* Pods-PTTSearchApp-AlamofireObjectMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C8F7C16EFC3015E6FD3CB2 /* Pods-PTTSearchApp-AlamofireObjectMapper-dummy.m */; };
+		8AABF2BC29064BEC27FF31A8 /* Pods-PTTSearchApp-AlamofireObjectMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E4B8F95D7044B99C2BC8782 /* Pods-PTTSearchApp-AlamofireObjectMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D7CD6BB6BE08632154E47C1 /* KingfisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5978CDDAF831DF15CEE8FE7E /* KingfisherManager.swift */; };
+		9749F047BBC08134E5E77D01 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090990E2C5E0F56878521E8F /* CoreData.framework */; };
+		99B143F058984E317A8445CB /* NSManagedObject+SugarRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = E848F285E221676ED9B76E3A /* NSManagedObject+SugarRecord.swift */; };
+		9B4E392D140A44BA4348D1E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA5AAE182E8C2AE1311AA5E /* Foundation.framework */; };
+		9EC1F2E1118E303FB8A005F4 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8A14E6026549EF1940C311 /* Download.swift */; };
+		9F8B09ADC85CA766277BBFA0 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F53A56A5157153978D247D2 /* ObjectMapper.framework */; };
+		9FF758A9F0887183A7861BF3 /* JDStatusBarStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBBA0D499A17DD6A2937E50 /* JDStatusBarStyle.m */; };
+		AC1E8E197122039B29D7A8FE /* UIButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871AA6FAB275139F60D868B3 /* UIButton+Kingfisher.swift */; };
+		AD3329E0087B0E68F6EDD47F /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27720AFC85CA472783E942C6 /* FromJSON.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AD9EA7162B608CEBB7FBAE7C /* WKInterfaceImage+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDCF746923698ABBF1FA4BA /* WKInterfaceImage+Kingfisher.swift */; };
+		AEDD57B066951A74939D7323 /* JDStatusBarStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = D3CBFF2BFD8510A4C147D0D2 /* JDStatusBarStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2CD8DF8EC466B4910367497 /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E5AF6CB0FD4706824F369B /* CustomDateFormatTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B49D2A2514F9E534DAC97393 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCCE6AEF36CED4B5260FF4D /* ImageDownloader.swift */; };
+		B5A7C9B0762D335D070ED3BA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 242E218F5BAFEEE4AA26E427 /* QuartzCore.framework */; };
+		B6C996C657EC307B2B79F49B /* EnumTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C495D8463CE63704319613A /* EnumTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BB7D23C04090B19522B42697 /* JDStatusBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 788B483D5C6280604F38F48E /* JDStatusBarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE626264DAC866BC298C0C64 /* Pods-PTTSearchApp-JDStatusBarNotification-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E42049CD23062735B6E0EE8 /* Pods-PTTSearchApp-JDStatusBarNotification-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C42BF8136AB3ABE68E98DF89 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80D2529A3266B2A36067498 /* ResponseSerialization.swift */; };
+		C6A6B0E5A068AA884ECDEBD7 /* SugarRecordResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C25A6455BD3473030BF6363 /* SugarRecordResults.swift */; };
+		CC844FDDF8694B7CD9774ABE /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338291006CF0A68CD725687F /* Alamofire.swift */; };
+		D0EB4DD93662F97B5071A225 /* Pods-PTTSearchApp-ObjectMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AB9C7A1A62DD16C93A0F45E /* Pods-PTTSearchApp-ObjectMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D70CAE34AA8C1CBE500AA917 /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815680661B940D2B3A317683 /* TransformOf.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DFA540BA5D29ACAE46A281BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA5AAE182E8C2AE1311AA5E /* Foundation.framework */; };
+		ED8484CB53BDBDE1516AD78A /* Pods-PTTSearchApp-SugarRecord-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44932798651BA95AD370B3B6 /* Pods-PTTSearchApp-SugarRecord-dummy.m */; };
+		F0C2425A7BBA1C6995995788 /* Pods-PTTSearchApp-JDStatusBarNotification-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B81F2802B0A2A41345AF26 /* Pods-PTTSearchApp-JDStatusBarNotification-dummy.m */; };
+		F2DE973190BE350EF43B6B7F /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561116B0AA79447A2A380DA1 /* ISO8601DateTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F4A70CD54E512CB0D172A440 /* SugarRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF2D589418947E1F98E7C5D /* SugarRecord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0629F640D41677F47818A1FB /* PBXContainerItemProxy */ = {
+		163C90735DE235FCEB263F98 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EF60EDEB8FC654A3326EAB85 /* Project object */;
+			containerPortal = F5F1207C395EF7619A3AEF02 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F03396EB231ED1076F986D76;
+			remoteGlobalIDString = 814A665BC8510FA51B56CB14;
+			remoteInfo = "Pods-PTTSearchApp-JDStatusBarNotification";
+		};
+		18868C1B14422687FC9EB3E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5F1207C395EF7619A3AEF02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C7690B10664FFD47B036FB9;
 			remoteInfo = "Pods-PTTSearchApp-Alamofire";
 		};
-		1524E7D604D4CB4EA7D9C886 /* PBXContainerItemProxy */ = {
+		20897D7F825A78259E2AD34B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EF60EDEB8FC654A3326EAB85 /* Project object */;
+			containerPortal = F5F1207C395EF7619A3AEF02 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1E3DFF1C1A145D8E6F0C0E5F;
-			remoteInfo = "Pods-PTTSearchApp-ObjectMapper";
-		};
-		4E0397C0D18B33368855B593 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EF60EDEB8FC654A3326EAB85 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1E3DFF1C1A145D8E6F0C0E5F;
-			remoteInfo = "Pods-PTTSearchApp-ObjectMapper";
-		};
-		5CB97F8FDE381D4F51003B37 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EF60EDEB8FC654A3326EAB85 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E0A5EBB8A3C57A4FF6413CFC;
+			remoteGlobalIDString = 4C7C1E51B10D0EFF6F9A5154;
 			remoteInfo = "Pods-PTTSearchApp-AlamofireObjectMapper";
 		};
-		77D7860320B1FE33B365E87E /* PBXContainerItemProxy */ = {
+		2C13B87FB5B3AC61DF436CE5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EF60EDEB8FC654A3326EAB85 /* Project object */;
+			containerPortal = F5F1207C395EF7619A3AEF02 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F03396EB231ED1076F986D76;
-			remoteInfo = "Pods-PTTSearchApp-Alamofire";
+			remoteGlobalIDString = 030925585B1A6F804D5F5F00;
+			remoteInfo = "Pods-PTTSearchApp-ObjectMapper";
 		};
-		B1AC692571AB662ED8B017DB /* PBXContainerItemProxy */ = {
+		5F5499CD7A57BDDA60C7C077 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EF60EDEB8FC654A3326EAB85 /* Project object */;
+			containerPortal = F5F1207C395EF7619A3AEF02 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3E182B1C1B92FF99DE99367D;
+			remoteGlobalIDString = 030925585B1A6F804D5F5F00;
+			remoteInfo = "Pods-PTTSearchApp-ObjectMapper";
+		};
+		80A98A2EFF300C9BB329449A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5F1207C395EF7619A3AEF02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 038FDAD9596B808316D940DF;
+			remoteInfo = "Pods-PTTSearchApp-SugarRecord";
+		};
+		8CBBA8F15B57F8BF5DD7B55F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5F1207C395EF7619A3AEF02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F6002EC4E37D2F30BB90760;
 			remoteInfo = "Pods-PTTSearchApp-Kingfisher";
 		};
-		BE64080F271FB722EB92F9D5 /* PBXContainerItemProxy */ = {
+		EE5E2E62755028C703C5B631 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EF60EDEB8FC654A3326EAB85 /* Project object */;
+			containerPortal = F5F1207C395EF7619A3AEF02 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 833D9D8B3C0BF8C988C8BA44;
-			remoteInfo = "Pods-PTTSearchApp-SugarRecord";
+			remoteGlobalIDString = 7C7690B10664FFD47B036FB9;
+			remoteInfo = "Pods-PTTSearchApp-Alamofire";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00C776CBF551D2C234E99EBE /* Pods-PTTSearchApp-Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PTTSearchApp-Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		0932FB483F8C9A6C4AE519BB /* Pods-PTTSearchApp-ObjectMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PTTSearchApp-ObjectMapper.modulemap"; sourceTree = "<group>"; };
-		0C0727345F5636049B4A797B /* Pods-PTTSearchApp-AlamofireObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PTTSearchApp-AlamofireObjectMapper-prefix.pch"; sourceTree = "<group>"; };
-		11647F1FCC9960DE467F6A06 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		17BAD94A420F499DEAE9B4D9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18C98EB567F7A73717FE9F1E /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Kingfisher/ImageCache.swift; sourceTree = "<group>"; };
-		1E6C994F7E693919A737E1F3 /* DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTransform.swift; path = ObjectMapper/Transforms/DateTransform.swift; sourceTree = "<group>"; };
-		26F1EF4D8FD13ACFCE6DB046 /* UIImage+Decode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Decode.swift"; path = "Kingfisher/UIImage+Decode.swift"; sourceTree = "<group>"; };
-		290F0E342D92F836FC262F7F /* Mapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mapper.swift; path = ObjectMapper/Core/Mapper.swift; sourceTree = "<group>"; };
-		2FDB50AB76FE7F7DD135AE19 /* TransformOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOf.swift; path = ObjectMapper/Transforms/TransformOf.swift; sourceTree = "<group>"; };
-		33B4D5F763A0236A846C56F8 /* Pods-PTTSearchApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PTTSearchApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		346F361D55EC7C59CCF8CD3A /* EnumTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumTransform.swift; path = ObjectMapper/Transforms/EnumTransform.swift; sourceTree = "<group>"; };
-		34E4C16BC072FA131842B24F /* UIImageView+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Kingfisher.swift"; path = "Kingfisher/UIImageView+Kingfisher.swift"; sourceTree = "<group>"; };
-		37FB5650B68799EBD1F68D9D /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamofireObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B853D3BFA15442AF631F5DB /* Pods-PTTSearchApp-Kingfisher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PTTSearchApp-Kingfisher.xcconfig"; sourceTree = "<group>"; };
-		3E8374B292A8DBFC12C03266 /* SugarRecordStackProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SugarRecordStackProtocol.swift; path = library/Core/Protocols/SugarRecordStackProtocol.swift; sourceTree = "<group>"; };
-		41D6037B9299974FE1F2B04F /* Pods-PTTSearchApp-AlamofireObjectMapper-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PTTSearchApp-AlamofireObjectMapper-Private.xcconfig"; sourceTree = "<group>"; };
-		4858239D0AD27D39E81D0F94 /* Pods-PTTSearchApp-SugarRecord-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PTTSearchApp-SugarRecord-prefix.pch"; sourceTree = "<group>"; };
-		4AF272067BD475D7AFB483EA /* SugarRecord.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SugarRecord.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4E981BE1144C7DE437C7CFA2 /* Pods-PTTSearchApp-Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PTTSearchApp-Alamofire-dummy.m"; sourceTree = "<group>"; };
-		4EEE96F32F20CA40ECBFB6AC /* SugarRecordResults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SugarRecordResults.swift; path = library/Core/SugarRecordResults.swift; sourceTree = "<group>"; };
-		51ECBDE6549C40A6319F1C2C /* Pods-PTTSearchApp-Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PTTSearchApp-Alamofire.xcconfig"; sourceTree = "<group>"; };
-		5AC748CCCF544EC170AAB69C /* Pods-PTTSearchApp-ObjectMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PTTSearchApp-ObjectMapper-umbrella.h"; sourceTree = "<group>"; };
-		607722AE7EDB37709878478E /* KingfisherOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherOptions.swift; path = Kingfisher/KingfisherOptions.swift; sourceTree = "<group>"; };
-		6652A8B3D47C87FFCA5994A4 /* Pods-PTTSearchApp-SugarRecord.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PTTSearchApp-SugarRecord.modulemap"; sourceTree = "<group>"; };
-		692BAB28DD3F03A906BB62A2 /* SugarRecordResultsProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SugarRecordResultsProtocol.swift; path = library/Core/Protocols/SugarRecordResultsProtocol.swift; sourceTree = "<group>"; };
-		69996D446E180C7C214998B1 /* Pods-PTTSearchApp-SugarRecord-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PTTSearchApp-SugarRecord-umbrella.h"; sourceTree = "<group>"; };
-		6A8120635F0D5CB8674549C6 /* Pods-PTTSearchApp-Kingfisher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PTTSearchApp-Kingfisher-umbrella.h"; sourceTree = "<group>"; };
-		6C5C1238413376417B2E73EF /* WKInterfaceImage+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "WKInterfaceImage+Kingfisher.swift"; path = "Kingfisher/WKInterfaceImage+Kingfisher.swift"; sourceTree = "<group>"; };
-		6E4C3154E5CC6CE168979BCC /* Pods-PTTSearchApp-ObjectMapper-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PTTSearchApp-ObjectMapper-Private.xcconfig"; sourceTree = "<group>"; };
-		71EAF54D5788054E9E4C0325 /* Pods-PTTSearchApp-AlamofireObjectMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PTTSearchApp-AlamofireObjectMapper.modulemap"; sourceTree = "<group>"; };
-		72BFD90A2D619F0112AA85E6 /* Pods-PTTSearchApp-ObjectMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PTTSearchApp-ObjectMapper-dummy.m"; sourceTree = "<group>"; };
-		7357F54EBED3D26D1FD4F04A /* Pods-PTTSearchApp-SugarRecord.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PTTSearchApp-SugarRecord.xcconfig"; sourceTree = "<group>"; };
-		7364A50299D3D9248417A7AE /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Kingfisher.swift"; path = "Kingfisher/UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
-		7409CE200590B67A9A71D9AC /* Pods-PTTSearchApp-AlamofireObjectMapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PTTSearchApp-AlamofireObjectMapper.xcconfig"; sourceTree = "<group>"; };
-		74B82E7414D45FD127A6EB04 /* SugarRecordCDContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SugarRecordCDContext.swift; path = library/CoreData/Base/SugarRecordCDContext.swift; sourceTree = "<group>"; };
-		7842AD4FB4A770F73BB4DE8E /* Pods-PTTSearchApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PTTSearchApp-dummy.m"; sourceTree = "<group>"; };
-		79B16DC62F1124A6B993745E /* Pods-PTTSearchApp-Kingfisher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PTTSearchApp-Kingfisher-dummy.m"; sourceTree = "<group>"; };
-		7E1AD4D2212A14F35EF9CC10 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		80BFE602919ABF7276247E85 /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
-		80C891396C32116DE6D5EB47 /* ToJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToJSON.swift; path = ObjectMapper/Core/ToJSON.swift; sourceTree = "<group>"; };
-		8391A31A497F9660ACA56658 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		83DE25EA2FA4BE4F62A6D132 /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomDateFormatTransform.swift; path = ObjectMapper/Transforms/CustomDateFormatTransform.swift; sourceTree = "<group>"; };
-		83F3F135726CC310800481D0 /* Pods-PTTSearchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PTTSearchApp.debug.xcconfig"; sourceTree = "<group>"; };
-		8495263C714747A5789111CC /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Kingfisher/ImageDownloader.swift; sourceTree = "<group>"; };
-		86D75938876D8086ABD8E4EB /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		8A39AD64C172EE77B7406EAF /* DateFormaterTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormaterTransform.swift; path = ObjectMapper/Transforms/DateFormaterTransform.swift; sourceTree = "<group>"; };
-		8BACE8BF39C97882B3E56B6F /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		8BBDF2286EB795246D397369 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8C9A5C0E2A4974FF78173D45 /* AlamofireObjectMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireObjectMapper.swift; path = AlamofireObjectMapper/AlamofireObjectMapper.swift; sourceTree = "<group>"; };
-		94F767B76CDA95A4DF1B0A45 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		96C82B185937A9F4B8FD0216 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9873D6FA9E9286F581EF3375 /* Pods-PTTSearchApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PTTSearchApp-resources.sh"; sourceTree = "<group>"; };
-		9A7231CAD8E42DADF1FFFD51 /* Pods-PTTSearchApp-AlamofireObjectMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PTTSearchApp-AlamofireObjectMapper-dummy.m"; sourceTree = "<group>"; };
-		9DE1EF8625AA0A368DC8BE65 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		9F08D05E96E1FBA228A5EB3C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A08F1D843D7161713A8AB887 /* SugarRecord.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SugarRecord.swift; path = library/Core/SugarRecord.swift; sourceTree = "<group>"; };
-		A6D7E683ABC68A20B41815DE /* Pods-PTTSearchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PTTSearchApp.release.xcconfig"; sourceTree = "<group>"; };
-		A7D7D2DFC06506B4AC31420F /* Pods-PTTSearchApp-Kingfisher-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PTTSearchApp-Kingfisher-Private.xcconfig"; sourceTree = "<group>"; };
-		A7FF4178CA6FB045CD79C271 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A831B39C61285CC375A84FBA /* FromJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FromJSON.swift; path = ObjectMapper/Core/FromJSON.swift; sourceTree = "<group>"; };
-		A9A8F53B0A5B78BD10FBDBCF /* DefaultCDStack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultCDStack.swift; path = library/CoreData/Base/DefaultCDStack.swift; sourceTree = "<group>"; };
-		AA69FE866BFC7ADE26A1E0D3 /* Pods-PTTSearchApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PTTSearchApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		ADC188BF621FB6E6F1A55BE4 /* Pods_PTTSearchApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PTTSearchApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADF440123FEC4626C6B9368D /* Pods-PTTSearchApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PTTSearchApp-umbrella.h"; sourceTree = "<group>"; };
-		AE54E694FC89C9C8EC472C1C /* Pods-PTTSearchApp-Alamofire-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PTTSearchApp-Alamofire-Private.xcconfig"; sourceTree = "<group>"; };
-		AE695870DDBC8DF2DA30F0D4 /* Pods-PTTSearchApp-ObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PTTSearchApp-ObjectMapper-prefix.pch"; sourceTree = "<group>"; };
-		B07A33041E5D4B96F9089851 /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO8601DateTransform.swift; path = ObjectMapper/Transforms/ISO8601DateTransform.swift; sourceTree = "<group>"; };
-		BE05F48B6A5E6B6DF882E06C /* TransformType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformType.swift; path = ObjectMapper/Transforms/TransformType.swift; sourceTree = "<group>"; };
-		C08ACBE2DDBB522A3DAC1DA5 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C13C6AAB9114A1FD44536230 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C2A08C436284D43DFF48E77B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C32B1196591511C9F1E53BA5 /* KingfisherOptionsInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherOptionsInfo.swift; path = Kingfisher/KingfisherOptionsInfo.swift; sourceTree = "<group>"; };
-		C7C8EBC4E4F9165F6995BECC /* NSManagedObject+SugarRecord.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSManagedObject+SugarRecord.swift"; path = "library/CoreData/Base/NSManagedObject+SugarRecord.swift"; sourceTree = "<group>"; };
-		C87833BAD135FB7178B5E0E9 /* SugarRecordFinder+FetchedResultsController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SugarRecordFinder+FetchedResultsController.swift"; path = "library/CoreData/Base/SugarRecordFinder+FetchedResultsController.swift"; sourceTree = "<group>"; };
-		D047B658844582FA53DB5055 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = ObjectMapper/Core/Operators.swift; sourceTree = "<group>"; };
-		D1D925FD41A2D8B75EDABA61 /* CDArray+SugarRecordResults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CDArray+SugarRecordResults.swift"; path = "library/CoreData/Base/CDArray+SugarRecordResults.swift"; sourceTree = "<group>"; };
-		D4539CEEE7A40BC2053704D8 /* SugarRecordFinder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SugarRecordFinder.swift; path = library/Core/SugarRecordFinder.swift; sourceTree = "<group>"; };
-		D46838CC6BD9D497E434A198 /* Pods-PTTSearchApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PTTSearchApp.modulemap"; sourceTree = "<group>"; };
-		D4FF1E248A94784568B64E17 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		D7ECCDF52807AFB27ABA9974 /* SugarRecordContextProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SugarRecordContextProtocol.swift; path = library/Core/Protocols/SugarRecordContextProtocol.swift; sourceTree = "<group>"; };
-		D86A2DC4FB4BCE67BA079EB1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA7D80ACCF5A667CDCB6993F /* Pods-PTTSearchApp-SugarRecord-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PTTSearchApp-SugarRecord-Private.xcconfig"; sourceTree = "<group>"; };
-		DAAD98755C4CD075EE52197E /* SugarRecordLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SugarRecordLogger.swift; path = library/Core/SugarRecordLogger.swift; sourceTree = "<group>"; };
-		E2A5BCA410759AE36CC10BD3 /* URLTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLTransform.swift; path = ObjectMapper/Transforms/URLTransform.swift; sourceTree = "<group>"; };
-		E2C28ADC3A95FA51B2E702CC /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
-		E381627F85A78BE350FE5322 /* String+MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+MD5.swift"; path = "Kingfisher/String+MD5.swift"; sourceTree = "<group>"; };
-		E41F0634BDA17661C96794BC /* Pods-PTTSearchApp-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PTTSearchApp-environment.h"; sourceTree = "<group>"; };
-		E4F57CB2A7B76DC9D4EF672C /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
-		E74584AE8CB5D8266C5DA49B /* KingfisherManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherManager.swift; path = Kingfisher/KingfisherManager.swift; sourceTree = "<group>"; };
-		EB32A8D77841C6D45511648C /* Pods-PTTSearchApp-Kingfisher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PTTSearchApp-Kingfisher-prefix.pch"; sourceTree = "<group>"; };
-		EB44022A4F24C40B13A0D8AE /* iCloudCDStack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = iCloudCDStack.swift; path = library/CoreData/Base/iCloudCDStack.swift; sourceTree = "<group>"; };
-		EBAB75B437995D134294B708 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		ED7F1B661665DC649EC337CF /* Pods-PTTSearchApp-Kingfisher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PTTSearchApp-Kingfisher.modulemap"; sourceTree = "<group>"; };
-		EDA66FA428779E330C69FB3C /* Pods-PTTSearchApp-Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PTTSearchApp-Alamofire.modulemap"; sourceTree = "<group>"; };
-		EF9CC6D786BAFFD1C1B91873 /* Pods-PTTSearchApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PTTSearchApp-frameworks.sh"; sourceTree = "<group>"; };
-		F3E983B032BEFFD43B2D71A8 /* Pods-PTTSearchApp-AlamofireObjectMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PTTSearchApp-AlamofireObjectMapper-umbrella.h"; sourceTree = "<group>"; };
-		F72C46A294D086CE38638BB5 /* Pods-PTTSearchApp-ObjectMapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PTTSearchApp-ObjectMapper.xcconfig"; sourceTree = "<group>"; };
-		F8707319210A7D7475DA48CE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
-		F927DF853D58A3E9CBECAD63 /* Pods-PTTSearchApp-Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PTTSearchApp-Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		FEAE1984945EEB55E7EDBFAF /* Pods-PTTSearchApp-SugarRecord-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PTTSearchApp-SugarRecord-dummy.m"; sourceTree = "<group>"; };
+		005A125D743A45F56DAD1FA7 /* URLTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLTransform.swift; path = ObjectMapper/Transforms/URLTransform.swift; sourceTree = "<group>"; };
+		009ACAEE09485A9EA7685A7F /* SugarRecord.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SugarRecord.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05748E56EC2A531098A542E0 /* Pods-PTTSearchApp-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PTTSearchApp-environment.h"; sourceTree = "<group>"; };
+		05E0B4B241B0292FAD0B4AB7 /* Pods-PTTSearchApp-SugarRecord-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PTTSearchApp-SugarRecord-Private.xcconfig"; sourceTree = "<group>"; };
+		090990E2C5E0F56878521E8F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		0AD98D1BC7E2F86536345B7B /* Pods-PTTSearchApp-Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PTTSearchApp-Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		0F53A56A5157153978D247D2 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FBEF17A28A2467D22E9CD40 /* Pods-PTTSearchApp-Kingfisher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PTTSearchApp-Kingfisher.modulemap"; sourceTree = "<group>"; };
+		144D5667D6C117B2F47C3BF4 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15E6201C54F5093843882FD1 /* DateFormaterTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormaterTransform.swift; path = ObjectMapper/Transforms/DateFormaterTransform.swift; sourceTree = "<group>"; };
+		18C8AA31B53F858E7839BC93 /* Pods-PTTSearchApp-ObjectMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PTTSearchApp-ObjectMapper-dummy.m"; sourceTree = "<group>"; };
+		1AB9C7A1A62DD16C93A0F45E /* Pods-PTTSearchApp-ObjectMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PTTSearchApp-ObjectMapper-umbrella.h"; sourceTree = "<group>"; };
+		1B2BA6517D854F81DF9E210E /* SugarRecordContextProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SugarRecordContextProtocol.swift; path = library/Core/Protocols/SugarRecordContextProtocol.swift; sourceTree = "<group>"; };
+		1F8CA0A5D7821951012A082C /* Pods-PTTSearchApp-Kingfisher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PTTSearchApp-Kingfisher.xcconfig"; sourceTree = "<group>"; };
+		2033462595908F319FB25A8B /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		219FF1287FC6037B3DF68C07 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2281CF0C92A81DF27BF19ADE /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
+		242E218F5BAFEEE4AA26E427 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		27720AFC85CA472783E942C6 /* FromJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FromJSON.swift; path = ObjectMapper/Core/FromJSON.swift; sourceTree = "<group>"; };
+		286E9116C93A927E6C5E2C4C /* iCloudCDStack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = iCloudCDStack.swift; path = library/CoreData/Base/iCloudCDStack.swift; sourceTree = "<group>"; };
+		2D3BD34504F6ECD76709F984 /* Pods-PTTSearchApp-ObjectMapper-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PTTSearchApp-ObjectMapper-Private.xcconfig"; sourceTree = "<group>"; };
+		3215B0A05433741463A3EDFA /* Pods_PTTSearchApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PTTSearchApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		333C468237B7698792BF7B92 /* Pods-PTTSearchApp-AlamofireObjectMapper-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PTTSearchApp-AlamofireObjectMapper-Private.xcconfig"; sourceTree = "<group>"; };
+		338291006CF0A68CD725687F /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		33BD792887D75BCF18269A0D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3529931DDADA176CFFB15BAA /* Pods-PTTSearchApp-AlamofireObjectMapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PTTSearchApp-AlamofireObjectMapper.xcconfig"; sourceTree = "<group>"; };
+		3782D2F1F32CC923FC947E7D /* Pods-PTTSearchApp-SugarRecord.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PTTSearchApp-SugarRecord.xcconfig"; sourceTree = "<group>"; };
+		38238F5A1889FAC6C88DBEA8 /* Pods-PTTSearchApp-Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PTTSearchApp-Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		3C495D8463CE63704319613A /* EnumTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumTransform.swift; path = ObjectMapper/Transforms/EnumTransform.swift; sourceTree = "<group>"; };
+		3E42049CD23062735B6E0EE8 /* Pods-PTTSearchApp-JDStatusBarNotification-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PTTSearchApp-JDStatusBarNotification-umbrella.h"; sourceTree = "<group>"; };
+		40AD44F53A91A0B02DFE2A3E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42E6F9DD3FC601C0B1A8E9B3 /* AlamofireObjectMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireObjectMapper.swift; path = AlamofireObjectMapper/AlamofireObjectMapper.swift; sourceTree = "<group>"; };
+		44932798651BA95AD370B3B6 /* Pods-PTTSearchApp-SugarRecord-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PTTSearchApp-SugarRecord-dummy.m"; sourceTree = "<group>"; };
+		450C4773C8424E6BE1E1A146 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		484F419235552BD310E78B92 /* KingfisherOptionsInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherOptionsInfo.swift; path = Kingfisher/KingfisherOptionsInfo.swift; sourceTree = "<group>"; };
+		4AE72D24FAC07E0A17958419 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = ObjectMapper/Core/Operators.swift; sourceTree = "<group>"; };
+		4B7BFC10AB0BDA1143AB2434 /* Pods-PTTSearchApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PTTSearchApp-resources.sh"; sourceTree = "<group>"; };
+		4B8A14E6026549EF1940C311 /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
+		4BA5AAE182E8C2AE1311AA5E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4DB371F1D7A56F6EB22F3A1D /* JDStatusBarNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JDStatusBarNotification.h; path = JDStatusBarNotification/JDStatusBarNotification.h; sourceTree = "<group>"; };
+		4FCCE6AEF36CED4B5260FF4D /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Kingfisher/ImageDownloader.swift; sourceTree = "<group>"; };
+		520712B5969F00D5503A182C /* Pods-PTTSearchApp-Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PTTSearchApp-Alamofire-dummy.m"; sourceTree = "<group>"; };
+		561116B0AA79447A2A380DA1 /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO8601DateTransform.swift; path = ObjectMapper/Transforms/ISO8601DateTransform.swift; sourceTree = "<group>"; };
+		58D7C81BB408F4396DFD0F92 /* SugarRecordStackProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SugarRecordStackProtocol.swift; path = library/Core/Protocols/SugarRecordStackProtocol.swift; sourceTree = "<group>"; };
+		5978CDDAF831DF15CEE8FE7E /* KingfisherManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherManager.swift; path = Kingfisher/KingfisherManager.swift; sourceTree = "<group>"; };
+		5A753B58BDA2B876C676960A /* Pods-PTTSearchApp-SugarRecord-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PTTSearchApp-SugarRecord-prefix.pch"; sourceTree = "<group>"; };
+		5C25A6455BD3473030BF6363 /* SugarRecordResults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SugarRecordResults.swift; path = library/Core/SugarRecordResults.swift; sourceTree = "<group>"; };
+		5CD98006D775E6C123027C54 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamofireObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E94E8A23BF23FB812DC061E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E996A3422DB8DA4F743B9E4 /* ToJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToJSON.swift; path = ObjectMapper/Core/ToJSON.swift; sourceTree = "<group>"; };
+		60B0BEB7D1BB3415141D4053 /* Pods-PTTSearchApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PTTSearchApp-umbrella.h"; sourceTree = "<group>"; };
+		656FAEE4A791007648145844 /* SugarRecordFinder+FetchedResultsController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SugarRecordFinder+FetchedResultsController.swift"; path = "library/CoreData/Base/SugarRecordFinder+FetchedResultsController.swift"; sourceTree = "<group>"; };
+		6AD1EDC032F04531BCEA59F9 /* DefaultCDStack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultCDStack.swift; path = library/CoreData/Base/DefaultCDStack.swift; sourceTree = "<group>"; };
+		72B49087D8716AFA9559509D /* Pods-PTTSearchApp-ObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PTTSearchApp-ObjectMapper-prefix.pch"; sourceTree = "<group>"; };
+		77B9EC4587483C28566F0A72 /* Pods-PTTSearchApp-Kingfisher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PTTSearchApp-Kingfisher-prefix.pch"; sourceTree = "<group>"; };
+		788B483D5C6280604F38F48E /* JDStatusBarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JDStatusBarView.h; path = JDStatusBarNotification/JDStatusBarView.h; sourceTree = "<group>"; };
+		7989BD0358215CFD2AAFCEF2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C36FBD77A2B2B64982FE861 /* TransformType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformType.swift; path = ObjectMapper/Transforms/TransformType.swift; sourceTree = "<group>"; };
+		7EA03B2FDB864068F1FE0D51 /* Mapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mapper.swift; path = ObjectMapper/Core/Mapper.swift; sourceTree = "<group>"; };
+		7F65AA27B2BCF396DFA12412 /* Pods-PTTSearchApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PTTSearchApp-dummy.m"; sourceTree = "<group>"; };
+		815680661B940D2B3A317683 /* TransformOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOf.swift; path = ObjectMapper/Transforms/TransformOf.swift; sourceTree = "<group>"; };
+		855B573EA31C7BAFFC8B4269 /* Pods-PTTSearchApp-ObjectMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PTTSearchApp-ObjectMapper.modulemap"; sourceTree = "<group>"; };
+		871AA6FAB275139F60D868B3 /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Kingfisher.swift"; path = "Kingfisher/UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
+		8E4B8F95D7044B99C2BC8782 /* Pods-PTTSearchApp-AlamofireObjectMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PTTSearchApp-AlamofireObjectMapper-umbrella.h"; sourceTree = "<group>"; };
+		8FDCF746923698ABBF1FA4BA /* WKInterfaceImage+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "WKInterfaceImage+Kingfisher.swift"; path = "Kingfisher/WKInterfaceImage+Kingfisher.swift"; sourceTree = "<group>"; };
+		9186013CD1CE69405CA9CCEC /* Pods-PTTSearchApp-ObjectMapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PTTSearchApp-ObjectMapper.xcconfig"; sourceTree = "<group>"; };
+		91E2F90CEE54B5AD1E895DF9 /* SugarRecordCDContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SugarRecordCDContext.swift; path = library/CoreData/Base/SugarRecordCDContext.swift; sourceTree = "<group>"; };
+		9268FBC3DD15B565FFD7E94E /* Pods-PTTSearchApp-SugarRecord-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PTTSearchApp-SugarRecord-umbrella.h"; sourceTree = "<group>"; };
+		9379443920466DC1936208D2 /* Pods-PTTSearchApp-JDStatusBarNotification-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PTTSearchApp-JDStatusBarNotification-Private.xcconfig"; sourceTree = "<group>"; };
+		940BFD285A75FB76F25074E8 /* Pods-PTTSearchApp-JDStatusBarNotification.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PTTSearchApp-JDStatusBarNotification.xcconfig"; sourceTree = "<group>"; };
+		963685EBA370D88059D4E488 /* Pods-PTTSearchApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PTTSearchApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		983DA3FB6C92FD153019BF7D /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9924EA37631BBB1138180521 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		99628C165D67E2EA3D2D237D /* Pods-PTTSearchApp-Kingfisher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PTTSearchApp-Kingfisher-umbrella.h"; sourceTree = "<group>"; };
+		A0C3AE664B61D895BBADA53F /* Pods-PTTSearchApp-Alamofire-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PTTSearchApp-Alamofire-Private.xcconfig"; sourceTree = "<group>"; };
+		A0EED0F85B52E4DD88EBEFF3 /* Pods-PTTSearchApp-JDStatusBarNotification.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PTTSearchApp-JDStatusBarNotification.modulemap"; sourceTree = "<group>"; };
+		A19829E991D77249A8B8D4E3 /* UIImage+Decode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Decode.swift"; path = "Kingfisher/UIImage+Decode.swift"; sourceTree = "<group>"; };
+		A40A9E9A7CBB9EF1912B3A80 /* Pods-PTTSearchApp-Kingfisher-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PTTSearchApp-Kingfisher-Private.xcconfig"; sourceTree = "<group>"; };
+		AA6F4B40D83DBDA79EB3BED3 /* JDStatusBarNotification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JDStatusBarNotification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACD720AFB1619918AEF7FEBC /* Pods-PTTSearchApp-Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PTTSearchApp-Alamofire.xcconfig"; sourceTree = "<group>"; };
+		AD1B24E6176AC9032F967684 /* Pods-PTTSearchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PTTSearchApp.release.xcconfig"; sourceTree = "<group>"; };
+		ADC57C61CD64F93414B6E873 /* JDStatusBarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JDStatusBarView.m; path = JDStatusBarNotification/JDStatusBarView.m; sourceTree = "<group>"; };
+		B192969F5426BD086E4C67EF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3B86693019F4AA025B6976F /* Pods-PTTSearchApp-JDStatusBarNotification-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PTTSearchApp-JDStatusBarNotification-prefix.pch"; sourceTree = "<group>"; };
+		B80D2529A3266B2A36067498 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		BC253E0736229C5801AC247A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD69EF1B5D12AD664D1C7A75 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF29F36A8ED3297794C3AA37 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2E5AF6CB0FD4706824F369B /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomDateFormatTransform.swift; path = ObjectMapper/Transforms/CustomDateFormatTransform.swift; sourceTree = "<group>"; };
+		C57078412715554D8084F5EA /* DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTransform.swift; path = ObjectMapper/Transforms/DateTransform.swift; sourceTree = "<group>"; };
+		C8159A13A7E9A6C7924B1B30 /* SugarRecordLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SugarRecordLogger.swift; path = library/Core/SugarRecordLogger.swift; sourceTree = "<group>"; };
+		C89740A90CA6F96DC8914D4F /* Pods-PTTSearchApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PTTSearchApp.modulemap"; sourceTree = "<group>"; };
+		C97A741FDC4A07313010E44C /* Pods-PTTSearchApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PTTSearchApp-frameworks.sh"; sourceTree = "<group>"; };
+		CA86A8FB78D84E916F267B53 /* Pods-PTTSearchApp-AlamofireObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PTTSearchApp-AlamofireObjectMapper-prefix.pch"; sourceTree = "<group>"; };
+		CBBBA0D499A17DD6A2937E50 /* JDStatusBarStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JDStatusBarStyle.m; path = JDStatusBarNotification/JDStatusBarStyle.m; sourceTree = "<group>"; };
+		D16CBAD1385C3434E865AEFA /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		D3CBFF2BFD8510A4C147D0D2 /* JDStatusBarStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JDStatusBarStyle.h; path = JDStatusBarNotification/JDStatusBarStyle.h; sourceTree = "<group>"; };
+		D6A1FD8F243C9D8009493396 /* String+MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+MD5.swift"; path = "Kingfisher/String+MD5.swift"; sourceTree = "<group>"; };
+		DD9932CCCE3BFABB86AC28E4 /* Pods-PTTSearchApp-Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PTTSearchApp-Alamofire.modulemap"; sourceTree = "<group>"; };
+		DDF2D589418947E1F98E7C5D /* SugarRecord.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SugarRecord.swift; path = library/Core/SugarRecord.swift; sourceTree = "<group>"; };
+		E369E096F9C2313150ECAC71 /* Pods-PTTSearchApp-Kingfisher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PTTSearchApp-Kingfisher-dummy.m"; sourceTree = "<group>"; };
+		E6FA61691203099884B43822 /* Pods-PTTSearchApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PTTSearchApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		E848F285E221676ED9B76E3A /* NSManagedObject+SugarRecord.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSManagedObject+SugarRecord.swift"; path = "library/CoreData/Base/NSManagedObject+SugarRecord.swift"; sourceTree = "<group>"; };
+		E90DCB5F790928CD78629DEE /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Kingfisher/ImageCache.swift; sourceTree = "<group>"; };
+		E96351BEB35C3BBDFB9E1B08 /* Pods-PTTSearchApp-SugarRecord.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PTTSearchApp-SugarRecord.modulemap"; sourceTree = "<group>"; };
+		E99E2D184F47C01877E8B2CC /* SugarRecordFinder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SugarRecordFinder.swift; path = library/Core/SugarRecordFinder.swift; sourceTree = "<group>"; };
+		EA868D49A33CAF64D8ABA67A /* Pods-PTTSearchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PTTSearchApp.debug.xcconfig"; sourceTree = "<group>"; };
+		ED0EE74A1C2EBEE750DA984F /* CDArray+SugarRecordResults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CDArray+SugarRecordResults.swift"; path = "library/CoreData/Base/CDArray+SugarRecordResults.swift"; sourceTree = "<group>"; };
+		EE06B15490021EB2F77B2530 /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
+		F09A320625FD3E1C608B800A /* Pods-PTTSearchApp-AlamofireObjectMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PTTSearchApp-AlamofireObjectMapper.modulemap"; sourceTree = "<group>"; };
+		F431B27A4AEA1FD9C58ABB56 /* UIImageView+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Kingfisher.swift"; path = "Kingfisher/UIImageView+Kingfisher.swift"; sourceTree = "<group>"; };
+		F4B81F2802B0A2A41345AF26 /* Pods-PTTSearchApp-JDStatusBarNotification-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PTTSearchApp-JDStatusBarNotification-dummy.m"; sourceTree = "<group>"; };
+		F7C8F7C16EFC3015E6FD3CB2 /* Pods-PTTSearchApp-AlamofireObjectMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PTTSearchApp-AlamofireObjectMapper-dummy.m"; sourceTree = "<group>"; };
+		F9E2405E747C279099C7FFAA /* KingfisherOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherOptions.swift; path = Kingfisher/KingfisherOptions.swift; sourceTree = "<group>"; };
+		F9F84AF88243E6801576D9AD /* SugarRecordResultsProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SugarRecordResultsProtocol.swift; path = library/Core/Protocols/SugarRecordResultsProtocol.swift; sourceTree = "<group>"; };
+		FA2AFA716C6695EB32934B71 /* JDStatusBarNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JDStatusBarNotification.m; path = JDStatusBarNotification/JDStatusBarNotification.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		12F231CA731D9BF9A98A4EA0 /* Frameworks */ = {
+		076C23C1F4DB54C814C66A13 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7F4A9CEC63CA16FEA3B2C4C /* Alamofire.framework in Frameworks */,
-				D567BD308B8069493C3017E7 /* Foundation.framework in Frameworks */,
-				1A09A4F15FC73B1F07FF217E /* ObjectMapper.framework in Frameworks */,
+				56BFBFFC1DFEA378841DFEB9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		99AD5685AE43DE2B7FD043AE /* Frameworks */ = {
+		182C43AC5DC586C38F23DCE5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				900A989AE8376050C0365ADD /* Foundation.framework in Frameworks */,
+				9B4E392D140A44BA4348D1E0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A3CDA7F2C41F6D8B21C11488 /* Frameworks */ = {
+		230432E0BBFD05DF2B749C5E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3ECCBAF02076EEE122A59BA6 /* Foundation.framework in Frameworks */,
+				DFA540BA5D29ACAE46A281BD /* Foundation.framework in Frameworks */,
+				B5A7C9B0762D335D070ED3BA /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A9970C4CF64BE154E0958917 /* Frameworks */ = {
+		3AE66049BE6BAC89D512A18A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFEDC17A2209B7D16CB83D4B /* CoreData.framework in Frameworks */,
-				7044B1DC90A80EB1854AFD02 /* Foundation.framework in Frameworks */,
+				17009AE32123EA5BD659A9AA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0596980AA52FB435A21E99E /* Frameworks */ = {
+		84ACBFE0F6E7B2E6FF7DA7C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C9EF85DE1B7DEDF8CA28BF7 /* Foundation.framework in Frameworks */,
+				05034E125F64AB0782AB4550 /* Alamofire.framework in Frameworks */,
+				579410A2B949A2080C8520CB /* Foundation.framework in Frameworks */,
+				9F8B09ADC85CA766277BBFA0 /* ObjectMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BF951C08071070F88511F039 /* Frameworks */ = {
+		A5440B4E7A69AB338CA846BD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E467FBD5316A5F059A292E85 /* Foundation.framework in Frameworks */,
+				9749F047BBC08134E5E77D01 /* CoreData.framework in Frameworks */,
+				16A0F5EDB14738C044A61E64 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8AB441D11FA13DFA56ED4F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25A32B4F67A8781BC511D9E7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A81ED18BDBB097E3987F44C /* Support Files */ = {
+		084F06FB0F810088936486FC /* JDStatusBarNotification */ = {
 			isa = PBXGroup;
 			children = (
-				C13C6AAB9114A1FD44536230 /* Info.plist */,
-				0932FB483F8C9A6C4AE519BB /* Pods-PTTSearchApp-ObjectMapper.modulemap */,
-				F72C46A294D086CE38638BB5 /* Pods-PTTSearchApp-ObjectMapper.xcconfig */,
-				6E4C3154E5CC6CE168979BCC /* Pods-PTTSearchApp-ObjectMapper-Private.xcconfig */,
-				72BFD90A2D619F0112AA85E6 /* Pods-PTTSearchApp-ObjectMapper-dummy.m */,
-				AE695870DDBC8DF2DA30F0D4 /* Pods-PTTSearchApp-ObjectMapper-prefix.pch */,
-				5AC748CCCF544EC170AAB69C /* Pods-PTTSearchApp-ObjectMapper-umbrella.h */,
+				4DB371F1D7A56F6EB22F3A1D /* JDStatusBarNotification.h */,
+				FA2AFA716C6695EB32934B71 /* JDStatusBarNotification.m */,
+				D3CBFF2BFD8510A4C147D0D2 /* JDStatusBarStyle.h */,
+				CBBBA0D499A17DD6A2937E50 /* JDStatusBarStyle.m */,
+				788B483D5C6280604F38F48E /* JDStatusBarView.h */,
+				ADC57C61CD64F93414B6E873 /* JDStatusBarView.m */,
+				161C3738244D63E35C5A9FFE /* Support Files */,
+			);
+			path = JDStatusBarNotification;
+			sourceTree = "<group>";
+		};
+		161C3738244D63E35C5A9FFE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B192969F5426BD086E4C67EF /* Info.plist */,
+				A0EED0F85B52E4DD88EBEFF3 /* Pods-PTTSearchApp-JDStatusBarNotification.modulemap */,
+				940BFD285A75FB76F25074E8 /* Pods-PTTSearchApp-JDStatusBarNotification.xcconfig */,
+				9379443920466DC1936208D2 /* Pods-PTTSearchApp-JDStatusBarNotification-Private.xcconfig */,
+				F4B81F2802B0A2A41345AF26 /* Pods-PTTSearchApp-JDStatusBarNotification-dummy.m */,
+				B3B86693019F4AA025B6976F /* Pods-PTTSearchApp-JDStatusBarNotification-prefix.pch */,
+				3E42049CD23062735B6E0EE8 /* Pods-PTTSearchApp-JDStatusBarNotification-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Pods-PTTSearchApp-ObjectMapper";
+			path = "../Target Support Files/Pods-PTTSearchApp-JDStatusBarNotification";
 			sourceTree = "<group>";
 		};
-		18A9EF2CA7792567B7A2FF95 /* SugarRecord */ = {
+		1B9C40EEB972F4FE320700F3 /* ObjectMapper */ = {
 			isa = PBXGroup;
 			children = (
-				AAEDA4222D1BDA4172FA89D1 /* Core */,
-				1E95DD90E9BDC853F2DCC526 /* CoreData */,
-				EF758891C3C4253002A83881 /* Support Files */,
-			);
-			path = SugarRecord;
-			sourceTree = "<group>";
-		};
-		1E95DD90E9BDC853F2DCC526 /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				D1D925FD41A2D8B75EDABA61 /* CDArray+SugarRecordResults.swift */,
-				A9A8F53B0A5B78BD10FBDBCF /* DefaultCDStack.swift */,
-				C7C8EBC4E4F9165F6995BECC /* NSManagedObject+SugarRecord.swift */,
-				74B82E7414D45FD127A6EB04 /* SugarRecordCDContext.swift */,
-				C87833BAD135FB7178B5E0E9 /* SugarRecordFinder+FetchedResultsController.swift */,
-				EB44022A4F24C40B13A0D8AE /* iCloudCDStack.swift */,
-			);
-			name = CoreData;
-			sourceTree = "<group>";
-		};
-		32EF154D4DB06652C50B21CB /* Alamofire */ = {
-			isa = PBXGroup;
-			children = (
-				94F767B76CDA95A4DF1B0A45 /* Alamofire.swift */,
-				E4F57CB2A7B76DC9D4EF672C /* Download.swift */,
-				E2C28ADC3A95FA51B2E702CC /* Manager.swift */,
-				EBAB75B437995D134294B708 /* ParameterEncoding.swift */,
-				9DE1EF8625AA0A368DC8BE65 /* Request.swift */,
-				8BACE8BF39C97882B3E56B6F /* ResponseSerialization.swift */,
-				80BFE602919ABF7276247E85 /* Upload.swift */,
-				86D75938876D8086ABD8E4EB /* Validation.swift */,
-				CB2AD34E0FA586362297A4EA /* Support Files */,
-			);
-			path = Alamofire;
-			sourceTree = "<group>";
-		};
-		3924EC2E163BA9C7838F407D = {
-			isa = PBXGroup;
-			children = (
-				D4FF1E248A94784568B64E17 /* Podfile */,
-				F2DDA54C2F083C5B7CC0194C /* Frameworks */,
-				9BF5EB66538A3FB75248E1D4 /* Pods */,
-				4CA9F6C238241592B835C207 /* Products */,
-				E7E35216F7731806C397FD80 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		3CC5ED70CF0536DA088FB2B9 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9F08D05E96E1FBA228A5EB3C /* Info.plist */,
-				ED7F1B661665DC649EC337CF /* Pods-PTTSearchApp-Kingfisher.modulemap */,
-				3B853D3BFA15442AF631F5DB /* Pods-PTTSearchApp-Kingfisher.xcconfig */,
-				A7D7D2DFC06506B4AC31420F /* Pods-PTTSearchApp-Kingfisher-Private.xcconfig */,
-				79B16DC62F1124A6B993745E /* Pods-PTTSearchApp-Kingfisher-dummy.m */,
-				EB32A8D77841C6D45511648C /* Pods-PTTSearchApp-Kingfisher-prefix.pch */,
-				6A8120635F0D5CB8674549C6 /* Pods-PTTSearchApp-Kingfisher-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-PTTSearchApp-Kingfisher";
-			sourceTree = "<group>";
-		};
-		4CA9F6C238241592B835C207 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A7FF4178CA6FB045CD79C271 /* Alamofire.framework */,
-				37FB5650B68799EBD1F68D9D /* AlamofireObjectMapper.framework */,
-				96C82B185937A9F4B8FD0216 /* Kingfisher.framework */,
-				11647F1FCC9960DE467F6A06 /* ObjectMapper.framework */,
-				ADC188BF621FB6E6F1A55BE4 /* Pods_PTTSearchApp.framework */,
-				4AF272067BD475D7AFB483EA /* SugarRecord.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		552F8D718CA3E800D83C3A38 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				F8707319210A7D7475DA48CE /* CoreData.framework */,
-				8391A31A497F9660ACA56658 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		62A220393CC616F51F742C3B /* Pods-PTTSearchApp */ = {
-			isa = PBXGroup;
-			children = (
-				8BBDF2286EB795246D397369 /* Info.plist */,
-				D46838CC6BD9D497E434A198 /* Pods-PTTSearchApp.modulemap */,
-				33B4D5F763A0236A846C56F8 /* Pods-PTTSearchApp-acknowledgements.markdown */,
-				AA69FE866BFC7ADE26A1E0D3 /* Pods-PTTSearchApp-acknowledgements.plist */,
-				7842AD4FB4A770F73BB4DE8E /* Pods-PTTSearchApp-dummy.m */,
-				E41F0634BDA17661C96794BC /* Pods-PTTSearchApp-environment.h */,
-				EF9CC6D786BAFFD1C1B91873 /* Pods-PTTSearchApp-frameworks.sh */,
-				9873D6FA9E9286F581EF3375 /* Pods-PTTSearchApp-resources.sh */,
-				ADF440123FEC4626C6B9368D /* Pods-PTTSearchApp-umbrella.h */,
-				83F3F135726CC310800481D0 /* Pods-PTTSearchApp.debug.xcconfig */,
-				A6D7E683ABC68A20B41815DE /* Pods-PTTSearchApp.release.xcconfig */,
-			);
-			name = "Pods-PTTSearchApp";
-			path = "Target Support Files/Pods-PTTSearchApp";
-			sourceTree = "<group>";
-		};
-		66D0338ADD7291A1C15D3C92 /* AlamofireObjectMapper */ = {
-			isa = PBXGroup;
-			children = (
-				8C9A5C0E2A4974FF78173D45 /* AlamofireObjectMapper.swift */,
-				EB97A28104ACE128371DFD24 /* Support Files */,
-			);
-			path = AlamofireObjectMapper;
-			sourceTree = "<group>";
-		};
-		7EA5A654E600579BD004F835 /* Kingfisher */ = {
-			isa = PBXGroup;
-			children = (
-				18C98EB567F7A73717FE9F1E /* ImageCache.swift */,
-				8495263C714747A5789111CC /* ImageDownloader.swift */,
-				E74584AE8CB5D8266C5DA49B /* KingfisherManager.swift */,
-				607722AE7EDB37709878478E /* KingfisherOptions.swift */,
-				C32B1196591511C9F1E53BA5 /* KingfisherOptionsInfo.swift */,
-				E381627F85A78BE350FE5322 /* String+MD5.swift */,
-				7364A50299D3D9248417A7AE /* UIButton+Kingfisher.swift */,
-				26F1EF4D8FD13ACFCE6DB046 /* UIImage+Decode.swift */,
-				34E4C16BC072FA131842B24F /* UIImageView+Kingfisher.swift */,
-				6C5C1238413376417B2E73EF /* WKInterfaceImage+Kingfisher.swift */,
-				3CC5ED70CF0536DA088FB2B9 /* Support Files */,
-			);
-			path = Kingfisher;
-			sourceTree = "<group>";
-		};
-		8F0498064B6B63D8EFD03883 /* ObjectMapper */ = {
-			isa = PBXGroup;
-			children = (
-				83DE25EA2FA4BE4F62A6D132 /* CustomDateFormatTransform.swift */,
-				8A39AD64C172EE77B7406EAF /* DateFormaterTransform.swift */,
-				1E6C994F7E693919A737E1F3 /* DateTransform.swift */,
-				346F361D55EC7C59CCF8CD3A /* EnumTransform.swift */,
-				A831B39C61285CC375A84FBA /* FromJSON.swift */,
-				B07A33041E5D4B96F9089851 /* ISO8601DateTransform.swift */,
-				290F0E342D92F836FC262F7F /* Mapper.swift */,
-				D047B658844582FA53DB5055 /* Operators.swift */,
-				80C891396C32116DE6D5EB47 /* ToJSON.swift */,
-				2FDB50AB76FE7F7DD135AE19 /* TransformOf.swift */,
-				BE05F48B6A5E6B6DF882E06C /* TransformType.swift */,
-				E2A5BCA410759AE36CC10BD3 /* URLTransform.swift */,
-				0A81ED18BDBB097E3987F44C /* Support Files */,
+				C2E5AF6CB0FD4706824F369B /* CustomDateFormatTransform.swift */,
+				15E6201C54F5093843882FD1 /* DateFormaterTransform.swift */,
+				C57078412715554D8084F5EA /* DateTransform.swift */,
+				3C495D8463CE63704319613A /* EnumTransform.swift */,
+				27720AFC85CA472783E942C6 /* FromJSON.swift */,
+				561116B0AA79447A2A380DA1 /* ISO8601DateTransform.swift */,
+				7EA03B2FDB864068F1FE0D51 /* Mapper.swift */,
+				4AE72D24FAC07E0A17958419 /* Operators.swift */,
+				5E996A3422DB8DA4F743B9E4 /* ToJSON.swift */,
+				815680661B940D2B3A317683 /* TransformOf.swift */,
+				7C36FBD77A2B2B64982FE861 /* TransformType.swift */,
+				005A125D743A45F56DAD1FA7 /* URLTransform.swift */,
+				E20A61C8FA623268D061C0C8 /* Support Files */,
 			);
 			path = ObjectMapper;
 			sourceTree = "<group>";
 		};
-		9BF5EB66538A3FB75248E1D4 /* Pods */ = {
+		23721381C4B0BE2CE7AB775F /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				32EF154D4DB06652C50B21CB /* Alamofire */,
-				66D0338ADD7291A1C15D3C92 /* AlamofireObjectMapper */,
-				7EA5A654E600579BD004F835 /* Kingfisher */,
-				8F0498064B6B63D8EFD03883 /* ObjectMapper */,
-				18A9EF2CA7792567B7A2FF95 /* SugarRecord */,
+				338291006CF0A68CD725687F /* Alamofire.swift */,
+				4B8A14E6026549EF1940C311 /* Download.swift */,
+				EE06B15490021EB2F77B2530 /* Manager.swift */,
+				450C4773C8424E6BE1E1A146 /* ParameterEncoding.swift */,
+				9924EA37631BBB1138180521 /* Request.swift */,
+				B80D2529A3266B2A36067498 /* ResponseSerialization.swift */,
+				2281CF0C92A81DF27BF19ADE /* Upload.swift */,
+				D16CBAD1385C3434E865AEFA /* Validation.swift */,
+				9CE3BE75BCC9A8984493BFFE /* Support Files */,
 			);
-			name = Pods;
+			path = Alamofire;
 			sourceTree = "<group>";
 		};
-		AAEDA4222D1BDA4172FA89D1 /* Core */ = {
+		3D0C10DD07CBA68BF9DD6D14 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A08F1D843D7161713A8AB887 /* SugarRecord.swift */,
-				D7ECCDF52807AFB27ABA9974 /* SugarRecordContextProtocol.swift */,
-				D4539CEEE7A40BC2053704D8 /* SugarRecordFinder.swift */,
-				DAAD98755C4CD075EE52197E /* SugarRecordLogger.swift */,
-				4EEE96F32F20CA40ECBFB6AC /* SugarRecordResults.swift */,
-				692BAB28DD3F03A906BB62A2 /* SugarRecordResultsProtocol.swift */,
-				3E8374B292A8DBFC12C03266 /* SugarRecordStackProtocol.swift */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		CB2AD34E0FA586362297A4EA /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				17BAD94A420F499DEAE9B4D9 /* Info.plist */,
-				EDA66FA428779E330C69FB3C /* Pods-PTTSearchApp-Alamofire.modulemap */,
-				51ECBDE6549C40A6319F1C2C /* Pods-PTTSearchApp-Alamofire.xcconfig */,
-				AE54E694FC89C9C8EC472C1C /* Pods-PTTSearchApp-Alamofire-Private.xcconfig */,
-				4E981BE1144C7DE437C7CFA2 /* Pods-PTTSearchApp-Alamofire-dummy.m */,
-				F927DF853D58A3E9CBECAD63 /* Pods-PTTSearchApp-Alamofire-prefix.pch */,
-				00C776CBF551D2C234E99EBE /* Pods-PTTSearchApp-Alamofire-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-PTTSearchApp-Alamofire";
-			sourceTree = "<group>";
-		};
-		E7E35216F7731806C397FD80 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				62A220393CC616F51F742C3B /* Pods-PTTSearchApp */,
+				B152AD7FE7B28CF9EDC63FBF /* Pods-PTTSearchApp */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		EB97A28104ACE128371DFD24 /* Support Files */ = {
+		4E6E305842CAAD5CD18C3A17 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D86A2DC4FB4BCE67BA079EB1 /* Info.plist */,
-				71EAF54D5788054E9E4C0325 /* Pods-PTTSearchApp-AlamofireObjectMapper.modulemap */,
-				7409CE200590B67A9A71D9AC /* Pods-PTTSearchApp-AlamofireObjectMapper.xcconfig */,
-				41D6037B9299974FE1F2B04F /* Pods-PTTSearchApp-AlamofireObjectMapper-Private.xcconfig */,
-				9A7231CAD8E42DADF1FFFD51 /* Pods-PTTSearchApp-AlamofireObjectMapper-dummy.m */,
-				0C0727345F5636049B4A797B /* Pods-PTTSearchApp-AlamofireObjectMapper-prefix.pch */,
-				F3E983B032BEFFD43B2D71A8 /* Pods-PTTSearchApp-AlamofireObjectMapper-umbrella.h */,
+				7989BD0358215CFD2AAFCEF2 /* Info.plist */,
+				F09A320625FD3E1C608B800A /* Pods-PTTSearchApp-AlamofireObjectMapper.modulemap */,
+				3529931DDADA176CFFB15BAA /* Pods-PTTSearchApp-AlamofireObjectMapper.xcconfig */,
+				333C468237B7698792BF7B92 /* Pods-PTTSearchApp-AlamofireObjectMapper-Private.xcconfig */,
+				F7C8F7C16EFC3015E6FD3CB2 /* Pods-PTTSearchApp-AlamofireObjectMapper-dummy.m */,
+				CA86A8FB78D84E916F267B53 /* Pods-PTTSearchApp-AlamofireObjectMapper-prefix.pch */,
+				8E4B8F95D7044B99C2BC8782 /* Pods-PTTSearchApp-AlamofireObjectMapper-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-PTTSearchApp-AlamofireObjectMapper";
 			sourceTree = "<group>";
 		};
-		EF758891C3C4253002A83881 /* Support Files */ = {
+		54420EE350A6ABFB691BF0FF /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				C2A08C436284D43DFF48E77B /* Info.plist */,
-				6652A8B3D47C87FFCA5994A4 /* Pods-PTTSearchApp-SugarRecord.modulemap */,
-				7357F54EBED3D26D1FD4F04A /* Pods-PTTSearchApp-SugarRecord.xcconfig */,
-				DA7D80ACCF5A667CDCB6993F /* Pods-PTTSearchApp-SugarRecord-Private.xcconfig */,
-				FEAE1984945EEB55E7EDBFAF /* Pods-PTTSearchApp-SugarRecord-dummy.m */,
-				4858239D0AD27D39E81D0F94 /* Pods-PTTSearchApp-SugarRecord-prefix.pch */,
-				69996D446E180C7C214998B1 /* Pods-PTTSearchApp-SugarRecord-umbrella.h */,
+				ED0EE74A1C2EBEE750DA984F /* CDArray+SugarRecordResults.swift */,
+				6AD1EDC032F04531BCEA59F9 /* DefaultCDStack.swift */,
+				E848F285E221676ED9B76E3A /* NSManagedObject+SugarRecord.swift */,
+				91E2F90CEE54B5AD1E895DF9 /* SugarRecordCDContext.swift */,
+				656FAEE4A791007648145844 /* SugarRecordFinder+FetchedResultsController.swift */,
+				286E9116C93A927E6C5E2C4C /* iCloudCDStack.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		55FA65B60200FE4D95606653 /* SugarRecord */ = {
+			isa = PBXGroup;
+			children = (
+				C3CAF9B059396B5451CC3834 /* Core */,
+				54420EE350A6ABFB691BF0FF /* CoreData */,
+				6D7F71591D77EB58310056A5 /* Support Files */,
+			);
+			path = SugarRecord;
+			sourceTree = "<group>";
+		};
+		62C1D8EF2C3811A9C50F9896 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23721381C4B0BE2CE7AB775F /* Alamofire */,
+				FE986FF328CB86C2A0BC672C /* AlamofireObjectMapper */,
+				084F06FB0F810088936486FC /* JDStatusBarNotification */,
+				F944A2252D05C85DD6C2A937 /* Kingfisher */,
+				1B9C40EEB972F4FE320700F3 /* ObjectMapper */,
+				55FA65B60200FE4D95606653 /* SugarRecord */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		66BFA6ADD082510D1874B4B4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				090990E2C5E0F56878521E8F /* CoreData.framework */,
+				4BA5AAE182E8C2AE1311AA5E /* Foundation.framework */,
+				242E218F5BAFEEE4AA26E427 /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6D7F71591D77EB58310056A5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC253E0736229C5801AC247A /* Info.plist */,
+				E96351BEB35C3BBDFB9E1B08 /* Pods-PTTSearchApp-SugarRecord.modulemap */,
+				3782D2F1F32CC923FC947E7D /* Pods-PTTSearchApp-SugarRecord.xcconfig */,
+				05E0B4B241B0292FAD0B4AB7 /* Pods-PTTSearchApp-SugarRecord-Private.xcconfig */,
+				44932798651BA95AD370B3B6 /* Pods-PTTSearchApp-SugarRecord-dummy.m */,
+				5A753B58BDA2B876C676960A /* Pods-PTTSearchApp-SugarRecord-prefix.pch */,
+				9268FBC3DD15B565FFD7E94E /* Pods-PTTSearchApp-SugarRecord-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-PTTSearchApp-SugarRecord";
 			sourceTree = "<group>";
 		};
-		F2DDA54C2F083C5B7CC0194C /* Frameworks */ = {
+		812F2B14F533BBADB75B9C41 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C08ACBE2DDBB522A3DAC1DA5 /* Alamofire.framework */,
-				7E1AD4D2212A14F35EF9CC10 /* ObjectMapper.framework */,
-				552F8D718CA3E800D83C3A38 /* iOS */,
+				BF29F36A8ED3297794C3AA37 /* Alamofire.framework */,
+				0F53A56A5157153978D247D2 /* ObjectMapper.framework */,
+				66BFA6ADD082510D1874B4B4 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9CE3BE75BCC9A8984493BFFE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				40AD44F53A91A0B02DFE2A3E /* Info.plist */,
+				DD9932CCCE3BFABB86AC28E4 /* Pods-PTTSearchApp-Alamofire.modulemap */,
+				ACD720AFB1619918AEF7FEBC /* Pods-PTTSearchApp-Alamofire.xcconfig */,
+				A0C3AE664B61D895BBADA53F /* Pods-PTTSearchApp-Alamofire-Private.xcconfig */,
+				520712B5969F00D5503A182C /* Pods-PTTSearchApp-Alamofire-dummy.m */,
+				0AD98D1BC7E2F86536345B7B /* Pods-PTTSearchApp-Alamofire-prefix.pch */,
+				38238F5A1889FAC6C88DBEA8 /* Pods-PTTSearchApp-Alamofire-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-PTTSearchApp-Alamofire";
+			sourceTree = "<group>";
+		};
+		B152AD7FE7B28CF9EDC63FBF /* Pods-PTTSearchApp */ = {
+			isa = PBXGroup;
+			children = (
+				5E94E8A23BF23FB812DC061E /* Info.plist */,
+				C89740A90CA6F96DC8914D4F /* Pods-PTTSearchApp.modulemap */,
+				963685EBA370D88059D4E488 /* Pods-PTTSearchApp-acknowledgements.markdown */,
+				E6FA61691203099884B43822 /* Pods-PTTSearchApp-acknowledgements.plist */,
+				7F65AA27B2BCF396DFA12412 /* Pods-PTTSearchApp-dummy.m */,
+				05748E56EC2A531098A542E0 /* Pods-PTTSearchApp-environment.h */,
+				C97A741FDC4A07313010E44C /* Pods-PTTSearchApp-frameworks.sh */,
+				4B7BFC10AB0BDA1143AB2434 /* Pods-PTTSearchApp-resources.sh */,
+				60B0BEB7D1BB3415141D4053 /* Pods-PTTSearchApp-umbrella.h */,
+				EA868D49A33CAF64D8ABA67A /* Pods-PTTSearchApp.debug.xcconfig */,
+				AD1B24E6176AC9032F967684 /* Pods-PTTSearchApp.release.xcconfig */,
+			);
+			name = "Pods-PTTSearchApp";
+			path = "Target Support Files/Pods-PTTSearchApp";
+			sourceTree = "<group>";
+		};
+		BBA0CA839C3E94AD5752E423 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				144D5667D6C117B2F47C3BF4 /* Alamofire.framework */,
+				5CD98006D775E6C123027C54 /* AlamofireObjectMapper.framework */,
+				AA6F4B40D83DBDA79EB3BED3 /* JDStatusBarNotification.framework */,
+				BD69EF1B5D12AD664D1C7A75 /* Kingfisher.framework */,
+				2033462595908F319FB25A8B /* ObjectMapper.framework */,
+				3215B0A05433741463A3EDFA /* Pods_PTTSearchApp.framework */,
+				009ACAEE09485A9EA7685A7F /* SugarRecord.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3CAF9B059396B5451CC3834 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DDF2D589418947E1F98E7C5D /* SugarRecord.swift */,
+				1B2BA6517D854F81DF9E210E /* SugarRecordContextProtocol.swift */,
+				E99E2D184F47C01877E8B2CC /* SugarRecordFinder.swift */,
+				C8159A13A7E9A6C7924B1B30 /* SugarRecordLogger.swift */,
+				5C25A6455BD3473030BF6363 /* SugarRecordResults.swift */,
+				F9F84AF88243E6801576D9AD /* SugarRecordResultsProtocol.swift */,
+				58D7C81BB408F4396DFD0F92 /* SugarRecordStackProtocol.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		E20A61C8FA623268D061C0C8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				33BD792887D75BCF18269A0D /* Info.plist */,
+				855B573EA31C7BAFFC8B4269 /* Pods-PTTSearchApp-ObjectMapper.modulemap */,
+				9186013CD1CE69405CA9CCEC /* Pods-PTTSearchApp-ObjectMapper.xcconfig */,
+				2D3BD34504F6ECD76709F984 /* Pods-PTTSearchApp-ObjectMapper-Private.xcconfig */,
+				18C8AA31B53F858E7839BC93 /* Pods-PTTSearchApp-ObjectMapper-dummy.m */,
+				72B49087D8716AFA9559509D /* Pods-PTTSearchApp-ObjectMapper-prefix.pch */,
+				1AB9C7A1A62DD16C93A0F45E /* Pods-PTTSearchApp-ObjectMapper-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-PTTSearchApp-ObjectMapper";
+			sourceTree = "<group>";
+		};
+		E8C4E12320C80C61EAD015C1 = {
+			isa = PBXGroup;
+			children = (
+				983DA3FB6C92FD153019BF7D /* Podfile */,
+				812F2B14F533BBADB75B9C41 /* Frameworks */,
+				62C1D8EF2C3811A9C50F9896 /* Pods */,
+				BBA0CA839C3E94AD5752E423 /* Products */,
+				3D0C10DD07CBA68BF9DD6D14 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		F6AC5F318DD3D67B5257F441 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				219FF1287FC6037B3DF68C07 /* Info.plist */,
+				0FBEF17A28A2467D22E9CD40 /* Pods-PTTSearchApp-Kingfisher.modulemap */,
+				1F8CA0A5D7821951012A082C /* Pods-PTTSearchApp-Kingfisher.xcconfig */,
+				A40A9E9A7CBB9EF1912B3A80 /* Pods-PTTSearchApp-Kingfisher-Private.xcconfig */,
+				E369E096F9C2313150ECAC71 /* Pods-PTTSearchApp-Kingfisher-dummy.m */,
+				77B9EC4587483C28566F0A72 /* Pods-PTTSearchApp-Kingfisher-prefix.pch */,
+				99628C165D67E2EA3D2D237D /* Pods-PTTSearchApp-Kingfisher-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-PTTSearchApp-Kingfisher";
+			sourceTree = "<group>";
+		};
+		F944A2252D05C85DD6C2A937 /* Kingfisher */ = {
+			isa = PBXGroup;
+			children = (
+				E90DCB5F790928CD78629DEE /* ImageCache.swift */,
+				4FCCE6AEF36CED4B5260FF4D /* ImageDownloader.swift */,
+				5978CDDAF831DF15CEE8FE7E /* KingfisherManager.swift */,
+				F9E2405E747C279099C7FFAA /* KingfisherOptions.swift */,
+				484F419235552BD310E78B92 /* KingfisherOptionsInfo.swift */,
+				D6A1FD8F243C9D8009493396 /* String+MD5.swift */,
+				871AA6FAB275139F60D868B3 /* UIButton+Kingfisher.swift */,
+				A19829E991D77249A8B8D4E3 /* UIImage+Decode.swift */,
+				F431B27A4AEA1FD9C58ABB56 /* UIImageView+Kingfisher.swift */,
+				8FDCF746923698ABBF1FA4BA /* WKInterfaceImage+Kingfisher.swift */,
+				F6AC5F318DD3D67B5257F441 /* Support Files */,
+			);
+			path = Kingfisher;
+			sourceTree = "<group>";
+		};
+		FE986FF328CB86C2A0BC672C /* AlamofireObjectMapper */ = {
+			isa = PBXGroup;
+			children = (
+				42E6F9DD3FC601C0B1A8E9B3 /* AlamofireObjectMapper.swift */,
+				4E6E305842CAAD5CD18C3A17 /* Support Files */,
+			);
+			path = AlamofireObjectMapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		13B48076802C24538AB86D60 /* Headers */ = {
+		129D456DA1C76D9DE0CF0F07 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				394DB5E279D270990F82DF1E /* Pods-PTTSearchApp-ObjectMapper-umbrella.h in Headers */,
+				680DB1BE2B0DB95A870E7725 /* Pods-PTTSearchApp-Alamofire-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7461475E67242847672D94ED /* Headers */ = {
+		1F4B8E04CFFCCEC241118E59 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51217491271819A5F69033EB /* Pods-PTTSearchApp-AlamofireObjectMapper-umbrella.h in Headers */,
+				22F9C1DF10F3C7B8CD3A0950 /* Pods-PTTSearchApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7BF7807B6F6838897E51D167 /* Headers */ = {
+		6B05793F08301DA3DF7ABC73 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07F0C496DD0475F06CB3C9A3 /* Pods-PTTSearchApp-Alamofire-umbrella.h in Headers */,
+				D0EB4DD93662F97B5071A225 /* Pods-PTTSearchApp-ObjectMapper-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7C6764235E96B9DA1DFC7FCF /* Headers */ = {
+		6B8FF0F436733CC96AF6E08C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				300BB9C2825E4AF56ADAA2EE /* Pods-PTTSearchApp-umbrella.h in Headers */,
+				206A33EADA06FDD13F037AA0 /* JDStatusBarNotification.h in Headers */,
+				AEDD57B066951A74939D7323 /* JDStatusBarStyle.h in Headers */,
+				BB7D23C04090B19522B42697 /* JDStatusBarView.h in Headers */,
+				BE626264DAC866BC298C0C64 /* Pods-PTTSearchApp-JDStatusBarNotification-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		918F45FF2103D38BDFF2F0E8 /* Headers */ = {
+		6E392980D4D6E05AC5CA3483 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57BB784A653CABC793F4A1C3 /* Pods-PTTSearchApp-Kingfisher-umbrella.h in Headers */,
+				4D3B5FAEE5143DB6670B3F57 /* Pods-PTTSearchApp-Kingfisher-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F146D9774959512D8E03538D /* Headers */ = {
+		75016F1589D86CB6FF483E5F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E97BFAE13D1C37BF39AEE015 /* Pods-PTTSearchApp-SugarRecord-umbrella.h in Headers */,
+				8AABF2BC29064BEC27FF31A8 /* Pods-PTTSearchApp-AlamofireObjectMapper-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F035540267626CF4D6BFA25 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53337CCB5EB88D6F54468CB5 /* Pods-PTTSearchApp-SugarRecord-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1E3DFF1C1A145D8E6F0C0E5F /* Pods-PTTSearchApp-ObjectMapper */ = {
+		030925585B1A6F804D5F5F00 /* Pods-PTTSearchApp-ObjectMapper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8F35B7F77B9E60C4CB7FA41E /* Build configuration list for PBXNativeTarget "Pods-PTTSearchApp-ObjectMapper" */;
+			buildConfigurationList = 9E9FAD295D944257D89D2937 /* Build configuration list for PBXNativeTarget "Pods-PTTSearchApp-ObjectMapper" */;
 			buildPhases = (
-				484AE57D7F343A53080E6D31 /* Sources */,
-				BF951C08071070F88511F039 /* Frameworks */,
-				13B48076802C24538AB86D60 /* Headers */,
+				3CE08B7993698E4FCE47BDD3 /* Sources */,
+				E8AB441D11FA13DFA56ED4F3 /* Frameworks */,
+				6B05793F08301DA3DF7ABC73 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -610,55 +694,16 @@
 			);
 			name = "Pods-PTTSearchApp-ObjectMapper";
 			productName = "Pods-PTTSearchApp-ObjectMapper";
-			productReference = 11647F1FCC9960DE467F6A06 /* ObjectMapper.framework */;
+			productReference = 2033462595908F319FB25A8B /* ObjectMapper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3E182B1C1B92FF99DE99367D /* Pods-PTTSearchApp-Kingfisher */ = {
+		038FDAD9596B808316D940DF /* Pods-PTTSearchApp-SugarRecord */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F46F086C16E1E15B57FFE04B /* Build configuration list for PBXNativeTarget "Pods-PTTSearchApp-Kingfisher" */;
+			buildConfigurationList = 573F6799B31798E515B020A9 /* Build configuration list for PBXNativeTarget "Pods-PTTSearchApp-SugarRecord" */;
 			buildPhases = (
-				F52540118366FA0667077AAF /* Sources */,
-				99AD5685AE43DE2B7FD043AE /* Frameworks */,
-				918F45FF2103D38BDFF2F0E8 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-PTTSearchApp-Kingfisher";
-			productName = "Pods-PTTSearchApp-Kingfisher";
-			productReference = 96C82B185937A9F4B8FD0216 /* Kingfisher.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		6776F245BA4BDC003A749FA7 /* Pods-PTTSearchApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C76D89A53F1CFB94A7381487 /* Build configuration list for PBXNativeTarget "Pods-PTTSearchApp" */;
-			buildPhases = (
-				5582DA8615489B4B3DEB425C /* Sources */,
-				B0596980AA52FB435A21E99E /* Frameworks */,
-				7C6764235E96B9DA1DFC7FCF /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EF7C14AA0C2A9E9FD5A8F6DF /* PBXTargetDependency */,
-				256E9F2C6E413E1955619D78 /* PBXTargetDependency */,
-				3B8BA3CFAD9AE7831E3D6530 /* PBXTargetDependency */,
-				E60BD13DCD44988497BF1445 /* PBXTargetDependency */,
-				06332121DC312B42DC40DE99 /* PBXTargetDependency */,
-			);
-			name = "Pods-PTTSearchApp";
-			productName = "Pods-PTTSearchApp";
-			productReference = ADC188BF621FB6E6F1A55BE4 /* Pods_PTTSearchApp.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		833D9D8B3C0BF8C988C8BA44 /* Pods-PTTSearchApp-SugarRecord */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 45B616480BC95ACF15E5C683 /* Build configuration list for PBXNativeTarget "Pods-PTTSearchApp-SugarRecord" */;
-			buildPhases = (
-				651CE47EE21E9D64A5E63569 /* Sources */,
-				A9970C4CF64BE154E0958917 /* Frameworks */,
-				F146D9774959512D8E03538D /* Headers */,
+				4B1E92AF1591989E351CB6B2 /* Sources */,
+				A5440B4E7A69AB338CA846BD /* Frameworks */,
+				7F035540267626CF4D6BFA25 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -666,35 +711,58 @@
 			);
 			name = "Pods-PTTSearchApp-SugarRecord";
 			productName = "Pods-PTTSearchApp-SugarRecord";
-			productReference = 4AF272067BD475D7AFB483EA /* SugarRecord.framework */;
+			productReference = 009ACAEE09485A9EA7685A7F /* SugarRecord.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E0A5EBB8A3C57A4FF6413CFC /* Pods-PTTSearchApp-AlamofireObjectMapper */ = {
+		4C7C1E51B10D0EFF6F9A5154 /* Pods-PTTSearchApp-AlamofireObjectMapper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 631CA2FBA3443D3B2A073CCF /* Build configuration list for PBXNativeTarget "Pods-PTTSearchApp-AlamofireObjectMapper" */;
+			buildConfigurationList = BB65BC6E0241C8B29C6C8FC2 /* Build configuration list for PBXNativeTarget "Pods-PTTSearchApp-AlamofireObjectMapper" */;
 			buildPhases = (
-				5C6FC8E3BA092EFB3F77CE75 /* Sources */,
-				12F231CA731D9BF9A98A4EA0 /* Frameworks */,
-				7461475E67242847672D94ED /* Headers */,
+				374A82B1C2D7CAD3ED26CA26 /* Sources */,
+				84ACBFE0F6E7B2E6FF7DA7C2 /* Frameworks */,
+				75016F1589D86CB6FF483E5F /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0CE484330125F09C260E8584 /* PBXTargetDependency */,
-				1FFD0B19A6D5C339DD9B1E7B /* PBXTargetDependency */,
+				4263BBDD3F3D96FED54CE252 /* PBXTargetDependency */,
+				0D39E7A4C2ED159ADEEA45E9 /* PBXTargetDependency */,
 			);
 			name = "Pods-PTTSearchApp-AlamofireObjectMapper";
 			productName = "Pods-PTTSearchApp-AlamofireObjectMapper";
-			productReference = 37FB5650B68799EBD1F68D9D /* AlamofireObjectMapper.framework */;
+			productReference = 5CD98006D775E6C123027C54 /* AlamofireObjectMapper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F03396EB231ED1076F986D76 /* Pods-PTTSearchApp-Alamofire */ = {
+		54808F4A37B4BDFA9D2BE00C /* Pods-PTTSearchApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0896A6FA9AA49C2BE0F77716 /* Build configuration list for PBXNativeTarget "Pods-PTTSearchApp-Alamofire" */;
+			buildConfigurationList = 533C17ADF017296B3D65D468 /* Build configuration list for PBXNativeTarget "Pods-PTTSearchApp" */;
 			buildPhases = (
-				F2B50257CBBEB3BC87CB3E26 /* Sources */,
-				A3CDA7F2C41F6D8B21C11488 /* Frameworks */,
-				7BF7807B6F6838897E51D167 /* Headers */,
+				1E75E70D5EBA750DA4B774A1 /* Sources */,
+				182C43AC5DC586C38F23DCE5 /* Frameworks */,
+				1F4B8E04CFFCCEC241118E59 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C916B14F0286C4BEF1199967 /* PBXTargetDependency */,
+				2F13B2E17EE356D676B87B2A /* PBXTargetDependency */,
+				30E3625B3D13A89C0A2FCD91 /* PBXTargetDependency */,
+				54C2357B69840326882CC8D9 /* PBXTargetDependency */,
+				E8FB7B54D4793285B8A41153 /* PBXTargetDependency */,
+				6FA969111B5A8D0FF9BFAE66 /* PBXTargetDependency */,
+			);
+			name = "Pods-PTTSearchApp";
+			productName = "Pods-PTTSearchApp";
+			productReference = 3215B0A05433741463A3EDFA /* Pods_PTTSearchApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7C7690B10664FFD47B036FB9 /* Pods-PTTSearchApp-Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E435EC665E68C2403D0746DC /* Build configuration list for PBXNativeTarget "Pods-PTTSearchApp-Alamofire" */;
+			buildPhases = (
+				CC9484E2E34C0DD62E9AB401 /* Sources */,
+				076C23C1F4DB54C814C66A13 /* Frameworks */,
+				129D456DA1C76D9DE0CF0F07 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -702,240 +770,235 @@
 			);
 			name = "Pods-PTTSearchApp-Alamofire";
 			productName = "Pods-PTTSearchApp-Alamofire";
-			productReference = A7FF4178CA6FB045CD79C271 /* Alamofire.framework */;
+			productReference = 144D5667D6C117B2F47C3BF4 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7F6002EC4E37D2F30BB90760 /* Pods-PTTSearchApp-Kingfisher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86EA866F2E177E355ACC66FC /* Build configuration list for PBXNativeTarget "Pods-PTTSearchApp-Kingfisher" */;
+			buildPhases = (
+				568F3981217545B035E449AF /* Sources */,
+				3AE66049BE6BAC89D512A18A /* Frameworks */,
+				6E392980D4D6E05AC5CA3483 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-PTTSearchApp-Kingfisher";
+			productName = "Pods-PTTSearchApp-Kingfisher";
+			productReference = BD69EF1B5D12AD664D1C7A75 /* Kingfisher.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		814A665BC8510FA51B56CB14 /* Pods-PTTSearchApp-JDStatusBarNotification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC370B42730D67CA5E16D780 /* Build configuration list for PBXNativeTarget "Pods-PTTSearchApp-JDStatusBarNotification" */;
+			buildPhases = (
+				763F12F12F36F5124622E116 /* Sources */,
+				230432E0BBFD05DF2B749C5E /* Frameworks */,
+				6B8FF0F436733CC96AF6E08C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-PTTSearchApp-JDStatusBarNotification";
+			productName = "Pods-PTTSearchApp-JDStatusBarNotification";
+			productReference = AA6F4B40D83DBDA79EB3BED3 /* JDStatusBarNotification.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		EF60EDEB8FC654A3326EAB85 /* Project object */ = {
+		F5F1207C395EF7619A3AEF02 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = 302E5EBD8AC56B0A8BC74239 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 1B522A5887F5F7DB729FCF8D /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 3924EC2E163BA9C7838F407D;
-			productRefGroup = 4CA9F6C238241592B835C207 /* Products */;
+			mainGroup = E8C4E12320C80C61EAD015C1;
+			productRefGroup = BBA0CA839C3E94AD5752E423 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6776F245BA4BDC003A749FA7 /* Pods-PTTSearchApp */,
-				F03396EB231ED1076F986D76 /* Pods-PTTSearchApp-Alamofire */,
-				E0A5EBB8A3C57A4FF6413CFC /* Pods-PTTSearchApp-AlamofireObjectMapper */,
-				3E182B1C1B92FF99DE99367D /* Pods-PTTSearchApp-Kingfisher */,
-				1E3DFF1C1A145D8E6F0C0E5F /* Pods-PTTSearchApp-ObjectMapper */,
-				833D9D8B3C0BF8C988C8BA44 /* Pods-PTTSearchApp-SugarRecord */,
+				54808F4A37B4BDFA9D2BE00C /* Pods-PTTSearchApp */,
+				7C7690B10664FFD47B036FB9 /* Pods-PTTSearchApp-Alamofire */,
+				4C7C1E51B10D0EFF6F9A5154 /* Pods-PTTSearchApp-AlamofireObjectMapper */,
+				814A665BC8510FA51B56CB14 /* Pods-PTTSearchApp-JDStatusBarNotification */,
+				7F6002EC4E37D2F30BB90760 /* Pods-PTTSearchApp-Kingfisher */,
+				030925585B1A6F804D5F5F00 /* Pods-PTTSearchApp-ObjectMapper */,
+				038FDAD9596B808316D940DF /* Pods-PTTSearchApp-SugarRecord */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		484AE57D7F343A53080E6D31 /* Sources */ = {
+		1E75E70D5EBA750DA4B774A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				378CBF26D768E859764608A5 /* CustomDateFormatTransform.swift in Sources */,
-				53F0BA3C0427DE60EFD33468 /* DateFormaterTransform.swift in Sources */,
-				D971D6E25F2A30BCCCF0E53B /* DateTransform.swift in Sources */,
-				86BB118C35535493BD0ADC51 /* EnumTransform.swift in Sources */,
-				B57CC9E0FD94FF0B5F187BE2 /* FromJSON.swift in Sources */,
-				1851C8391E3F4B2C0FE13949 /* ISO8601DateTransform.swift in Sources */,
-				ABB7EB2B35A92CC47C1580DE /* Mapper.swift in Sources */,
-				42EEB67BB71E0E433D7087A4 /* Operators.swift in Sources */,
-				6A24AB7BC743BA7479711352 /* Pods-PTTSearchApp-ObjectMapper-dummy.m in Sources */,
-				28779F23E66EBEF38DF1A53F /* ToJSON.swift in Sources */,
-				2E729848BECB52F7596A4CFA /* TransformOf.swift in Sources */,
-				8D3FF500563B5ACF6EB06D2B /* TransformType.swift in Sources */,
-				687A2DE5802D9143F5854A3A /* URLTransform.swift in Sources */,
+				799E4FF39BE4F7DDBFC3D7FD /* Pods-PTTSearchApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5582DA8615489B4B3DEB425C /* Sources */ = {
+		374A82B1C2D7CAD3ED26CA26 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				255B23A49D1135F810AE32B7 /* Pods-PTTSearchApp-dummy.m in Sources */,
+				5EEAF27CA694ABEA5A5AA25E /* AlamofireObjectMapper.swift in Sources */,
+				822B96644960A1EE09F644BE /* Pods-PTTSearchApp-AlamofireObjectMapper-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5C6FC8E3BA092EFB3F77CE75 /* Sources */ = {
+		3CE08B7993698E4FCE47BDD3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8307D98CE1A3188A505826D /* AlamofireObjectMapper.swift in Sources */,
-				1A73B5C5EDDBE26F752B59FF /* Pods-PTTSearchApp-AlamofireObjectMapper-dummy.m in Sources */,
+				B2CD8DF8EC466B4910367497 /* CustomDateFormatTransform.swift in Sources */,
+				22FE20D6C54DA3DCC704FACB /* DateFormaterTransform.swift in Sources */,
+				3DF0482C043D3A5C4D1928B2 /* DateTransform.swift in Sources */,
+				B6C996C657EC307B2B79F49B /* EnumTransform.swift in Sources */,
+				AD3329E0087B0E68F6EDD47F /* FromJSON.swift in Sources */,
+				F2DE973190BE350EF43B6B7F /* ISO8601DateTransform.swift in Sources */,
+				4B0E5F9BAD4ACCE084E450B3 /* Mapper.swift in Sources */,
+				4228F40899AD61E0397F9341 /* Operators.swift in Sources */,
+				10EC4E82F5EC406CFF25F5EA /* Pods-PTTSearchApp-ObjectMapper-dummy.m in Sources */,
+				72C756E839C96C57C5288F55 /* ToJSON.swift in Sources */,
+				D70CAE34AA8C1CBE500AA917 /* TransformOf.swift in Sources */,
+				4843C34F37C4771BAC2AD454 /* TransformType.swift in Sources */,
+				73513C9F6D0EF59D9128D9AB /* URLTransform.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		651CE47EE21E9D64A5E63569 /* Sources */ = {
+		4B1E92AF1591989E351CB6B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E876D3E402E4C833D7DA500D /* CDArray+SugarRecordResults.swift in Sources */,
-				224FC064F7974DFA98D39C01 /* DefaultCDStack.swift in Sources */,
-				F7ECCFA8FE465588DF63113C /* NSManagedObject+SugarRecord.swift in Sources */,
-				3B61CF1A32842D098403E76B /* Pods-PTTSearchApp-SugarRecord-dummy.m in Sources */,
-				753E33B8D5187AFDD2383C5E /* SugarRecord.swift in Sources */,
-				7A8B262FFB8A028AF78A32CC /* SugarRecordCDContext.swift in Sources */,
-				8CBFE31DEBAB9738D7A8EC47 /* SugarRecordContextProtocol.swift in Sources */,
-				BFE06B01699C78B18BCCAB88 /* SugarRecordFinder+FetchedResultsController.swift in Sources */,
-				B0C8947027606ED2126C5009 /* SugarRecordFinder.swift in Sources */,
-				431CBB68FEB06363CCDC13CC /* SugarRecordLogger.swift in Sources */,
-				3E05D24695ECBFF4AC21480D /* SugarRecordResults.swift in Sources */,
-				C231BEF6175412AE4669E6A4 /* SugarRecordResultsProtocol.swift in Sources */,
-				2655C8D1E97A4349A1D0C29E /* SugarRecordStackProtocol.swift in Sources */,
-				843AE9A290AA5007AC6AED16 /* iCloudCDStack.swift in Sources */,
+				66B47C6B69AC4B064A7C3D55 /* CDArray+SugarRecordResults.swift in Sources */,
+				795D2809014F4BFDAE296D82 /* DefaultCDStack.swift in Sources */,
+				99B143F058984E317A8445CB /* NSManagedObject+SugarRecord.swift in Sources */,
+				ED8484CB53BDBDE1516AD78A /* Pods-PTTSearchApp-SugarRecord-dummy.m in Sources */,
+				F4A70CD54E512CB0D172A440 /* SugarRecord.swift in Sources */,
+				666F8B697C620CFBF1DD5DBA /* SugarRecordCDContext.swift in Sources */,
+				5BB4C5BBC939AC9C9D65C9F2 /* SugarRecordContextProtocol.swift in Sources */,
+				02042ADEE8688C41EB74D7AC /* SugarRecordFinder+FetchedResultsController.swift in Sources */,
+				1BD4CD03FF5575637F6A6F7A /* SugarRecordFinder.swift in Sources */,
+				32E63A3066FF85EF550C536A /* SugarRecordLogger.swift in Sources */,
+				C6A6B0E5A068AA884ECDEBD7 /* SugarRecordResults.swift in Sources */,
+				4D747E0C2CDD675EC9661B5E /* SugarRecordResultsProtocol.swift in Sources */,
+				39424BFA422031EB2A258B8C /* SugarRecordStackProtocol.swift in Sources */,
+				7C9CFA215BA8E45CA2726549 /* iCloudCDStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F2B50257CBBEB3BC87CB3E26 /* Sources */ = {
+		568F3981217545B035E449AF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA68371096559C342F19B56F /* Alamofire.swift in Sources */,
-				6C9943F4735738AED1C43AFA /* Download.swift in Sources */,
-				E1E1AB3EE03A5D662E5A5D78 /* Manager.swift in Sources */,
-				2E3878F15EB668D08B452DA6 /* ParameterEncoding.swift in Sources */,
-				C74D38B037F116337B4F5A0D /* Pods-PTTSearchApp-Alamofire-dummy.m in Sources */,
-				B492CCF5062D8E156FCFB5DC /* Request.swift in Sources */,
-				B5497EEE0B1E3075DEF49525 /* ResponseSerialization.swift in Sources */,
-				74607025FD4A46354F2A8605 /* Upload.swift in Sources */,
-				FEC8FDF419A648B3FC4AAD70 /* Validation.swift in Sources */,
+				32FF315140A1112F6F1BF48B /* ImageCache.swift in Sources */,
+				B49D2A2514F9E534DAC97393 /* ImageDownloader.swift in Sources */,
+				8D7CD6BB6BE08632154E47C1 /* KingfisherManager.swift in Sources */,
+				194039DB7193DEF484D8FF4D /* KingfisherOptions.swift in Sources */,
+				571E6C04487A36E15ABD4F30 /* KingfisherOptionsInfo.swift in Sources */,
+				0C454E7536A0076387576F60 /* Pods-PTTSearchApp-Kingfisher-dummy.m in Sources */,
+				0C6D46CB382EE9094F4A3DB7 /* String+MD5.swift in Sources */,
+				AC1E8E197122039B29D7A8FE /* UIButton+Kingfisher.swift in Sources */,
+				5F551E6E068D6B6BFA689025 /* UIImage+Decode.swift in Sources */,
+				2B2C3CA4983E40E5AB844B3E /* UIImageView+Kingfisher.swift in Sources */,
+				AD9EA7162B608CEBB7FBAE7C /* WKInterfaceImage+Kingfisher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F52540118366FA0667077AAF /* Sources */ = {
+		763F12F12F36F5124622E116 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F508F51A707D0D9170FC8AAC /* ImageCache.swift in Sources */,
-				43F4046580AA9FB3AC04C416 /* ImageDownloader.swift in Sources */,
-				B23CA9AFA4CC55C0AB38DB3B /* KingfisherManager.swift in Sources */,
-				23C81CBC817BC2A3B311C0E4 /* KingfisherOptions.swift in Sources */,
-				7B4DFC0394A908E35EB19569 /* KingfisherOptionsInfo.swift in Sources */,
-				21076CC512959FD863B00267 /* Pods-PTTSearchApp-Kingfisher-dummy.m in Sources */,
-				6E57C312AC17C734FD9D9697 /* String+MD5.swift in Sources */,
-				5E36E787DFAA0A23C7ADDA65 /* UIButton+Kingfisher.swift in Sources */,
-				41485E8C86F9C10633BE4205 /* UIImage+Decode.swift in Sources */,
-				C6C361F4530891FC0BD71D10 /* UIImageView+Kingfisher.swift in Sources */,
-				9456C16208A148D2109D7D1D /* WKInterfaceImage+Kingfisher.swift in Sources */,
+				14A11F24CFB59031CB6A860E /* JDStatusBarNotification.m in Sources */,
+				9FF758A9F0887183A7861BF3 /* JDStatusBarStyle.m in Sources */,
+				4E4E893B300A4132005164CE /* JDStatusBarView.m in Sources */,
+				F0C2425A7BBA1C6995995788 /* Pods-PTTSearchApp-JDStatusBarNotification-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC9484E2E34C0DD62E9AB401 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC844FDDF8694B7CD9774ABE /* Alamofire.swift in Sources */,
+				9EC1F2E1118E303FB8A005F4 /* Download.swift in Sources */,
+				124B5E1F608F74AC81F407F9 /* Manager.swift in Sources */,
+				196BC5DE5DCBFE5940AB263D /* ParameterEncoding.swift in Sources */,
+				8105733DC78F990837E0FAB1 /* Pods-PTTSearchApp-Alamofire-dummy.m in Sources */,
+				6E89DC6E9B11E1F6003536E3 /* Request.swift in Sources */,
+				C42BF8136AB3ABE68E98DF89 /* ResponseSerialization.swift in Sources */,
+				558132A99BA910F51C10BC28 /* Upload.swift in Sources */,
+				3B2A853F39578BD14A9F5617 /* Validation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		06332121DC312B42DC40DE99 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-PTTSearchApp-SugarRecord";
-			target = 833D9D8B3C0BF8C988C8BA44 /* Pods-PTTSearchApp-SugarRecord */;
-			targetProxy = BE64080F271FB722EB92F9D5 /* PBXContainerItemProxy */;
-		};
-		0CE484330125F09C260E8584 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-PTTSearchApp-Alamofire";
-			target = F03396EB231ED1076F986D76 /* Pods-PTTSearchApp-Alamofire */;
-			targetProxy = 77D7860320B1FE33B365E87E /* PBXContainerItemProxy */;
-		};
-		1FFD0B19A6D5C339DD9B1E7B /* PBXTargetDependency */ = {
+		0D39E7A4C2ED159ADEEA45E9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-PTTSearchApp-ObjectMapper";
-			target = 1E3DFF1C1A145D8E6F0C0E5F /* Pods-PTTSearchApp-ObjectMapper */;
-			targetProxy = 4E0397C0D18B33368855B593 /* PBXContainerItemProxy */;
+			target = 030925585B1A6F804D5F5F00 /* Pods-PTTSearchApp-ObjectMapper */;
+			targetProxy = 5F5499CD7A57BDDA60C7C077 /* PBXContainerItemProxy */;
 		};
-		256E9F2C6E413E1955619D78 /* PBXTargetDependency */ = {
+		2F13B2E17EE356D676B87B2A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-PTTSearchApp-AlamofireObjectMapper";
-			target = E0A5EBB8A3C57A4FF6413CFC /* Pods-PTTSearchApp-AlamofireObjectMapper */;
-			targetProxy = 5CB97F8FDE381D4F51003B37 /* PBXContainerItemProxy */;
+			target = 4C7C1E51B10D0EFF6F9A5154 /* Pods-PTTSearchApp-AlamofireObjectMapper */;
+			targetProxy = 20897D7F825A78259E2AD34B /* PBXContainerItemProxy */;
 		};
-		3B8BA3CFAD9AE7831E3D6530 /* PBXTargetDependency */ = {
+		30E3625B3D13A89C0A2FCD91 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-PTTSearchApp-Kingfisher";
-			target = 3E182B1C1B92FF99DE99367D /* Pods-PTTSearchApp-Kingfisher */;
-			targetProxy = B1AC692571AB662ED8B017DB /* PBXContainerItemProxy */;
+			name = "Pods-PTTSearchApp-JDStatusBarNotification";
+			target = 814A665BC8510FA51B56CB14 /* Pods-PTTSearchApp-JDStatusBarNotification */;
+			targetProxy = 163C90735DE235FCEB263F98 /* PBXContainerItemProxy */;
 		};
-		E60BD13DCD44988497BF1445 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-PTTSearchApp-ObjectMapper";
-			target = 1E3DFF1C1A145D8E6F0C0E5F /* Pods-PTTSearchApp-ObjectMapper */;
-			targetProxy = 1524E7D604D4CB4EA7D9C886 /* PBXContainerItemProxy */;
-		};
-		EF7C14AA0C2A9E9FD5A8F6DF /* PBXTargetDependency */ = {
+		4263BBDD3F3D96FED54CE252 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-PTTSearchApp-Alamofire";
-			target = F03396EB231ED1076F986D76 /* Pods-PTTSearchApp-Alamofire */;
-			targetProxy = 0629F640D41677F47818A1FB /* PBXContainerItemProxy */;
+			target = 7C7690B10664FFD47B036FB9 /* Pods-PTTSearchApp-Alamofire */;
+			targetProxy = EE5E2E62755028C703C5B631 /* PBXContainerItemProxy */;
+		};
+		54C2357B69840326882CC8D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PTTSearchApp-Kingfisher";
+			target = 7F6002EC4E37D2F30BB90760 /* Pods-PTTSearchApp-Kingfisher */;
+			targetProxy = 8CBBA8F15B57F8BF5DD7B55F /* PBXContainerItemProxy */;
+		};
+		6FA969111B5A8D0FF9BFAE66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PTTSearchApp-SugarRecord";
+			target = 038FDAD9596B808316D940DF /* Pods-PTTSearchApp-SugarRecord */;
+			targetProxy = 80A98A2EFF300C9BB329449A /* PBXContainerItemProxy */;
+		};
+		C916B14F0286C4BEF1199967 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PTTSearchApp-Alamofire";
+			target = 7C7690B10664FFD47B036FB9 /* Pods-PTTSearchApp-Alamofire */;
+			targetProxy = 18868C1B14422687FC9EB3E2 /* PBXContainerItemProxy */;
+		};
+		E8FB7B54D4793285B8A41153 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PTTSearchApp-ObjectMapper";
+			target = 030925585B1A6F804D5F5F00 /* Pods-PTTSearchApp-ObjectMapper */;
+			targetProxy = 2C13B87FB5B3AC61DF436CE5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0A2361063BFECA732971AB5B /* Debug */ = {
+		0B95F667DAE10BF9978B2DFC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 41D6037B9299974FE1F2B04F /* Pods-PTTSearchApp-AlamofireObjectMapper-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-PTTSearchApp-AlamofireObjectMapper/Pods-PTTSearchApp-AlamofireObjectMapper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-PTTSearchApp-AlamofireObjectMapper/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-PTTSearchApp-AlamofireObjectMapper/Pods-PTTSearchApp-AlamofireObjectMapper.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = AlamofireObjectMapper;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		32D4CEFFCAD41CA6A8A4B33C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6D7E683ABC68A20B41815DE /* Pods-PTTSearchApp.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PTTSearchApp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-PTTSearchApp/Pods-PTTSearchApp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_PTTSearchApp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		42306131224C9439BB47074E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E4C3154E5CC6CE168979BCC /* Pods-PTTSearchApp-ObjectMapper-Private.xcconfig */;
+			baseConfigurationReference = 2D3BD34504F6ECD76709F984 /* Pods-PTTSearchApp-ObjectMapper-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -960,7 +1023,34 @@
 			};
 			name = Release;
 		};
-		52590F64A851A94002CC093D /* Release */ = {
+		1EE6563EADD86F6DA6C9A3D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0C3AE664B61D895BBADA53F /* Pods-PTTSearchApp-Alamofire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PTTSearchApp-Alamofire/Pods-PTTSearchApp-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-PTTSearchApp-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-PTTSearchApp-Alamofire/Pods-PTTSearchApp-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		25E380980984277F5D3C28D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -994,9 +1084,9 @@
 			};
 			name = Release;
 		};
-		64AEFCE300E7357AB041689E /* Release */ = {
+		36E328A8E52C101605943BC6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 41D6037B9299974FE1F2B04F /* Pods-PTTSearchApp-AlamofireObjectMapper-Private.xcconfig */;
+			baseConfigurationReference = 333C468237B7698792BF7B92 /* Pods-PTTSearchApp-AlamofireObjectMapper-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1021,119 +1111,9 @@
 			};
 			name = Release;
 		};
-		66F6F4B138DB31CEE8955EBE /* Debug */ = {
+		3AA026CFFF3BB1B7708D6A01 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA7D80ACCF5A667CDCB6993F /* Pods-PTTSearchApp-SugarRecord-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-PTTSearchApp-SugarRecord/Pods-PTTSearchApp-SugarRecord-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-PTTSearchApp-SugarRecord/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-PTTSearchApp-SugarRecord/Pods-PTTSearchApp-SugarRecord.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SugarRecord;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6CB9451EC64272E7EC3A3E3F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7D7D2DFC06506B4AC31420F /* Pods-PTTSearchApp-Kingfisher-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-PTTSearchApp-Kingfisher/Pods-PTTSearchApp-Kingfisher-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-PTTSearchApp-Kingfisher/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-PTTSearchApp-Kingfisher/Pods-PTTSearchApp-Kingfisher.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Kingfisher;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7D3E76D47BBA0967A5CC9BBB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7D7D2DFC06506B4AC31420F /* Pods-PTTSearchApp-Kingfisher-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-PTTSearchApp-Kingfisher/Pods-PTTSearchApp-Kingfisher-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-PTTSearchApp-Kingfisher/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-PTTSearchApp-Kingfisher/Pods-PTTSearchApp-Kingfisher.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Kingfisher;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8B045C4DFA79CEBB80F2D7D8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA7D80ACCF5A667CDCB6993F /* Pods-PTTSearchApp-SugarRecord-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-PTTSearchApp-SugarRecord/Pods-PTTSearchApp-SugarRecord-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-PTTSearchApp-SugarRecord/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-PTTSearchApp-SugarRecord/Pods-PTTSearchApp-SugarRecord.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SugarRecord;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9EC92F23A9FE992F7D5D6862 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE54E694FC89C9C8EC472C1C /* Pods-PTTSearchApp-Alamofire-Private.xcconfig */;
+			baseConfigurationReference = A0C3AE664B61D895BBADA53F /* Pods-PTTSearchApp-Alamofire-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1159,9 +1139,9 @@
 			};
 			name = Debug;
 		};
-		B68A35CC789A669A85836C41 /* Release */ = {
+		433131AC75B92615CB9BD1D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE54E694FC89C9C8EC472C1C /* Pods-PTTSearchApp-Alamofire-Private.xcconfig */;
+			baseConfigurationReference = 333C468237B7698792BF7B92 /* Pods-PTTSearchApp-AlamofireObjectMapper-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1170,25 +1150,26 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-PTTSearchApp-Alamofire/Pods-PTTSearchApp-Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-PTTSearchApp-Alamofire/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PTTSearchApp-AlamofireObjectMapper/Pods-PTTSearchApp-AlamofireObjectMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-PTTSearchApp-AlamofireObjectMapper/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-PTTSearchApp-Alamofire/Pods-PTTSearchApp-Alamofire.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Alamofire;
+				MODULEMAP_FILE = "Target Support Files/Pods-PTTSearchApp-AlamofireObjectMapper/Pods-PTTSearchApp-AlamofireObjectMapper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AlamofireObjectMapper;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		BE34D475157858DDB0FA8BC6 /* Debug */ = {
+		6331FA9DD1AE54EFF4198877 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83F3F135726CC310800481D0 /* Pods-PTTSearchApp.debug.xcconfig */;
+			baseConfigurationReference = AD1B24E6176AC9032F967684 /* Pods-PTTSearchApp.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1202,49 +1183,20 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Pods-PTTSearchApp/Pods-PTTSearchApp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = Pods_PTTSearchApp;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		C909D47E2DFB87370CD65204 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E4C3154E5CC6CE168979BCC /* Pods-PTTSearchApp-ObjectMapper-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-PTTSearchApp-ObjectMapper/Pods-PTTSearchApp-ObjectMapper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-PTTSearchApp-ObjectMapper/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-PTTSearchApp-ObjectMapper/Pods-PTTSearchApp-ObjectMapper.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = ObjectMapper;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D4A18D762E8B4E2FD762E560 /* Debug */ = {
+		6F88F63E6D1E0504B829AD99 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1283,73 +1235,304 @@
 			};
 			name = Debug;
 		};
+		71057853C5173EDDF51098A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A40A9E9A7CBB9EF1912B3A80 /* Pods-PTTSearchApp-Kingfisher-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PTTSearchApp-Kingfisher/Pods-PTTSearchApp-Kingfisher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-PTTSearchApp-Kingfisher/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-PTTSearchApp-Kingfisher/Pods-PTTSearchApp-Kingfisher.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Kingfisher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7109F1D5680565A83D844922 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9379443920466DC1936208D2 /* Pods-PTTSearchApp-JDStatusBarNotification-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PTTSearchApp-JDStatusBarNotification/Pods-PTTSearchApp-JDStatusBarNotification-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-PTTSearchApp-JDStatusBarNotification/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-PTTSearchApp-JDStatusBarNotification/Pods-PTTSearchApp-JDStatusBarNotification.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JDStatusBarNotification;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8279B0B52AFA09F62D7BE537 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05E0B4B241B0292FAD0B4AB7 /* Pods-PTTSearchApp-SugarRecord-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PTTSearchApp-SugarRecord/Pods-PTTSearchApp-SugarRecord-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-PTTSearchApp-SugarRecord/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-PTTSearchApp-SugarRecord/Pods-PTTSearchApp-SugarRecord.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SugarRecord;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B85DC79EEA7B9DF6AADA3B85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D3BD34504F6ECD76709F984 /* Pods-PTTSearchApp-ObjectMapper-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PTTSearchApp-ObjectMapper/Pods-PTTSearchApp-ObjectMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-PTTSearchApp-ObjectMapper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-PTTSearchApp-ObjectMapper/Pods-PTTSearchApp-ObjectMapper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ObjectMapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CB1EC6B93847AE9EA56B1388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA868D49A33CAF64D8ABA67A /* Pods-PTTSearchApp.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PTTSearchApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-PTTSearchApp/Pods-PTTSearchApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_PTTSearchApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CBBA824D071AC076FFCD24EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9379443920466DC1936208D2 /* Pods-PTTSearchApp-JDStatusBarNotification-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PTTSearchApp-JDStatusBarNotification/Pods-PTTSearchApp-JDStatusBarNotification-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-PTTSearchApp-JDStatusBarNotification/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-PTTSearchApp-JDStatusBarNotification/Pods-PTTSearchApp-JDStatusBarNotification.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = JDStatusBarNotification;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DBE20727634F251AB315C8C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05E0B4B241B0292FAD0B4AB7 /* Pods-PTTSearchApp-SugarRecord-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PTTSearchApp-SugarRecord/Pods-PTTSearchApp-SugarRecord-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-PTTSearchApp-SugarRecord/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-PTTSearchApp-SugarRecord/Pods-PTTSearchApp-SugarRecord.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SugarRecord;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E3843A2FB6490940E053DC9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A40A9E9A7CBB9EF1912B3A80 /* Pods-PTTSearchApp-Kingfisher-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PTTSearchApp-Kingfisher/Pods-PTTSearchApp-Kingfisher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-PTTSearchApp-Kingfisher/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-PTTSearchApp-Kingfisher/Pods-PTTSearchApp-Kingfisher.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Kingfisher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0896A6FA9AA49C2BE0F77716 /* Build configuration list for PBXNativeTarget "Pods-PTTSearchApp-Alamofire" */ = {
+		1B522A5887F5F7DB729FCF8D /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9EC92F23A9FE992F7D5D6862 /* Debug */,
-				B68A35CC789A669A85836C41 /* Release */,
+				6F88F63E6D1E0504B829AD99 /* Debug */,
+				25E380980984277F5D3C28D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		302E5EBD8AC56B0A8BC74239 /* Build configuration list for PBXProject "Pods" */ = {
+		533C17ADF017296B3D65D468 /* Build configuration list for PBXNativeTarget "Pods-PTTSearchApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D4A18D762E8B4E2FD762E560 /* Debug */,
-				52590F64A851A94002CC093D /* Release */,
+				CB1EC6B93847AE9EA56B1388 /* Debug */,
+				6331FA9DD1AE54EFF4198877 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		45B616480BC95ACF15E5C683 /* Build configuration list for PBXNativeTarget "Pods-PTTSearchApp-SugarRecord" */ = {
+		573F6799B31798E515B020A9 /* Build configuration list for PBXNativeTarget "Pods-PTTSearchApp-SugarRecord" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				66F6F4B138DB31CEE8955EBE /* Debug */,
-				8B045C4DFA79CEBB80F2D7D8 /* Release */,
+				DBE20727634F251AB315C8C7 /* Debug */,
+				8279B0B52AFA09F62D7BE537 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		631CA2FBA3443D3B2A073CCF /* Build configuration list for PBXNativeTarget "Pods-PTTSearchApp-AlamofireObjectMapper" */ = {
+		86EA866F2E177E355ACC66FC /* Build configuration list for PBXNativeTarget "Pods-PTTSearchApp-Kingfisher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0A2361063BFECA732971AB5B /* Debug */,
-				64AEFCE300E7357AB041689E /* Release */,
+				E3843A2FB6490940E053DC9F /* Debug */,
+				71057853C5173EDDF51098A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8F35B7F77B9E60C4CB7FA41E /* Build configuration list for PBXNativeTarget "Pods-PTTSearchApp-ObjectMapper" */ = {
+		9E9FAD295D944257D89D2937 /* Build configuration list for PBXNativeTarget "Pods-PTTSearchApp-ObjectMapper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C909D47E2DFB87370CD65204 /* Debug */,
-				42306131224C9439BB47074E /* Release */,
+				B85DC79EEA7B9DF6AADA3B85 /* Debug */,
+				0B95F667DAE10BF9978B2DFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C76D89A53F1CFB94A7381487 /* Build configuration list for PBXNativeTarget "Pods-PTTSearchApp" */ = {
+		BB65BC6E0241C8B29C6C8FC2 /* Build configuration list for PBXNativeTarget "Pods-PTTSearchApp-AlamofireObjectMapper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BE34D475157858DDB0FA8BC6 /* Debug */,
-				32D4CEFFCAD41CA6A8A4B33C /* Release */,
+				433131AC75B92615CB9BD1D6 /* Debug */,
+				36E328A8E52C101605943BC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F46F086C16E1E15B57FFE04B /* Build configuration list for PBXNativeTarget "Pods-PTTSearchApp-Kingfisher" */ = {
+		E435EC665E68C2403D0746DC /* Build configuration list for PBXNativeTarget "Pods-PTTSearchApp-Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6CB9451EC64272E7EC3A3E3F /* Debug */,
-				7D3E76D47BBA0967A5CC9BBB /* Release */,
+				3AA026CFFF3BB1B7708D6A01 /* Debug */,
+				1EE6563EADD86F6DA6C9A3D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC370B42730D67CA5E16D780 /* Build configuration list for PBXNativeTarget "Pods-PTTSearchApp-JDStatusBarNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBBA824D071AC076FFCD24EB /* Debug */,
+				7109F1D5680565A83D844922 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = EF60EDEB8FC654A3326EAB85 /* Project object */;
+	rootObject = F5F1207C395EF7619A3AEF02 /* Project object */;
 }

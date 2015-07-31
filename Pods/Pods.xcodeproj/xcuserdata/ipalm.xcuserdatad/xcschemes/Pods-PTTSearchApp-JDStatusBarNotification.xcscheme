@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4C7C1E51B10D0EFF6F9A5154"
-               BuildableName = "AlamofireObjectMapper.framework"
-               BlueprintName = "Pods-PTTSearchApp-AlamofireObjectMapper"
+               BlueprintIdentifier = "814A665BC8510FA51B56CB14"
+               BuildableName = "JDStatusBarNotification.framework"
+               BlueprintName = "Pods-PTTSearchApp-JDStatusBarNotification"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

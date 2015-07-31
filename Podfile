@@ -7,6 +7,7 @@ pod 'Alamofire', '~> 1.2'
 pod 'AlamofireObjectMapper', '~> 0.5'
 pod 'SugarRecord/CoreData', :git => 'https://github.com/SugarRecord/SugarRecord.git'
 pod 'Kingfisher', '~> 1.4'
+pod 'JDStatusBarNotification'
 end
 
 target 'PTTSearchAppTests' do

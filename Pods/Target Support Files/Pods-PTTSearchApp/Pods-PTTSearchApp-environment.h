@@ -18,6 +18,12 @@
 #define COCOAPODS_VERSION_MINOR_AlamofireObjectMapper 5
 #define COCOAPODS_VERSION_PATCH_AlamofireObjectMapper 0
 
+// JDStatusBarNotification
+#define COCOAPODS_POD_AVAILABLE_JDStatusBarNotification
+#define COCOAPODS_VERSION_MAJOR_JDStatusBarNotification 1
+#define COCOAPODS_VERSION_MINOR_JDStatusBarNotification 5
+#define COCOAPODS_VERSION_PATCH_JDStatusBarNotification 2
+
 // Kingfisher
 #define COCOAPODS_POD_AVAILABLE_Kingfisher
 #define COCOAPODS_VERSION_MAJOR_Kingfisher 1

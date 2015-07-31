@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-PTTSearchApp-JDStatusBarNotification.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-PTTSearchApp-Kingfisher.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,32 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1E3DFF1C1A145D8E6F0C0E5F</key>
+		<key>030925585B1A6F804D5F5F00</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3E182B1C1B92FF99DE99367D</key>
+		<key>038FDAD9596B808316D940DF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6776F245BA4BDC003A749FA7</key>
+		<key>4C7C1E51B10D0EFF6F9A5154</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>833D9D8B3C0BF8C988C8BA44</key>
+		<key>54808F4A37B4BDFA9D2BE00C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E0A5EBB8A3C57A4FF6413CFC</key>
+		<key>7C7690B10664FFD47B036FB9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F03396EB231ED1076F986D76</key>
+		<key>7F6002EC4E37D2F30BB90760</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>814A665BC8510FA51B56CB14</key>
 		<dict>
 			<key>primary</key>
 			<true/>

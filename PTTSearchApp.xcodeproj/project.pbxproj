@@ -21,6 +21,8 @@
 		ACC2EBAA1B5AB0CB00F92347 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2EBA91B5AB0CB00F92347 /* SearchResult.swift */; };
 		ACD2FF051B5B751E006DF40D /* HintTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD2FF041B5B751E006DF40D /* HintTableViewCell.swift */; };
 		ACD2FF071B5B752C006DF40D /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD2FF061B5B752C006DF40D /* ProfileTableViewCell.swift */; };
+		ACDC9AF81B6B556B00C7F4D1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC9AF71B6B556B00C7F4D1 /* ProfileViewController.swift */; };
+		ACDC9AFA1B6B57E600C7F4D1 /* TitlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC9AF91B6B57E600C7F4D1 /* TitlesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		ACC2EBA91B5AB0CB00F92347 /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		ACD2FF041B5B751E006DF40D /* HintTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HintTableViewCell.swift; sourceTree = "<group>"; };
 		ACD2FF061B5B752C006DF40D /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		ACDC9AF71B6B556B00C7F4D1 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		ACDC9AF91B6B57E600C7F4D1 /* TitlesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitlesViewController.swift; sourceTree = "<group>"; };
 		B2534E6993C4AE2F5DF89BD4 /* Pods-PTTSearchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTTSearchApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PTTSearchApp/Pods-PTTSearchApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +110,7 @@
 		ACC2EB791B5A9E8500F92347 /* PTTSearchApp */ = {
 			isa = PBXGroup;
 			children = (
+				ACDC9AF61B6B554400C7F4D1 /* DetailView */,
 				ACC2EB7C1B5A9E8500F92347 /* AppDelegate.swift */,
 				ACD2FF031B5B74F0006DF40D /* SearchPage */,
 				ACC2EB831B5A9E8500F92347 /* Main.storyboard */,
@@ -154,6 +159,15 @@
 				ACD2FF061B5B752C006DF40D /* ProfileTableViewCell.swift */,
 			);
 			name = SearchPage;
+			sourceTree = "<group>";
+		};
+		ACDC9AF61B6B554400C7F4D1 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				ACDC9AF71B6B556B00C7F4D1 /* ProfileViewController.swift */,
+				ACDC9AF91B6B57E600C7F4D1 /* TitlesViewController.swift */,
+			);
+			name = DetailView;
 			sourceTree = "<group>";
 		};
 		C63390AEF91FA691F8CD396E /* Pods */ = {
@@ -318,6 +332,7 @@
 			files = (
 				ACD2FF051B5B751E006DF40D /* HintTableViewCell.swift in Sources */,
 				ACC2EBAA1B5AB0CB00F92347 /* SearchResult.swift in Sources */,
+				ACDC9AF81B6B556B00C7F4D1 /* ProfileViewController.swift in Sources */,
 				ACC2EBA81B5AB09300F92347 /* SearchHistory.swift in Sources */,
 				ACD2FF071B5B752C006DF40D /* ProfileTableViewCell.swift in Sources */,
 				ACC2EB821B5A9E8500F92347 /* SearchViewController.swift in Sources */,
@@ -325,6 +340,7 @@
 				ACC2EB801B5A9E8500F92347 /* PTTSearchApp.xcdatamodeld in Sources */,
 				ACC2EB7D1B5A9E8500F92347 /* AppDelegate.swift in Sources */,
 				ACC2EBA61B5AAF6D00F92347 /* JSONMappable.swift in Sources */,
+				ACDC9AFA1B6B57E600C7F4D1 /* TitlesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

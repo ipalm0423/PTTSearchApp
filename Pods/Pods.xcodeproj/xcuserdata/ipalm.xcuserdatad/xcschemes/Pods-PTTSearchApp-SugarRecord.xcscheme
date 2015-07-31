@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "833D9D8B3C0BF8C988C8BA44"
+               BlueprintIdentifier = "038FDAD9596B808316D940DF"
                BuildableName = "SugarRecord.framework"
                BlueprintName = "Pods-PTTSearchApp-SugarRecord"
                ReferencedContainer = "container:Pods.xcodeproj">

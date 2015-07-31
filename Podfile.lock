@@ -3,6 +3,7 @@ PODS:
   - AlamofireObjectMapper (0.5):
     - Alamofire (~> 1.2)
     - ObjectMapper (~> 0.10)
+  - JDStatusBarNotification (1.5.2)
   - Kingfisher (1.4.2)
   - ObjectMapper (0.12)
   - SugarRecord/Core (1.0.7)
@@ -12,6 +13,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 1.2)
   - AlamofireObjectMapper (~> 0.5)
+  - JDStatusBarNotification
   - Kingfisher (~> 1.4)
   - SugarRecord/CoreData (from `https://github.com/SugarRecord/SugarRecord.git`)
 
@@ -27,6 +29,7 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: 5550bf0b575ed1a4bf9be572f9463e1015cc169e
   AlamofireObjectMapper: 898d4ef5c6fc076331406f43702dc06d2c9c7513
+  JDStatusBarNotification: a36d09ccbb047217572b074a61e7ca10dddc5f0a
   Kingfisher: 4446782a827abbe2e6048a1fa741924a10e6ad7c
   ObjectMapper: ef4a369cbab75546029ceb7e8155772b5f8e8841
   SugarRecord: 9d55ce666e8161eacdc95c996173eb53eb6d3683
