@@ -207,6 +207,8 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
                         println("find profile: " + resultProfileAccount)
                         //有結果
                         destinationVC.tempProfile = response
+                        //test
+                        println(response?.lastOnline)
                     }else {
                         //無結果
                         JDStatusBarNotification.showWithStatus("無結果", dismissAfter: 1.0, styleName: JDStatusBarStyleWarning)

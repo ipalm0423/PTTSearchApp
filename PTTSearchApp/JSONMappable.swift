@@ -28,19 +28,100 @@ class mapHint: Mappable {
     }
 }
 
+class mapContent: Mappable {
+    var uid: String?
+    var type: String?
+    var subType: String?
+    var title: String?
+    var content: String?
+    var account: String?
+    var time: NSDate?
+    var floor: String?
+    var childfloor: String?
+    
+    
+    init() {}
+    
+    required init?(_ map: Map) {
+        mapping(map)
+    }
+    
+    func mapping(map: Map) {
+        uid <- map["uid"]
+        type <- map["type"]
+        subType <- map["subType"]
+        title <- map["title"]
+        content <- map["content"]
+        account <- map["account"]
+        time <- (map["time"], DateTransform())
+        floor <- map["floor"]
+        childfloor <- map["childfloor"]
+    }
+}
+
+class mapTitle: Mappable {
+    var uid: String?
+    var url: String?
+    var ip: String?
+    var account: String?
+    var name: String?
+    var title: String?
+    var subTitle: String?
+    var board: String?
+    var time: NSDate?
+    var totalPush: String?
+    var icon: String?
+    var politic: String?
+    var motheruid: String?
+    var childuid: [String]?
+    var tag: [String]?
+        
+    init() {}
+        
+    required init?(_ map: Map) {
+            mapping(map)
+        }
+        
+    func mapping(map: Map) {
+        uid <- map["uid"]
+        url <- map["url"]
+        ip <- map["ip"]
+        account <- map["account"]
+        name <- map["name"]
+        title <- map["title"]
+        subTitle <- map["subTitle"]
+        board <- map["board"]
+        time <- (map["time"], DateTransform())
+        totalPush <- map["totalPush"]
+        icon <- map["icon"]
+        politic <- map["politic"]
+        motheruid <- map["motheruid"]
+        childuid <- map["childuid"]
+        tag <- map["tag"]
+        
+        
+        }
+}
+
 class mapProfile: Mappable {
     var uid: String?
     var account: String?
     var name: String?
     var icon: String?
     var score: String?
-    var lastOnline: String?
+    var lastOnline: NSDate?
+    var ip: String?
     var osArticle: String?
     var ofArticle: String?
     var totalArticle: String?
+    var totalPush: String?
     var follower: String?
     var redPush: String?
     var greenPush: String?
+    var pushList: [mapContent]?
+    var articleList: [mapTitle]?
+    var commentList: [mapContent]?
+    
     
     init() {}
     
@@ -54,14 +135,18 @@ class mapProfile: Mappable {
         name <- map["name"]
         icon <- map["icon"]
         score <- map["score"]
-        lastOnline <- map["lastOnline"]
+        lastOnline <- (map["lastOnline"], DateTransform())
+        ip <- map["ip"]
         osArticle <- map["osArticle"]
         ofArticle <- map["ofArticle"]
         totalArticle <- map["totalArticle"]
+        totalPush <- map["totalPush"]
         follower <- map["follower"]
         redPush <- map["redPush"]
         greenPush <- map["greenPush"]
-        
+        pushList <- map["pushList"]
+        articleList <- map["articleList"]
+        commentList <- map["commentList"]
         
     }
 }
