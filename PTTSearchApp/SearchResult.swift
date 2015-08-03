@@ -13,23 +13,35 @@ class SearchResult: NSManagedObject{
     //basic
     @NSManaged var uid:String!
     @NSManaged var scope:String!
-    @NSManaged var account:String!
+    @NSManaged var account:String?
     @NSManaged var name:String?
+    @NSManaged var ip:String?
+    @NSManaged var icon:String?
+    @NSManaged var saveTime:NSDate!
     
-    //article
+    //title
     @NSManaged var title:String?
-    @NSManaged var postTime:NSDate?
-    @NSManaged var picture:NSData?
+    @NSManaged var subTitle:String?
+    @NSManaged var board:String?
+    @NSManaged var url:String?
+    @NSManaged var pushes:String?
+    @NSManaged var politic:String?
+    @NSManaged var motheruid:String?
+    @NSManaged var childuid:NSArray?
+    @NSManaged var tag:NSArray?
+    @NSManaged var time:NSDate?
     
     //profile
-    @NSManaged var score:NSNumber?
+    @NSManaged var score:String?
     @NSManaged var lastOnline:NSDate?
-    @NSManaged var osArticle:NSNumber?
-    @NSManaged var ofArticle:NSNumber?
-    @NSManaged var totalArticle:NSNumber?
-    @NSManaged var follower:NSNumber?
-    @NSManaged var greenPush:NSNumber?
-    @NSManaged var redPush:NSNumber?
+    @NSManaged var osArticle:String?
+    @NSManaged var ofArticle:String?
+    @NSManaged var totalArticle:String?
+    @NSManaged var totalPush:String?
+    @NSManaged var onlineCount:String?
+    @NSManaged var follower:String?
+    @NSManaged var greenPush:String?
+    @NSManaged var redPush:String?
     
     
 }

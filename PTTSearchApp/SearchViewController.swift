@@ -20,7 +20,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var tableView: UITableView!
     
     var hints = [String]()
-    var histories = [SearchResult]()
+    var histories = [SearchHistroy]()
     var filtedHints = [String]()
     var searchController = UISearchController(searchResultsController: nil)
     
@@ -72,16 +72,13 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = self.tableView.dequeueReusableCellWithIdentifier("HintCell") as! HintTableViewCell
         if self.searchController.active {
-            let cell = self.tableView.dequeueReusableCellWithIdentifier("HintCell") as! HintTableViewCell
             cell.MainLabel.text = self.filtedHints[indexPath.row]
-            return cell
         }else {
-            let cell = self.tableView.dequeueReusableCellWithIdentifier("ProfileCell") as! ProfileTableViewCell
-            cell.MainLabel.text = self.histories[indexPath.row].name
-            return cell
+            cell.MainLabel.text = self.histories[indexPath.row].hint
         }
-        
+        return cell
         
         
     }
@@ -152,14 +149,27 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     
 //core data
     func loadHistoryHint() {
-        let loadhints = SearchHistroy.sorted(by: "searchTime", ascending: false).find()
+        let loadhints = SearchHistroy.sorted(by: "searchTime", ascending: false).firsts(30).find()
         println("load history hints: ")
         print(loadhints.count)
+        self.histories.removeAll(keepCapacity: false)
         for var i = 0; i < loadhints.count; i++ {
             if let hint = loadhints.objectAtIndex(UInt(i)) as? SearchHistroy {
                 self.addHintInArray(hint.hint)
+                self.histories += [hint]
             }
         }
+        self.tableView.reloadData()
+    }
+    
+    func saveHistoryHint(hint: String) {
+        if let history:SearchHistroy = SearchHistroy.create() as? SearchHistroy {
+            history.hint = hint
+            history.searchTime = NSDate()
+            history.scope = self.searchScope()
+            history.save()
+        }
+        self.loadHistoryHint()
     }
     
     
@@ -167,21 +177,19 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
 //navigation
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         //save search history to core data
-        if let hint:SearchHistroy = SearchHistroy.create() as? SearchHistroy {
-            hint.hint = searchBar.text
-            hint.searchTime = NSDate()
-            hint.save()
-        }
+        self.saveHistoryHint(searchBar.text)
         self.addHintInArray(searchBar.text)
-        
+        println("search for: " + searchBar.text)
         //navi
         switch self.searchScope() {
         case "文章" :
             self.searchController.active = false
             self.performSegueWithIdentifier("TitleViewSegue", sender: self)
+            println("Show titles view")
         case "帳號" :
             self.searchController.active = false
             self.performSegueWithIdentifier("ProfileViewSegue", sender: self)
+            println("Show profile view")
         default:
             println("error: different scope")
         }
@@ -189,55 +197,57 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
+        if self.searchController.active == true {
+            let hint = self.filtedHints[indexPath.row]
+            self.saveHistoryHint(hint)
+            println("search for: " + hint)
+            //navi
+            self.searchController.searchBar.text = hint
+            println("search for: " + hint)
+            switch self.searchScope() {
+            case "文章" :
+                self.searchController.active = false
+                self.performSegueWithIdentifier("TitleViewSegue", sender: self)
+                println("Show titles view")
+            case "帳號" :
+                self.searchController.active = false
+                self.performSegueWithIdentifier("ProfileViewSegue", sender: self)
+                println("Show profile view")
+            default:
+                println("error: different scope")
+            }
+        }else {
+            let selectHint = self.histories[indexPath.row]
+            println("search for: " + selectHint.hint)
+            switch selectHint.scope {
+            case "帳號" :
+                self.searchController.searchBar.text = selectHint.hint
+                self.performSegueWithIdentifier("ProfileViewSegue", sender: self)
+            case "文章" :
+                self.searchController.searchBar.text = selectHint.hint
+                self.performSegueWithIdentifier("TitleViewSegue", sender: self)
+            default:
+                println("unknow scope")
+            }
+        }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var url = Singleton.sharedInstance.serverURL + "search/"
+        
         
         if segue.identifier == "ProfileViewSegue"{
-            url += "searchProfile"
-            //send to server
             if let destinationVC = segue.destinationViewController as? ProfileViewController {
-                println("Show profile view")
-                
-                //搜尋帳號
-                Alamofire.request(.GET, url, parameters: ["agent" : "iphone", "hint" : self.searchController.searchBar.text]).responseObject { (response: mapProfile?, error: NSError?) -> Void in
-                    println("got result from server")
-                    if let resultProfileAccount = response?.account {
-                        println("find profile: " + resultProfileAccount)
-                        //有結果
-                        destinationVC.tempProfile = response
-                        //test
-                        println(response?.lastOnline)
-                    }else {
-                        //無結果
-                        JDStatusBarNotification.showWithStatus("無結果", dismissAfter: 1.0, styleName: JDStatusBarStyleWarning)
-                    }
-                    if error != nil {
-                        println(error)
-                    }
+                let account = self.searchController.searchBar.text
+                destinationVC.account = account
+                //查看是否有舊檔案
+                if let profile = SearchResult.by("account", equalTo: account).by("scope", equalTo: "帳號").find().firstObject() as? SearchResult {
+                    //已經加入離線最愛
+                    destinationVC.isFavor = true
                 }
             }
             
         }else if segue.identifier == "TitleViewSegue" {
-            url += "searchArticle"
-            //傳送給伺服器
-            if self.searchScope() == "文章" {
-                //搜尋文章, wait....
-                /*
-                Alamofire.request(.GET, url, parameters: ["agent" : "iphone", "hint" : self.searchController.searchBar.text]).responseObject { (response: mapProfile?, error: NSError?) -> Void in
-                    println("got result from server")
-                    if let resultProfileAccount = response?.account {
-                        //有結果
-                        self.performSegueWithIdentifier("ProfileViewSegue", sender: self)
-                    }else {
-                        //無結果
-                        JDStatusBarNotification.showWithStatus("沒有搜尋結果", dismissAfter: 0.5)
-                    }
-                    if error != nil {
-                        println(error)
-                    }*/
-                }
+            
         }
     }
     

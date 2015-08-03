@@ -22,6 +22,7 @@ class BasicProfileTableViewCell: UITableViewCell {
     
     @IBOutlet weak var areaLabel: UILabel!
     
+    @IBOutlet weak var onlineCountLabel: UILabel!
     
     
     

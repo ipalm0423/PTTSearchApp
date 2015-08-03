@@ -7,10 +7,15 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireObjectMapper
+import JDStatusBarNotification
+import SugarRecord
 
 class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var tempProfile: mapProfile?
+    var account = ""
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -18,8 +23,8 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         super.viewDidLoad()
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        
-        self.tableView.reloadData()
+        self.searchProfile(self.account)
+        self.navigationItem.title = "搜尋結果"
         // Do any additional setup after loading the view.
     }
 
@@ -81,11 +86,15 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         if let profile = self.tempProfile {
             var totalArticle = "0"
             var totalPush = "0"
+            var onlineCount = "0"
             if let articles = profile.totalArticle {
                 totalArticle = articles
             }
             if let pushes = profile.totalPush {
                 totalPush = pushes
+            }
+            if let onlinecount = profile.onlineCount {
+                onlineCount = onlinecount
             }
             switch indexPath.section {
             case 1:
@@ -96,8 +105,9 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
                     cell.accountLabel.text = profile.account
                     cell.nameLabel.text = profile.name
                     cell.scoreLabel.text = profile.score
-                    cell.lastOnlineLabel.text = Singleton.sharedInstance.NSDateToTWString(profile.lastOnline!)
+                    cell.lastOnlineLabel.text = "登入時間：" + Singleton.sharedInstance.NSDateToTWString(profile.lastOnline!)
                     cell.areaLabel.text = profile.ip
+                    cell.onlineCountLabel.text = "上站次數：" + onlineCount
                     //未來更新
                     cell.setupIcon(nil)
                     
@@ -138,7 +148,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
                     cell.titleLabel.text = title.title
                     cell.subTitleLabel.text = title.subTitle
                     cell.accountLabel.text = title.account! + "(" + title.name! + ")"
-                    cell.pushLabel.text = title.totalPush
+                    cell.pushLabel.text = title.pushes
                     cell.timeLabel.text = Singleton.sharedInstance.NSDateToDaysString(title.time!)
                     cell.boardLabel.text = "@" + title.board!
                     //等未來更新
@@ -205,6 +215,133 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
             return 80
         }
     }
+    
+    
+    
+    
+//internet
+    func searchProfile(account: String) {
+        var url = Singleton.sharedInstance.serverURL + "search/searchProfile"
+        println("search for profile...")
+        //搜尋帳號
+        Alamofire.request(.GET, url, parameters: ["agent" : "iphone", "hint" : account]).responseObject { (response: mapProfile?, error: NSError?) -> Void in
+            println("got result from server")
+            if let resultProfileAccount = response?.account {
+                println("find profile: " + resultProfileAccount)
+                //有結果
+                self.tempProfile = response
+                self.tableView.reloadData()
+                self.updateOldProfile(resultProfileAccount)
+            }else {
+                //無結果
+                JDStatusBarNotification.showWithStatus("無結果", dismissAfter: 1.0, styleName: JDStatusBarStyleWarning)
+            }
+            if error != nil {
+                println(error)
+            }
+        }
+    }
+    
+    
+    
+//button
+    
+    @IBOutlet weak var favorButton: UIButton!
+    var isFavor = false {
+        didSet {
+            if self.isFavor == true {
+                self.favorButton.setImage(UIImage(named: "heart-black-vec-20"), forState: UIControlState.Normal)
+                
+            }else {
+                self.favorButton.setImage(UIImage(named: "heart-vec-20"), forState: UIControlState.Normal)
+                
+            }
+        }
+    }
+    
+    @IBAction func favorButtonTouch(sender: AnyObject) {
+        if let account = self.tempProfile?.account {
+            //animate
+            if self.isFavor == false {
+                //儲存
+                self.isFavor = true
+                self.saveNewProfile()
+                JDStatusBarNotification.showWithStatus("已加入最愛", dismissAfter: 1, styleName: JDStatusBarStyleSuccess)
+            }else {
+                //刪除
+                self.isFavor = false
+                self.deleteProfile(account)
+                JDStatusBarNotification.showWithStatus("移除最愛", dismissAfter: 1, styleName: JDStatusBarStyleDark)
+            }
+        }
+    }
+    
+    
+    
+    
+    
+//core data
+    func saveNewProfile() {
+        if let profile:SearchResult = SearchResult.create() as? SearchResult {
+            let saveProfile = self.tempProfile!
+            profile.uid = saveProfile.uid
+            profile.scope = "帳號"
+            profile.account = saveProfile.account
+            profile.name = saveProfile.name
+            profile.ip = saveProfile.ip
+            profile.icon = saveProfile.icon
+            profile.saveTime = NSDate()
+            profile.score = saveProfile.score
+            profile.lastOnline = saveProfile.lastOnline
+            profile.osArticle = saveProfile.osArticle
+            profile.ofArticle = saveProfile.ofArticle
+            profile.totalArticle = saveProfile.totalArticle
+            profile.totalPush = saveProfile.totalPush
+            profile.onlineCount = saveProfile.onlineCount
+            profile.follower = saveProfile.follower
+            profile.greenPush = saveProfile.greenPush
+            profile.redPush = saveProfile.redPush
+            
+            profile.save()
+        }
+    }
+    
+    func updateOldProfile(account: String) {
+        if let profile = SearchResult.by("account", equalTo: account).by("scope", equalTo: "帳號").find().firstObject() as? SearchResult {
+            
+            let saveProfile = self.tempProfile!
+            
+            profile.beginWriting()
+            profile.uid = saveProfile.uid
+            profile.scope = "帳號"
+            profile.account = saveProfile.account
+            profile.name = saveProfile.name
+            profile.ip = saveProfile.ip
+            profile.icon = saveProfile.icon
+            profile.saveTime = NSDate()
+            profile.score = saveProfile.score
+            profile.lastOnline = saveProfile.lastOnline
+            profile.osArticle = saveProfile.osArticle
+            profile.ofArticle = saveProfile.ofArticle
+            profile.totalArticle = saveProfile.totalArticle
+            profile.totalPush = saveProfile.totalPush
+            profile.onlineCount = saveProfile.onlineCount
+            profile.follower = saveProfile.follower
+            profile.greenPush = saveProfile.greenPush
+            profile.redPush = saveProfile.redPush
+            profile.endWriting()
+        }
+        
+    }
+    
+    func deleteProfile(account: String) {
+        if let profile = SearchResult.by("account", equalTo: account).by("scope", equalTo: "帳號").find().firstObject() as? SearchResult {
+            profile.beginWriting()
+            profile.delete()
+            profile.endWriting()
+        }
+    }
+    
     
     
     /*

@@ -12,4 +12,5 @@ import CoreData
 class SearchHistroy: NSManagedObject{
     @NSManaged var hint:String!
     @NSManaged var searchTime:NSDate!
+    @NSManaged var scope:String!
 }

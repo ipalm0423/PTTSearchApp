@@ -69,7 +69,7 @@ class mapTitle: Mappable {
     var subTitle: String?
     var board: String?
     var time: NSDate?
-    var totalPush: String?
+    var pushes: String?
     var icon: String?
     var politic: String?
     var motheruid: String?
@@ -92,7 +92,7 @@ class mapTitle: Mappable {
         subTitle <- map["subTitle"]
         board <- map["board"]
         time <- (map["time"], DateTransform())
-        totalPush <- map["totalPush"]
+        pushes <- map["pushes"]
         icon <- map["icon"]
         politic <- map["politic"]
         motheruid <- map["motheruid"]
@@ -115,6 +115,7 @@ class mapProfile: Mappable {
     var ofArticle: String?
     var totalArticle: String?
     var totalPush: String?
+    var onlineCount: String?
     var follower: String?
     var redPush: String?
     var greenPush: String?
@@ -141,6 +142,7 @@ class mapProfile: Mappable {
         ofArticle <- map["ofArticle"]
         totalArticle <- map["totalArticle"]
         totalPush <- map["totalPush"]
+        onlineCount <- map["onlineCount"]
         follower <- map["follower"]
         redPush <- map["redPush"]
         greenPush <- map["greenPush"]
