@@ -1,17 +1,17 @@
 //
-//  MoreCommentTableViewCell.swift
+//  IndicatorTableViewCell.swift
 //  PTTSearchApp
 //
-//  Created by 陳冠宇 on 2015/8/2.
+//  Created by 陳冠宇 on 2015/8/7.
 //  Copyright (c) 2015年 陳冠宇. All rights reserved.
 //
 
 import UIKit
 
-class MoreCommentTableViewCell: UITableViewCell {
+class IndicatorTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var indicatorLabel: UILabel!
     
-    @IBOutlet weak var commentLabel: UILabel!
     
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     

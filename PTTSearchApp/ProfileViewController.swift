@@ -46,13 +46,13 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
                 
             case 1:
                 return 2
-            case 2:
+            case 3:
                 if let pushlist = profile.pushList {
                     return pushlist.count + 1
                 }else {
                     return 1
                 }
-            case 3:
+            case 2:
                 if let articlelist = profile.articleList {
                     return articlelist.count + 1
                 }else {
@@ -122,7 +122,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
                     cell.setupButtonWidth()
                     return cell
                 }
-            case 2:
+            case 3:
                 
                 let pushcount = profile.pushList!.count
                 if indexPath.row == pushcount {
@@ -134,10 +134,11 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
                     cell.titleLabel.text = push.title
                     cell.pushLabel.text = push.content
                     cell.timeLabel.text = Singleton.sharedInstance.NSDateToDaysString(push.time!)
+                    
                     return cell
                 }
                 
-            case 3:
+            case 2:
                 let titlecount = profile.articleList!.count
                 if indexPath.row == titlecount {
                     let cell = self.tableView.dequeueReusableCellWithIdentifier("MoreArticleCell") as! MoreArticleTableViewCell
@@ -153,7 +154,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
                     cell.boardLabel.text = "@" + title.board!
                     //等未來更新
                     cell.setupIcon(nil)
-                    
+                    cell.setupPushLabelColor()
                     return cell
                 }
                 /*
@@ -177,9 +178,9 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         case 1:
             return nil
         case 2:
-            return "歷史推文："
-        case 3:
             return "歷史文章："
+        case 3:
+            return "歷史推文："
             /*
         case 4:
             return "網友評論："
@@ -204,9 +205,9 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
             }else {
                 return 100
             }
-        case 2:
-            return 80
         case 3:
+            return 80
+        case 2:
             return 100
             /*
         case 4:
@@ -225,7 +226,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         println("search for profile...")
         //搜尋帳號
         Alamofire.request(.GET, url, parameters: ["agent" : "iphone", "hint" : account]).responseObject { (response: mapProfile?, error: NSError?) -> Void in
-            println("got result from server")
+            println("got feedback from server")
             if let resultProfileAccount = response?.account {
                 println("find profile: " + resultProfileAccount)
                 //有結果

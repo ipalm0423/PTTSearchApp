@@ -30,6 +30,8 @@
 		ACDC9B061B6E1C6200C7F4D1 /* MorePushTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC9B051B6E1C6200C7F4D1 /* MorePushTableViewCell.swift */; };
 		ACDC9B081B6E1C8900C7F4D1 /* MoreArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC9B071B6E1C8900C7F4D1 /* MoreArticleTableViewCell.swift */; };
 		ACDC9B0A1B6E34E100C7F4D1 /* TitleViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC9B091B6E34E100C7F4D1 /* TitleViewTableViewCell.swift */; };
+		ACDC9B0C1B70A97600C7F4D1 /* TitlesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC9B0B1B70A97600C7F4D1 /* TitlesTableViewCell.swift */; };
+		ACF80EA41B74975900A107FD /* IndicatorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF80EA31B74975900A107FD /* IndicatorTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		ACDC9B051B6E1C6200C7F4D1 /* MorePushTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorePushTableViewCell.swift; sourceTree = "<group>"; };
 		ACDC9B071B6E1C8900C7F4D1 /* MoreArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreArticleTableViewCell.swift; sourceTree = "<group>"; };
 		ACDC9B091B6E34E100C7F4D1 /* TitleViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleViewTableViewCell.swift; sourceTree = "<group>"; };
+		ACDC9B0B1B70A97600C7F4D1 /* TitlesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitlesTableViewCell.swift; sourceTree = "<group>"; };
+		ACF80EA31B74975900A107FD /* IndicatorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorTableViewCell.swift; sourceTree = "<group>"; };
 		B2534E6993C4AE2F5DF89BD4 /* Pods-PTTSearchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTTSearchApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PTTSearchApp/Pods-PTTSearchApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -203,6 +207,8 @@
 			isa = PBXGroup;
 			children = (
 				ACDC9AF91B6B57E600C7F4D1 /* TitlesViewController.swift */,
+				ACDC9B0B1B70A97600C7F4D1 /* TitlesTableViewCell.swift */,
+				ACF80EA31B74975900A107FD /* IndicatorTableViewCell.swift */,
 			);
 			name = titlesView;
 			sourceTree = "<group>";
@@ -367,8 +373,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACDC9B0C1B70A97600C7F4D1 /* TitlesTableViewCell.swift in Sources */,
 				ACDC9B081B6E1C8900C7F4D1 /* MoreArticleTableViewCell.swift in Sources */,
 				ACD2FF051B5B751E006DF40D /* HintTableViewCell.swift in Sources */,
+				ACF80EA41B74975900A107FD /* IndicatorTableViewCell.swift in Sources */,
 				ACC2EBAA1B5AB0CB00F92347 /* SearchResult.swift in Sources */,
 				ACDC9B041B6E0B6300C7F4D1 /* MoreCommentTableViewCell.swift in Sources */,
 				ACDC9AF81B6B556B00C7F4D1 /* ProfileViewController.swift in Sources */,

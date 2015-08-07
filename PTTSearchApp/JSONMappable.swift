@@ -103,6 +103,22 @@ class mapTitle: Mappable {
         }
 }
 
+class mapTitles: Mappable {
+    var titles: [mapTitle]?
+    var hint: String?
+    
+    init() {}
+    
+    required init?(_ map: Map) {
+        mapping(map)
+    }
+    
+    func mapping(map: Map) {
+        titles <- map["titles"]
+        hint <- map["hint"]
+    }
+}
+
 class mapProfile: Mappable {
     var uid: String?
     var account: String?

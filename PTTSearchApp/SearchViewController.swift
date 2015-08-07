@@ -26,6 +26,8 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
         
         //add searchBar
         self.searchController.delegate = self
@@ -34,17 +36,16 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         self.searchController.hidesNavigationBarDuringPresentation = true
         self.searchController.searchBar.placeholder = "輸入你要查詢的內容"
         self.searchController.dimsBackgroundDuringPresentation = false
+        self.searchController.searchBar.scopeButtonTitles = ["帳號", "文章"]
         self.tableView.tableHeaderView = self.searchController.searchBar
         self.searchController.searchBar.sizeToFit()
-        self.searchController.searchBar.scopeButtonTitles = ["帳號", "文章"]
+        
         //self.navigationItem.titleView = self.searchController.searchBar
         //self.definesPresentationContext = true
         
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
         
-        // Do any additional setup after loading the view, typically from a nib.
         self.loadHistoryHint()
+        // Do any additional setup after loading the view, typically from a nib.
         
         
     }
@@ -247,7 +248,10 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
             }
             
         }else if segue.identifier == "TitleViewSegue" {
-            
+            if let destinationVC = segue.destinationViewController as? TitlesViewController {
+                let hint = self.searchController.searchBar.text
+                destinationVC.hint = hint
+            }
         }
     }
     
