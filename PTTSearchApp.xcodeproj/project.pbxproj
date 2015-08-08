@@ -32,6 +32,7 @@
 		ACDC9B0A1B6E34E100C7F4D1 /* TitleViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC9B091B6E34E100C7F4D1 /* TitleViewTableViewCell.swift */; };
 		ACDC9B0C1B70A97600C7F4D1 /* TitlesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC9B0B1B70A97600C7F4D1 /* TitlesTableViewCell.swift */; };
 		ACF80EA41B74975900A107FD /* IndicatorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF80EA31B74975900A107FD /* IndicatorTableViewCell.swift */; };
+		ACF80EAA1B75CB6500A107FD /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF80EA91B75CB6500A107FD /* PushViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		ACDC9B091B6E34E100C7F4D1 /* TitleViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleViewTableViewCell.swift; sourceTree = "<group>"; };
 		ACDC9B0B1B70A97600C7F4D1 /* TitlesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitlesTableViewCell.swift; sourceTree = "<group>"; };
 		ACF80EA31B74975900A107FD /* IndicatorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorTableViewCell.swift; sourceTree = "<group>"; };
+		ACF80EA91B75CB6500A107FD /* PushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
 		B2534E6993C4AE2F5DF89BD4 /* Pods-PTTSearchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTTSearchApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PTTSearchApp/Pods-PTTSearchApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -182,6 +184,7 @@
 		ACDC9AF61B6B554400C7F4D1 /* DetailView */ = {
 			isa = PBXGroup;
 			children = (
+				ACF80EA81B75CB4200A107FD /* pushView */,
 				ACDC9B021B6E066600C7F4D1 /* titlesView */,
 				ACDC9B011B6E064F00C7F4D1 /* profileView */,
 			);
@@ -211,6 +214,14 @@
 				ACF80EA31B74975900A107FD /* IndicatorTableViewCell.swift */,
 			);
 			name = titlesView;
+			sourceTree = "<group>";
+		};
+		ACF80EA81B75CB4200A107FD /* pushView */ = {
+			isa = PBXGroup;
+			children = (
+				ACF80EA91B75CB6500A107FD /* PushViewController.swift */,
+			);
+			name = pushView;
 			sourceTree = "<group>";
 		};
 		C63390AEF91FA691F8CD396E /* Pods */ = {
@@ -393,6 +404,7 @@
 				ACC2EB7D1B5A9E8500F92347 /* AppDelegate.swift in Sources */,
 				ACC2EBA61B5AAF6D00F92347 /* JSONMappable.swift in Sources */,
 				ACDC9AFA1B6B57E600C7F4D1 /* TitlesViewController.swift in Sources */,
+				ACF80EAA1B75CB6500A107FD /* PushViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

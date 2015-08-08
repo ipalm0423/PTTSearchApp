@@ -27,5 +27,16 @@ class PushTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    func setupPushLabelColor() {
+        if let count = self.pushLabel.text?.toInt() {
+            if count > 0 {
+                self.pushLabel.textColor = UIColor.redColor()
+            }else if count < 0 {
+                self.pushLabel.textColor = UIColor.greenColor()
+            }
+        }
+    }
+    
 
 }

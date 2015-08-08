@@ -201,7 +201,6 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         if self.searchController.active == true {
             let hint = self.filtedHints[indexPath.row]
             self.saveHistoryHint(hint)
-            println("search for: " + hint)
             //navi
             self.searchController.searchBar.text = hint
             println("search for: " + hint)
@@ -244,6 +243,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
                 if let profile = SearchResult.by("account", equalTo: account).by("scope", equalTo: "帳號").find().firstObject() as? SearchResult {
                     //已經加入離線最愛
                     destinationVC.isFavor = true
+                    destinationVC.navigationItem.title = "搜尋結果"
                 }
             }
             
@@ -251,6 +251,8 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
             if let destinationVC = segue.destinationViewController as? TitlesViewController {
                 let hint = self.searchController.searchBar.text
                 destinationVC.hint = hint
+                destinationVC.scopes = "all"
+                destinationVC.navigationItem.title = "搜尋結果"
             }
         }
     }

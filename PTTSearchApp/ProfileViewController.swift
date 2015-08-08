@@ -24,7 +24,6 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.searchProfile(self.account)
-        self.navigationItem.title = "搜尋結果"
         // Do any additional setup after loading the view.
     }
 
@@ -355,4 +354,28 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     */
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        
+        if segue.identifier == "MorePushViewSegue"{
+            if let destinationVC = segue.destinationViewController as? PushViewController {
+                let account = self.account
+                destinationVC.hint = account
+                destinationVC.scopes = "push"
+                destinationVC.navigationItem.title = "所有推文"
+            }
+            
+        }else if segue.identifier == "MoreTitleViewSegue" {
+            if let destinationVC = segue.destinationViewController as? TitlesViewController {
+                let hint = self.account
+                destinationVC.hint = hint
+                destinationVC.scopes = "account"
+                destinationVC.navigationItem.title = "所有文章"
+            }
+        }
+    }
+    
+    
+    
+    
 }

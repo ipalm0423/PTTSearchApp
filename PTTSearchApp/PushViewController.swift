@@ -1,8 +1,8 @@
 //
-//  TitlesViewController.swift
+//  PushViewController.swift
 //  PTTSearchApp
 //
-//  Created by 陳冠宇 on 2015/7/31.
+//  Created by 陳冠宇 on 2015/8/8.
 //  Copyright (c) 2015年 陳冠宇. All rights reserved.
 //
 
@@ -12,13 +12,13 @@ import AlamofireObjectMapper
 import JDStatusBarNotification
 import SugarRecord
 
-class TitlesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class PushViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     
     var hint = ""
     var scopes = ""
-    var titles = [mapTitle]()
+    var pushes = [mapContent]()
     var showIndicator = true {
         didSet {
             self.tableView.reloadData()
@@ -28,12 +28,12 @@ class TitlesViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        self.searchTitle(self.hint, scopes: self.scopes, startRow: self.titles.count + 1, counts: 10)
+        
+        self.searchPush(self.hint, scopes: self.scopes, startRow: self.pushes.count + 1, counts: 10)
         // Do any additional setup after loading the view.
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,19 +41,21 @@ class TitlesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         // Dispose of any resources that can be recreated.
     }
     
-
+    
+    
+    
 //table view delegate
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 1 {
             //indicator
-            if self.titles.count > 0 && self.showIndicator == false {
+            if self.pushes.count > 0 && self.showIndicator == false {
                 return 0
             }else {
                 return 1
             }
         }
         
-        return self.titles.count
+        return self.pushes.count
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -72,27 +74,23 @@ class TitlesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
         
         
-        let cell = self.tableView.dequeueReusableCellWithIdentifier("TitlesCell", forIndexPath: indexPath) as! TitlesTableViewCell
-        let title = self.titles[indexPath.row]
-        cell.titleLabel.text = title.title
-        cell.subLabel.text = title.subTitle
-        cell.accountLabel.text = title.account
-        cell.pushLabel.text = title.pushes
-        cell.timeLabel.text = Singleton.sharedInstance.NSDateToDaysString(title.time!)
-        cell.boardLabel.text = "@" + title.board!
-        //未來更新
-        cell.setupIcon(nil)
+        let cell = self.tableView.dequeueReusableCellWithIdentifier("PushCell", forIndexPath: indexPath) as! PushTableViewCell
+        let push = self.pushes[indexPath.row]
+        cell.titleLabel.text = push.title
+        cell.pushLabel.text = push.content
+        cell.timeLabel.text = Singleton.sharedInstance.NSDateToDaysString(push.time!)
         cell.setupPushLabelColor()
+        
         return cell
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 100
+        return 80
     }
     
     
     
-//scroll view delegate
+    //scroll view delegate
     func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         var offset = scrollView.contentOffset
         var bounds = scrollView.bounds
@@ -104,32 +102,31 @@ class TitlesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         if y > (h + 60) {
             
-            self.searchTitle(self.hint, scopes: self.scopes, startRow: self.titles.count + 1, counts: 10)
+            self.searchPush(self.hint, scopes: self.scopes, startRow: self.pushes.count + 1, counts: 10)
         }
     }
     
     
     
     
-//internet
-    func searchTitle(hint: String, scopes: String, startRow: Int, counts: Int) {
+    //internet
+    func searchPush(hint: String, scopes: String, startRow: Int, counts: Int) {
         self.showIndicator = true
         self.indicatorText = "搜尋中"
-        var url = Singleton.sharedInstance.serverURL + "search/searchArticle"
-        println("search for title...")
+        var url = Singleton.sharedInstance.serverURL + "search/searchPush"
+        println("search for pushes...")
         //搜尋帳號
-        Alamofire.request(.GET, url, parameters: ["agent" : "iphone", "hint" : hint,  "scope" : scopes, "startCount" : startRow, "counts" : counts]).responseObject { (response: mapTitles?, error: NSError?) -> Void in
+        Alamofire.request(.GET, url, parameters: ["agent" : "iphone", "hint" : hint,  "scope" : scopes, "startCount" : startRow, "counts" : counts]).responseObject { (response: mapContents?, error: NSError?) -> Void in
             println("got feedback from server")
             self.showIndicator = false
-            if let resultTitles = response?.titles {
-                println("get " + resultTitles.count.description + " titles from server")
-                if resultTitles.count == 0 {
+            if let resultPushes = response?.contents {
+                println("get " + resultPushes.count.description + " pushes from server")
+                if resultPushes.count == 0 {
                     self.indicatorText = "無搜尋結果"
                     return
                 }
                 //有結果
-                self.titles += resultTitles
-                
+                self.pushes += resultPushes
             }else {
                 //無結果
                 JDStatusBarNotification.showWithStatus("請檢查網路連線", dismissAfter: 1.0, styleName: JDStatusBarStyleWarning)
@@ -144,6 +141,11 @@ class TitlesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
     }
     
+    
+    
+    
+    
+
     /*
     // MARK: - Navigation
 
