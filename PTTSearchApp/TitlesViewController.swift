@@ -154,4 +154,24 @@ class TitlesViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     */
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ArticleViewSegue"{
+            if let destinationVC = segue.destinationViewController as? ArticleViewController {
+                if let indexPath = self.tableView.indexPathForSelectedRow() {
+                    let title = self.titles[indexPath.row]
+                    destinationVC.tempTitle = title
+                    //查看是否有舊檔案
+                    if let result = SearchResult.by("uid", equalTo: title.uid!).find().firstObject() as? SearchResult {
+                        //已經加入離線最愛
+                        destinationVC.isFavor = true
+                    }
+                }
+            }
+            
+        }
+    }
+    
+    
+    
+    
 }

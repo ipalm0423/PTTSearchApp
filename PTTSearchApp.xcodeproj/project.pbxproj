@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6060B4409F0FE2D25AD39B4A /* Pods_PTTSearchApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0131580E420046FBD5EBCE81 /* Pods_PTTSearchApp.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		AC813B1B1B760ECB008C5480 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC813B1A1B760ECB008C5480 /* ArticleViewController.swift */; };
+		AC813B1D1B760F81008C5480 /* ArticleTopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC813B1C1B760F81008C5480 /* ArticleTopTableViewCell.swift */; };
+		AC813B1F1B761484008C5480 /* ArticleContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC813B1E1B761484008C5480 /* ArticleContentTableViewCell.swift */; };
+		AC813B211B761F9D008C5480 /* ArticlePushTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC813B201B761F9D008C5480 /* ArticlePushTableViewCell.swift */; };
 		ACC2EB7D1B5A9E8500F92347 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2EB7C1B5A9E8500F92347 /* AppDelegate.swift */; };
 		ACC2EB801B5A9E8500F92347 /* PTTSearchApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACC2EB7E1B5A9E8500F92347 /* PTTSearchApp.xcdatamodeld */; };
 		ACC2EB821B5A9E8500F92347 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2EB811B5A9E8500F92347 /* SearchViewController.swift */; };
@@ -48,6 +52,10 @@
 /* Begin PBXFileReference section */
 		0131580E420046FBD5EBCE81 /* Pods_PTTSearchApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PTTSearchApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30C1B859130DF166560571B6 /* Pods-PTTSearchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTTSearchApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PTTSearchApp/Pods-PTTSearchApp.release.xcconfig"; sourceTree = "<group>"; };
+		AC813B1A1B760ECB008C5480 /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
+		AC813B1C1B760F81008C5480 /* ArticleTopTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTopTableViewCell.swift; sourceTree = "<group>"; };
+		AC813B1E1B761484008C5480 /* ArticleContentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleContentTableViewCell.swift; sourceTree = "<group>"; };
+		AC813B201B761F9D008C5480 /* ArticlePushTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlePushTableViewCell.swift; sourceTree = "<group>"; };
 		ACC2EB771B5A9E8500F92347 /* PTTSearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTTSearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC2EB7B1B5A9E8500F92347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACC2EB7C1B5A9E8500F92347 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +113,17 @@
 				0131580E420046FBD5EBCE81 /* Pods_PTTSearchApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC813B191B7602CE008C5480 /* ArticleView */ = {
+			isa = PBXGroup;
+			children = (
+				AC813B1A1B760ECB008C5480 /* ArticleViewController.swift */,
+				AC813B1C1B760F81008C5480 /* ArticleTopTableViewCell.swift */,
+				AC813B201B761F9D008C5480 /* ArticlePushTableViewCell.swift */,
+				AC813B1E1B761484008C5480 /* ArticleContentTableViewCell.swift */,
+			);
+			name = ArticleView;
 			sourceTree = "<group>";
 		};
 		ACC2EB6E1B5A9E8500F92347 = {
@@ -184,6 +203,7 @@
 		ACDC9AF61B6B554400C7F4D1 /* DetailView */ = {
 			isa = PBXGroup;
 			children = (
+				AC813B191B7602CE008C5480 /* ArticleView */,
 				ACF80EA81B75CB4200A107FD /* pushView */,
 				ACDC9B021B6E066600C7F4D1 /* titlesView */,
 				ACDC9B011B6E064F00C7F4D1 /* profileView */,
@@ -385,10 +405,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACDC9B0C1B70A97600C7F4D1 /* TitlesTableViewCell.swift in Sources */,
+				AC813B1D1B760F81008C5480 /* ArticleTopTableViewCell.swift in Sources */,
+				AC813B1F1B761484008C5480 /* ArticleContentTableViewCell.swift in Sources */,
 				ACDC9B081B6E1C8900C7F4D1 /* MoreArticleTableViewCell.swift in Sources */,
 				ACD2FF051B5B751E006DF40D /* HintTableViewCell.swift in Sources */,
 				ACF80EA41B74975900A107FD /* IndicatorTableViewCell.swift in Sources */,
+				AC813B211B761F9D008C5480 /* ArticlePushTableViewCell.swift in Sources */,
 				ACC2EBAA1B5AB0CB00F92347 /* SearchResult.swift in Sources */,
+				AC813B1B1B760ECB008C5480 /* ArticleViewController.swift in Sources */,
 				ACDC9B041B6E0B6300C7F4D1 /* MoreCommentTableViewCell.swift in Sources */,
 				ACDC9AF81B6B556B00C7F4D1 /* ProfileViewController.swift in Sources */,
 				ACDC9AFC1B6DDD1800C7F4D1 /* ButtonProfileTableViewCell.swift in Sources */,

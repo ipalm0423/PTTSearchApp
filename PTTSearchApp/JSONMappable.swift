@@ -104,8 +104,10 @@ class mapTitle: Mappable {
 }
 
 class mapContents: Mappable {
+    var uid: String?
+    var signature: String?
     var contents: [mapContent]?
-    var hint: String?
+    var pushes: [mapContent]?
     
     init() {}
     
@@ -114,8 +116,10 @@ class mapContents: Mappable {
     }
     
     func mapping(map: Map) {
+        uid <- map["uid"]
+        signature <- map["signature"]
         contents <- map["contents"]
-        hint <- map["hint"]
+        pushes <- map["pushes"]
     }
 }
 
