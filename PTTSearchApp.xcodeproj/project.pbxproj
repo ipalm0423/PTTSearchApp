@@ -12,6 +12,7 @@
 		AC813B1D1B760F81008C5480 /* ArticleTopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC813B1C1B760F81008C5480 /* ArticleTopTableViewCell.swift */; };
 		AC813B1F1B761484008C5480 /* ArticleContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC813B1E1B761484008C5480 /* ArticleContentTableViewCell.swift */; };
 		AC813B211B761F9D008C5480 /* ArticlePushTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC813B201B761F9D008C5480 /* ArticlePushTableViewCell.swift */; };
+		AC813B231B7845A0008C5480 /* ArticleHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC813B221B7845A0008C5480 /* ArticleHeaderTableViewCell.swift */; };
 		ACC2EB7D1B5A9E8500F92347 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2EB7C1B5A9E8500F92347 /* AppDelegate.swift */; };
 		ACC2EB801B5A9E8500F92347 /* PTTSearchApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACC2EB7E1B5A9E8500F92347 /* PTTSearchApp.xcdatamodeld */; };
 		ACC2EB821B5A9E8500F92347 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2EB811B5A9E8500F92347 /* SearchViewController.swift */; };
@@ -56,6 +57,7 @@
 		AC813B1C1B760F81008C5480 /* ArticleTopTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTopTableViewCell.swift; sourceTree = "<group>"; };
 		AC813B1E1B761484008C5480 /* ArticleContentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleContentTableViewCell.swift; sourceTree = "<group>"; };
 		AC813B201B761F9D008C5480 /* ArticlePushTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlePushTableViewCell.swift; sourceTree = "<group>"; };
+		AC813B221B7845A0008C5480 /* ArticleHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		ACC2EB771B5A9E8500F92347 /* PTTSearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTTSearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC2EB7B1B5A9E8500F92347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACC2EB7C1B5A9E8500F92347 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			children = (
 				AC813B1A1B760ECB008C5480 /* ArticleViewController.swift */,
 				AC813B1C1B760F81008C5480 /* ArticleTopTableViewCell.swift */,
+				AC813B221B7845A0008C5480 /* ArticleHeaderTableViewCell.swift */,
 				AC813B201B761F9D008C5480 /* ArticlePushTableViewCell.swift */,
 				AC813B1E1B761484008C5480 /* ArticleContentTableViewCell.swift */,
 			);
@@ -420,6 +423,7 @@
 				ACDC9B0A1B6E34E100C7F4D1 /* TitleViewTableViewCell.swift in Sources */,
 				ACD2FF071B5B752C006DF40D /* ProfileTableViewCell.swift in Sources */,
 				ACC2EB821B5A9E8500F92347 /* SearchViewController.swift in Sources */,
+				AC813B231B7845A0008C5480 /* ArticleHeaderTableViewCell.swift in Sources */,
 				ACC2EBA41B5AAF4300F92347 /* Singleton.swift in Sources */,
 				ACDC9AFE1B6DDD4B00C7F4D1 /* BasicProfileTableViewCell.swift in Sources */,
 				ACDC9B001B6DE2CB00C7F4D1 /* PushTableViewCell.swift in Sources */,

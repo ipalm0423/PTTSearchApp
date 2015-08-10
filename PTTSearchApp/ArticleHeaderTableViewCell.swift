@@ -1,30 +1,15 @@
 //
-//  ArticleTopTableViewCell.swift
+//  ArticleHeaderTableViewCell.swift
 //  PTTSearchApp
 //
-//  Created by 陳冠宇 on 2015/8/8.
+//  Created by 陳冠宇 on 2015/8/10.
 //  Copyright (c) 2015年 陳冠宇. All rights reserved.
 //
 
 import UIKit
 
-class ArticleTopTableViewCell: UITableViewCell {
+class ArticleHeaderTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var titleLabel: UILabel!
-    
-    @IBOutlet weak var subLabel: UILabel!
-    
-    
-    
-    @IBOutlet weak var accountLabel: UILabel!
-    
-    @IBOutlet weak var timeLabel: UILabel!
-    
-    
-    
-    
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -264,14 +264,16 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
             //animate
             if self.isFavor == false {
                 //儲存
-                self.isFavor = true
-                self.saveNewProfile()
-                JDStatusBarNotification.showWithStatus("已加入最愛", dismissAfter: 1, styleName: JDStatusBarStyleSuccess)
+                if self.saveNewProfile() {
+                    self.isFavor = true
+                    JDStatusBarNotification.showWithStatus("已加入最愛", dismissAfter: 1, styleName: JDStatusBarStyleSuccess)
+                }
             }else {
                 //刪除
-                self.isFavor = false
-                self.deleteProfile(account)
-                JDStatusBarNotification.showWithStatus("移除最愛", dismissAfter: 1, styleName: JDStatusBarStyleDark)
+                if self.deleteProfile(account) {
+                    self.isFavor = false
+                    JDStatusBarNotification.showWithStatus("移除最愛", dismissAfter: 1, styleName: JDStatusBarStyleDark)
+                }
             }
         }
     }
@@ -281,7 +283,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     
 //core data
-    func saveNewProfile() {
+    func saveNewProfile() -> Bool {
         if let profile:SearchResult = SearchResult.create() as? SearchResult {
             let saveProfile = self.tempProfile!
             profile.uid = saveProfile.uid
@@ -302,8 +304,9 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
             profile.greenPush = saveProfile.greenPush
             profile.redPush = saveProfile.redPush
             
-            profile.save()
+            return profile.save()
         }
+        return false
     }
     
     func updateOldProfile(account: String) {
@@ -334,12 +337,14 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         
     }
     
-    func deleteProfile(account: String) {
+    func deleteProfile(account: String) -> Bool {
         if let profile = SearchResult.by("account", equalTo: account).by("scope", equalTo: "帳號").find().firstObject() as? SearchResult {
             profile.beginWriting()
             profile.delete()
             profile.endWriting()
+            return true
         }
+        return false
     }
     
     

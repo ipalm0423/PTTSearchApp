@@ -155,5 +155,22 @@ class PushViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ArticleViewSegue"{
+            if let destinationVC = segue.destinationViewController as? ArticleViewController {
+                if let indexPath = self.tableView.indexPathForSelectedRow() {
+                    let push = self.pushes[indexPath.row]
+                    destinationVC.uid = push.uid!
+                    //查看是否有舊檔案
+                    if let result = SearchResult.by("uid", equalTo: push.uid!).find().firstObject() as? SearchResult {
+                        //已經加入離線最愛
+                        destinationVC.isFavor = true
+                    }
+                }
+            }
+            
+        }
+    }
 
 }

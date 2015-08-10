@@ -17,7 +17,7 @@ class ArticleViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     @IBOutlet weak var tableView: UITableView!
     
-    
+    var uid = ""
     var tempTitle: mapTitle?
     var contents = [mapContent]()
     var pushes = [mapContent]()
@@ -28,7 +28,7 @@ class ArticleViewController: UIViewController, UITableViewDelegate, UITableViewD
             self.tableView.reloadData()
         }
     }
-    var isFavor = false
+    
     
 
     override func viewDidLoad() {
@@ -38,9 +38,12 @@ class ArticleViewController: UIViewController, UITableViewDelegate, UITableViewD
         if let title = tempTitle {
             self.searchArticle(title.uid!)
             self.navigationItem.title = title.board
+        }else {
+            self.searchTitle(self.uid)
+            self.searchArticle(self.uid)
         }
+        self.tableView.estimatedRowHeight = 44
         self.tableView.rowHeight = UITableViewAutomaticDimension
-        self.tableView.estimatedRowHeight = 100
         
         // Do any additional setup after loading the view.
     }
@@ -56,6 +59,9 @@ class ArticleViewController: UIViewController, UITableViewDelegate, UITableViewD
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
+            if self.indicatorText == "搜尋中" && self.showIndicator == true {
+                return 0
+            }
             return 1
         case 1:
             return self.contents.count
@@ -77,6 +83,7 @@ class ArticleViewController: UIViewController, UITableViewDelegate, UITableViewD
         return 4
     }
     
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         switch indexPath.section {
         case 0:
@@ -88,11 +95,11 @@ class ArticleViewController: UIViewController, UITableViewDelegate, UITableViewD
                 }
                 cell.titleLabel.text = title.title
                 cell.subLabel.text = title.subTitle
-                cell.boardLabel.text = title.board
                 cell.accountLabel.text = title.account! + " (" + name + ")"
                 cell.timeLabel.text = Singleton.sharedInstance.NSDateToTWString(title.time!)
+                cell.titleLabel.preferredMaxLayoutWidth = CGRectGetWidth(self.tableView.bounds)
                 //未來更新
-                cell.iconView.hidden = true
+                //cell.iconView.hidden = true
             }
             return cell
         case 1:
@@ -108,6 +115,7 @@ class ArticleViewController: UIViewController, UITableViewDelegate, UITableViewD
             cell.floorLabel.text = (indexPath.row + 1).description + "樓"
             cell.timeLabel.text = Singleton.sharedInstance.NSDateToTWString(push.time!)
             cell.setupPushLabelColor(push.subType!)
+            cell.contentLabel.preferredMaxLayoutWidth = CGRectGetWidth(self.tableView.bounds)
             return cell
         default:
             //indicator cell
@@ -119,8 +127,7 @@ class ArticleViewController: UIViewController, UITableViewDelegate, UITableViewD
         }
     }
     
-    //no table height
-
+    
     
     
     
@@ -146,6 +153,115 @@ class ArticleViewController: UIViewController, UITableViewDelegate, UITableViewD
         }
     }
     
+    
+    
+    
+    
+//favor button
+    @IBOutlet weak var favorButton: UIButton!
+    var isFavor = false {
+        didSet {
+            if self.isFavor == true {
+                self.favorButton.setImage(UIImage(named: "heart-black-vec-20"), forState: UIControlState.Normal)
+                
+            }else {
+                self.favorButton.setImage(UIImage(named: "heart-vec-20"), forState: UIControlState.Normal)
+                
+            }
+        }
+    }
+    
+    
+    @IBAction func favorButtonTouch(sender: AnyObject) {
+        if let uid = self.tempTitle?.uid {
+            //animate
+            if self.isFavor == false {
+                //儲存
+                if self.saveNewTitle() {
+                    self.isFavor = true
+                    JDStatusBarNotification.showWithStatus("已加入最愛", dismissAfter: 1, styleName: JDStatusBarStyleSuccess)
+                }
+            }else {
+                //刪除
+                if self.deleteTitle(uid) {
+                    self.isFavor = false
+                    JDStatusBarNotification.showWithStatus("移除最愛", dismissAfter: 1, styleName: JDStatusBarStyleDark)
+                }
+            }
+        }
+        
+    }
+    
+    
+    
+    
+//core data
+    func saveNewTitle() -> Bool {
+        if let newTitle: SearchResult = SearchResult.create() as? SearchResult {
+            let saveTitle = self.tempTitle!
+            newTitle.uid = saveTitle.uid
+            newTitle.scope = "文章"
+            newTitle.saveTime = NSDate()
+            newTitle.account = saveTitle.account
+            newTitle.name = saveTitle.name
+            newTitle.ip = saveTitle.ip
+            newTitle.url = saveTitle.url
+            newTitle.title = saveTitle.title
+            newTitle.subTitle = saveTitle.subTitle
+            newTitle.board = saveTitle.board
+            newTitle.time = saveTitle.time
+            newTitle.pushes = saveTitle.pushes
+            newTitle.icon = saveTitle.icon
+            newTitle.politic = saveTitle.politic
+            newTitle.motheruid = saveTitle.motheruid
+            newTitle.childuid = saveTitle.childuid
+            newTitle.tag = saveTitle.tag
+            
+            return newTitle.save()
+            
+        }
+        return false
+    }
+    
+    
+    func updateOldTitle(uid: String) {
+        if let newTitle = SearchResult.by("uid", equalTo: uid).by("scope", equalTo: "文章").find().firstObject() as? SearchResult {
+            
+            let saveTitle = self.tempTitle!
+            
+            newTitle.beginWriting()
+            newTitle.uid = saveTitle.uid
+            newTitle.scope = "文章"
+            newTitle.saveTime = NSDate()
+            newTitle.account = saveTitle.account
+            newTitle.name = saveTitle.name
+            newTitle.ip = saveTitle.ip
+            newTitle.url = saveTitle.url
+            newTitle.title = saveTitle.title
+            newTitle.subTitle = saveTitle.subTitle
+            newTitle.board = saveTitle.board
+            newTitle.time = saveTitle.time
+            newTitle.pushes = saveTitle.pushes
+            newTitle.icon = saveTitle.icon
+            newTitle.politic = saveTitle.politic
+            newTitle.motheruid = saveTitle.motheruid
+            newTitle.childuid = saveTitle.childuid
+            newTitle.tag = saveTitle.tag
+            newTitle.endWriting()
+            
+        }
+    }
+    
+    
+    func deleteTitle(uid: String) -> Bool {
+        if let title = SearchResult.by("uid", equalTo: uid).by("scope", equalTo: "文章").find().firstObject() as? SearchResult {
+            title.beginWriting()
+            title.delete()
+            title.endWriting()
+            return true
+        }
+        return false
+    }
     
     
     
@@ -180,6 +296,36 @@ class ArticleViewController: UIViewController, UITableViewDelegate, UITableViewD
                         self.pushes = resultPushes
                     }
                 }
+            }else {
+                //無結果
+                JDStatusBarNotification.showWithStatus("請檢查網路連線", dismissAfter: 1.0, styleName: JDStatusBarStyleWarning)
+                self.indicatorText = "請檢查網路"
+                self.showIndicator = false
+                self.showInformationRow = true
+                return
+            }
+            self.tableView.reloadData()
+            if error != nil {
+                println(error)
+            }
+        }
+    }
+    
+    func searchTitle(uid: String) {
+        self.showIndicator = true
+        self.indicatorText = "搜尋中"
+        self.showInformationRow = true
+        var url = Singleton.sharedInstance.serverURL + "article/title/uid"
+        println("search for article in uid: " + uid)
+        //搜尋帳號
+        Alamofire.request(.GET, url, parameters: ["agent" : "iphone", "uid" : uid]).responseObject { (response: mapTitle?, error: NSError?) -> Void in
+            
+            if let title = response {
+                println("got feedback from server")
+                self.showIndicator = false
+                self.showInformationRow = false
+                //have response
+                self.tempTitle = title
             }else {
                 //無結果
                 JDStatusBarNotification.showWithStatus("請檢查網路連線", dismissAfter: 1.0, styleName: JDStatusBarStyleWarning)
